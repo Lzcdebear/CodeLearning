@@ -1,0 +1,35 @@
+'''
+第三题
+对于sklearn中的手写数字使用knn分类器进行分类分析
+将数据的百分之八十作为训练数据
+百分之而是作为测试数据
+'''
+# （1）导入库
+from sklearn.datasets import load_digits
+import matplotlib.pyplot as plt
+import numpy as np
+from sklearn.neighbors import KNeighborsClassifier   #导入KNeighborsClassifier类
+from sklearn.model_selection import train_test_split   #导入train_test_split方法
+from sklearn.metrics import classification_report   #导入classification_report模块
+
+# （2）调用load_digits()读入手写数字信息，并显示前十张图片展示手写数字
+digits = load_digits()
+images = digits.images
+plt.figure(figsize=(10, 5))
+plt.suptitle('handwritten_Image')
+# 前十张图片
+for i in range(10):
+    plt.subplot(2, 5, i + 1), plt.title('image%i' % (i + 1))
+    plt.imshow(images[i]), plt.axis('off')
+plt.show()
+
+X_train, X_test, Y_train, Y_test = train_test_split(digits.data, digits.target, test_size=0.2, random_state=33)  # 切分训练集、测试集为8：2
+# （4）利用KNN模型进行分类
+knc = KNeighborsClassifier()  #生成K分类器实例
+knc.fit(X_train,Y_train)   #使用训练数据训练分类器模型
+y_predict = knc.predict(X_test)   #验证训练好的模型
+# （5）使用模型自带的评估函数进行准确性测评。
+print('The accuracy of K-Nearest Neighbor Classifier is', knc.score(X_test, Y_test)) #
+# （6）使用sklearn.metrics里面的classification_report模块对预测结果做更加详细的分析。
+print(classification_report(Y_test,y_predict))  #
+

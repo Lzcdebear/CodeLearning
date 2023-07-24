@@ -1,0 +1,21 @@
+    \tableofcontents
+    
+    \section{引言}
+    \section{实验方法}
+    \section{实验结果}
+    \subsection{图表}
+    \subsubsection{实验条件}
+    \subsubsection{实验过程}
+    \section{结论}
+    \section{感谢}
+    如果使用的是book，还可以使用chapter命令，chapter会显示第几章
+
+    tableofcontents 会显示目录
+    如果使用的是 
+   \\
+    进行换行的话，只是换行不会首行缩进，也不会有新的段落
+    如果使用的是空行来进行换行的话会产生新的段落
+    同样还可以使用 \par 来进行换行，也会产生新的段落
+    但是为了阅读的方便还是使用空行来进行换行
+    具体可以在cmd中查询 texdoc ctex来进行阅读
+    

@@ -1,0 +1,85 @@
+\documentclass{article}
+\usepackage{ctex}
+\usepackage{amsmath}
+
+% 正文区
+\begin{document}
+    \section{简介}
+    LaTeX 将排版内容分为文本模式和数学模式，
+    文本模式用于普通的文本排版，
+    数学模式用于数学公式排版
+    \section{行内公式}
+    \subsection{美元符号}
+    交换律是 $a+b=b+a$,如$1+2=2+1$
+    \subsection{小括号}
+    交换律是 \(a+b=b+a\),如\(1+2=2+1\)
+    \subsection{math环境}
+    交换律是 
+    \begin{math}
+        a+b=b+a
+    \end{math}
+
+    \section{上下标}
+    \subsection{上标}
+    $3x^2 - x + 2 = 0$
+    $3x^{20} - x + 2 = 0$
+    \subsection{下标}
+    $a_0,a_1,a_2$
+    $a_{100}$
+    \section{希腊字母}
+    $\alpha$
+    $\beta$
+    $\gamma$
+    $\epsilon$
+    $\pi$
+    $\omega$
+
+    $\Delta$
+    $\Theta$
+    $\Omega$
+
+    $\alpha^2 + \beta^{2\omega-3} = \epsilon^{\delta}$
+    \section{数学函数}
+    $\log$
+    $\sin$
+    $\cos$
+    $arcsin$
+    $ln$
+
+    $\sqrt[7]{x^2}$
+    \section{分式}
+    大约是原体积的$3/4$
+    大约是原体积的$\frac{3}{44}$
+    \section{行间公式}
+    \subsection{美元符号}
+    可以将公式放在两个美元符号构成的内容中，行间公式将会自动居中然后进行编号
+
+    交换律是$$a+b=b+a$$例如$$1+2=2+1$$
+    \subsection{中括号}
+    交换律是\[a+b=b+a\]例如\[1+2=2+1\]
+    \subsection{displaymath环境}
+    交换律是
+    \begin{displaymath}
+        a+b=b+a
+    \end{displaymath}
+    for example:
+    \begin{displaymath}
+        1+2=2+1
+    \end{displaymath}
+    \subsection{自动编号的equation环境}
+    对于equation环境下的公式可以进行标签然后进行引用
+
+    交换律的公式就是式\ref{eq:commutative}
+    \begin{equation}
+        \label{eq:commutative}
+        a+b=b+a
+    \end{equation}
+    \subsection{不自动编号的equation*环境}
+    引用公式\ref{eq:commutative2}
+    \begin{equation*}\label{eq:commutative2}
+        a+b=b+a
+    \end{equation*}
+    如果对equation*进行引用的话默认的编号是小节的编号比如
+
+    这一段的小节是 7.5，那进行引用的时候引用的编号就是7.5
+\end{document}

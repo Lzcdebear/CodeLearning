@@ -1,0 +1,34 @@
+% 导言区
+\documentclass{ctexart}
+% \usepackage{ctex}
+\usepackage{graphicx}
+% 使用的语句方式就是 \includegraphics[选项]{文件名}
+% EPS,PDF,PNG,JPEG,BMP
+% \graphicspath{{路径/},{路径}} 需要使用{}进行分割
+
+
+% 正文区
+\begin{document}
+    \LaTeX{}中的插图
+    % \includegraphics{lion}
+    如果图片或者内容太大的话可以使用[]进行参数设定
+    比如可以使用
+
+    includegraphics[scale=]
+
+    includegraphics[height= cm]
+    
+    includegraphics[width= cm]
+    
+    其中还可以规定图像的高度或者宽度和文本一样，例如
+
+    0.1\textbackslash textwidth
+
+    同时还可以规定旋转的角度，比如
+
+    angle=-45
+
+    不同的参数之间可以使用逗号进行分割，都写在一个[]内
+
+    更多具体的内容可以使用texdoc graphicx来进行查看
+\end{document}

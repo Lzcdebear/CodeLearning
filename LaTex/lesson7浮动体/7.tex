@@ -1,0 +1,59 @@
+\documentclass{ctexart}
+
+% 正文区
+\begin{document}
+在latex中还可以使用figure/table环境来进行浮动体的创建，
+浮动体可以方便进行表格和图像的移动和位置编辑
+
+figure一般可以用来对图像进行编辑
+而table则一般用在表格
+
+比如将表格放到table中
+如果使用centering命令则会自动居中，
+而且由于是在table环境中进行居中的，不影响后面的文本
+
+同时还可以对tabel和figure进行标题的确定，使用caption命令
+
+对于图像和表格的位置还可以进行选择\\
+h here 就是代码所在的上下文\\
+t top 就是页面的顶部\\
+p page 就是在新的一页中显示\\
+b bottom 就是页面的底部\\
+如果参数四个都写则就是不限制位置，如果限制位置可能会导致文本的排版出现变化
+但是一定会保证图片或者表格出现在应该在的位置
+
+还可以使用lable进行标签的使用，因为figure和table会自动对内容进行排序编号
+所以使用标签的话在文本其他地方想引用或者指向这个内容就可以直接用标签
+ref{标签}
+
+\LaTeX{} 中的表格可以用下面这样的代码进行编辑，最终的结果如表\ref{tab-score}所展示的那样
+\begin{table}[h]
+    \centering   
+    \caption{学生考试成绩单}\label{tab-score}
+    \begin{tabular}{| l || c | c  r  p{1.5cm}}
+        \hline
+        姓名 & 语文 & 数学 & 外语 & 备注 \\
+        \hline
+        张三 & 87 & 100 & 93 & 优秀 \\
+        \hline \hline
+        李四 & 75 & 64 & 52 & 补考另行通知 \\
+        王二 & 80 & 82 & 78 & \\
+    \end{tabular}
+\end{table}
+
+
+    \begin{tabular}{| l || c | c  r  p{1.5cm}}
+        姓名 & 语文 & 数学 & 外语 & 备注 \\
+        \hline
+        张三 & 87 & 100 & 93 & 优秀 \\
+        \hline \hline
+        李四 & 75 & 64 & 52 & 补考另行通知 \\
+        王二 & 80 & 82 & 78 & \\
+    \end{tabular}\\
+其余的内容可以使用\\
+\enspace texdoc booktab\enspace \\
+\enspace texdoc longtab\enspace \\
+\enspace texdoc tabu\enspace \\
+进行阅读
+
+\end{document}

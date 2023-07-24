@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>A卷</title>
+<style type="text/css">
+<!--
+body {
+	line-height: 26px;
+}
+.red {
+	color: #F00;
+	font-weight: bold;
+}
+pre {
+	font-family: Consolas;
+	line-height: normal;
+	font-size: medium;
+}
+-->
+</style>
+</head>
+
+<body>
+<h2 align="center">华东师范大学&middot;《人工智能基础与应用》</h2>
+<h3 align="center">2022-2023学年第二学期期末模拟卷（本试卷答卷时间为 90分钟，满分100分） </h3>
+<p align="center"><strong><u>特别注意：1.考试结束后不要关机；2.操作题结果必须保存在<span class="red">c:\ecnu_ks\root\</span>中，否则没有分数。</u></strong></p>
+<p><strong>一. 选择题（每小题2分，20题 共40分）</strong></p>
+<p>登录后完成20道选择题。 </p>
+
+
+<p><strong>二. 程序填空（每空2分，每题5空， 共2题，20分）</strong></p>
+<ol>
+  <li> 在Python环境下打开c:\ecnu_ks\root\<span class="red">fillblank_1.py</span>程序源文件，并将其另存为&ldquo;<span class="red">ans21-学号-姓名.py</span>&rdquo;，存放在<span class="red">c:\ecnu_ks\root</span>中。 按下列要求对文件中的下划线进行填空（<span class="red">用填空内容代替下划线，除此之外，不能改动其它任何地方，也不得增删行</span>），调试并运行之。
+<ol type="a">
+      <li>程序功能: 用随机数函数生成班级语文、数学、英语三门课程的成绩，班级人数为50人，按要求统计分数段信息并输出。<br> 
+      （提示：Numpy布尔数组参加运算时，True用1表示，False用0表示。）
+      </li>
+            
+      <li>原始程序如下图所示：
+        <table width="100%" border="2" cellpadding="1" cellspacing="0">
+          <tr>
+            <td><pre>
+#fillblank_1.py
+#给定代码不准删除修改，所有填空使用一个表达式完成。
+
+import numpy as np
+np.random.seed(6)  ##设定随机种子，不要改动！
+
+#生成成绩：随机整数，范围在[40,100)之间，50行3列的二维数组，每行数据依次为某同学的语文、数学、英语这三门课的成绩
+scores=______【1】______
+
+#请输入一个筛选分数：
+score=int(input("请输入分数："))
+
+#统计输入分数以下的成绩信息：
+mask=(scores&lt;score)
+
+#分别统计语文、数学、英语三门课在筛选分数段以下的人数
+print("语文、数学、英语三门课在{}分以下的人数分别为：".format(score), ______【2】______) 
+
+#统计三门课都在筛选分数以上的人数
+print("三门课都在{}分以上的人数为：".format(score), ______【3】______)  
+
+#输出三门课的平均分
+print("三门课的平均分分别为：", ______【4】______)
+
+#输出三门课平均分在筛选分数以上的人数
+print("三门课平均分在{}分以上的人数为：".format(score), ______【5】______) 
+
+</pre></td>
+          </tr>
+        </table>
+      </li>
+      <li>程序运行结果示例如下图所示：
+        <table width="100%" border="2" cellpadding="1" cellspacing="0">
+          <tr>
+            <td><pre>
+
+请输入分数：80
+语文、数学、英语三门课在80分以下的人数分别为： [36 33 36]
+三门课都在80分以上的人数为： 2
+三门课的平均分分别为： [65.2  66.76 67.48]
+三门课平均分在80分以上的人数为： 8
+
+
+</pre></td>
+          </tr>
+        </table><br />
+      </li>
+    </ol>
+  </li>
+  <li> 在Python环境下打开c:\ecnu_ks\root\<span class="red">fillblank_2.py</span>程序源文件，并将其另存为&ldquo;<span class="red">ans22-学号-姓名.py</span>&rdquo;，存放在<span class="red">c:\ecnu_ks\root</span>中。 按下列要求对文件中的下划线进行填空（<span class="red">用填空内容代替下划线，除此之外，不能改动其它任何地方，也不得增删行</span>），调试并运行之。
+    <ol type="a">
+      <li>程序功能： 读入“housing.csv”文件，按注释要求对某地区收入中位数进行聚类，以展示该地区的收入情况。聚类需要使用数据集中的三列元素：longitude，经度；latitude，纬度；median_income，收入中位数。<br>
+      </li>      
+      <li>原始程序如下图所示：
+        <table width="100%" border="2" cellpadding="1" cellspacing="0">
+          <tr>
+            <td><pre>
+# fillblank_2.py
+
+# 导入库
+import matplotlib.pyplot as plt
+from ________【1】________ import KMeans # 导入聚类库
+import pandas as pd
+import numpy as np
+plt.rcParams['font.sans-serif'] = ['SimHei'] 
+plt.rcParams['axes.unicode_minus'] = False
+
+# 加载数据集并提取数据
+data_ori = ________【2】________  # 读取housing.csv数据
+data = ________【3】________ # 提取聚类需要使用的三列元素
+
+# 从键盘输入聚类数
+n = int(input("请输入聚类数：\n"))
+
+# 聚类训练
+res = KMeans(________【4】________, random_state = 1)  # 设置聚类数为n
+res.fit(data)
+
+# 展示结果
+labels = res.labels_ 
+centers = ________【5】________  # 获取所有质心的特征数据
+print(centers)
+
+
+</pre></td>
+          </tr>
+        </table>
+      </li>
+      <li>程序运行结果示例如下图所示：
+    <table width="100%" border="2" cellpadding="1" cellspacing="0">
+          <tr>
+            <td><pre>
+请输入聚类数：
+6
+[[-121.89079208   38.35447607    2.81425565]
+ [-118.0273144    33.85772076    5.51798177]
+ [-117.82903608   33.81916298    2.87353963]
+ [-121.96796356   37.70932119    5.5028353 ]
+ [-119.34864629   35.00810044   10.95214323]
+ [-119.72682115   36.10424242    2.66961087]]
+
+</pre></td>
+          </tr>
+        </table><br />
+      </li>
+    </ol>
+</li>
+</ol>
+
+<p><strong>三. 程序编写（每题20分，共2题，共40分）</strong></p>
+<ol>
+  <li>按照下列要求，设计完成一个程序。在Python环境下，用IDLE打开c:\ecnu_ks\root\<span class="red">pro1.py</span>程序源文件，将程序源代码另存为&ldquo;<span class="red">ans31-学号-姓名.py</span>&rdquo;，存放在<span class="red">c:\ecnu_ks\root</span>中。
+    <ol type="a">
+    <li>程序功能：按下列要求读入数据文件，对数据进行清洗，并进行统计和分析，最后输出如样张所示的可视化图形并保存。<br>
+      （1）读取c:\ecnu_ks\root中的文件student_score.csv中的学生语文、数学、英语三列成绩数据,注意csv文件中的分隔符，且文件中含中文字符；（sep="\t",encoding="gbk"）<br>
+      （2）数据清洗：清除三门课全部缺考的学生，将部分缺考的学生成绩设为0；（提示：可用df[df=="缺考"]=np.NaN将缺考成绩设置为缺失值）<br>
+      （3）数据统计和分析：输入一个总成绩，输出比这个总成绩高的人数；<br>
+      （4）绘制出数学成绩各成绩段的饼图并保存为"pie.png"，如样张所示。<br>
+       提示：注意读取数据的数据类型。
+		</li> 
+    <li>程序运行示例如下图所示：
+             <table width="100%" border="2" cellpadding="1" cellspacing="0">
+          <tr>
+            <td><pre>
+>>>
+输入一个总成绩：200
+比这个总成绩高的人数有23位。
+</pre>
+              <p><img src="pie.png" alt="" width="432" height="288" /></p>
+              <p>&nbsp;</p></td></tr>
+        </table>
+        <br />
+      </li>
+    </ol>
+  </li>
+  <li>按照下列要求，设计完成一个程序。在Python环境下，用IDLE打开c:\ecnu_ks\root\<span class="red">pro2.py</span>程序源文件，将程序源代码另存为&ldquo;<span class="red">ans32-学号-姓名.py</span>&rdquo;，存放在<span class="red">c:\ecnu_ks\root</span>中。
+    <ol type="a">
+      <li>本题所使用的为scikit-learn内置的手写数字数据集（digits_dataset），该数据集包含了1797个8*8的图像，每个图像是一个手写数字（0-9）。其中每个图像被表示为一个64维的向量（即每个样本是有64个特征值），每个特征值取值范围为0～16，表示像素的亮度，如下图所示：<br>
+        <p><img src="digits.png" alt="" width="400" height="50" /></p>
+    </li>   
+      <li>程序功能：按下列要求对手写数字数据集进行预处理和切分，训练数据并输出评价指标。<br>
+      （1）导入库和数据集，实例化转换器并对X进行数据标准化（StandardScaler）；<br>
+      （2）划分训练集和测试集，测试样本占30%，随机数编号为n，示例中n=42；<br>
+      （3）创建KNN分类器并在训练集上进行训练，最邻点数量为5，并在测试集上对结果进行预测；<br>
+      （4）计算精确率并输出混淆矩阵，其中精确率评价值的平均值计算方式average设为'macro'（方法中增加参数average='macro'），保留四位小数。<br>
+      
+		</li> 
+    <li>程序运行示例如下图所示：
+             <table width="100%" border="2" cellpadding="1" cellspacing="0">
+          <tr>
+            <td><pre>
+>>>
+请输入随机数编号：
+42
+精确率: 0.9783
+混淆矩阵:
+[[53  0  0  0  0  0  0  0  0  0]
+ [ 0 50  0  0  0  0  0  0  0  0]
+ [ 0  0 47  0  0  0  0  0  0  0]
+ [ 0  0  1 53  0  0  0  0  0  0]
+ [ 0  0  0  0 60  0  0  0  0  0]
+ [ 0  0  0  0  0 64  1  0  0  1]
+ [ 0  0  0  0  0  0 53  0  0  0]
+ [ 0  0  0  0  0  1  0 53  0  1]
+ [ 0  0  0  1  0  0  0  0 42  0]
+ [ 0  0  0  2  1  1  1  0  1 53]]
+</pre>
+              <p></p>
+              <p>&nbsp;</p></td></tr>
+        </table>
+        <br />
+      </li>
+    </ol>
+  </li>
+</ol>
+<p class="red">注意：考试结束后千万不要关机！</p>
+</body>
+</html>

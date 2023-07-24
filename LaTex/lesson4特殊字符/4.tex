@@ -1,0 +1,92 @@
+\documentclass{article}
+
+\usepackage{ctex}
+
+% 正文
+\begin{document}
+    \section{空白字符}
+    Are you wiser than others? Definitely no, in some
+    ways may it is true. What can you achieve?
+    A luxurious house? A brillilant car? An admirable
+    career? Who knows.
+
+    近年来，随着逆向工程和三维重建技术的发展，获取显示
+    世界中的物体的三维数据方式越来越多的挂住和研究，很多
+    研究机构和商业哦那公司都陆续推出了自己的三维重建系统
+    % 英文中出现空格无论多少个就显示一个空格
+    % 自动缩进，绝对不能使用空格代替
+    % 中文中的空格会自动忽略
+    % 汉字和其他字符间距会自动由 XeLaTeX 处理
+    % 禁止使用中文全角空格
+
+    % 1 em当前字母中M的宽度
+    a\quad b
+    % 2 3m 
+    a\qquad b
+    % 1/6 em
+    a\,b
+    a\thinspace b
+    % 0.5 em
+    a\enspace b
+    % 一个空格
+    a\ b
+    % 1pc=12pt=4.218mm
+    a\kern 1pc b
+    a\kern -1em b
+    a\hskip 1em b
+    a\hspace{35pt}b
+    % 占位宽度
+    a\hphantom{xyz}b
+    % 弹性长度
+    a\hfill b
+    \section{\LaTeX 控制符}
+    % 这些符号都是在latex中由特殊意义的符号
+    % 为了输出这些符号使用 \
+    % 由于\\代表的是换行，所以为了输出\则需要使用\textbackslash
+    \& \# \$ \% \{ \} \={} \^{}
+    \textbackslash
+    \section{排版符号}
+    \S \P \dag \ddag \copyright \pounds
+    \section{\TeX 标志符号}
+    \TeX \LaTeX{} 
+    
+    \LaTeXe{}
+    \section{引号}
+    % latex中有专有的左右引号使用
+    % 使用数字1左侧 单个为左单引号
+    % 使用常用的引号 单个为右单引号
+    `' 
+    
+    ``''
+
+    ``你好''
+    \section{连字符}
+    - 
+    -- 
+    ---
+    \section{非英文字符}
+    \oe 
+    
+    \OE 
+    
+    \ae
+    
+    \AE
+
+    \aa 
+    
+    \AA 
+    
+    \o 
+    
+    \O
+    
+    \ss 
+    
+    \SS 
+    !` ?` 
+    \section{重音符号}
+    \`o \'o \^o \''o \~o \=o \.o
+
+    \u{o} \v{o} \H{o} \r{o} \t{o} \b{o} \c{o} \d{o}
+\end{document}

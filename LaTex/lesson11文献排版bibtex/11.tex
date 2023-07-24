@@ -1,0 +1,33 @@
+\documentclass{ctexart}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\bibliographystyle{plain}
+% 正文区
+% 参考文献区域
+\begin{document}
+%     参考文献使用方式是在集合的thebibliography环境中进行设置\\
+% 设置的时候bibitem后面是对象的名字，也就是之后引用的时候所用的名字\\
+% 而之后的内容就是标准的格式对象的名称什么的，在 emph后面包括的内容是重点，会进行斜体或者改变字体的方式进行强调
+
+%     以下就是对于参考文献在正文中的引用的例子
+
+%     对于引用对象可以使用cite进行对象设置，比如引用第一个文献 \cite{article1}
+
+%     对于其他的不止一次的引用的情况，也就是在不同的文件中都需要引用的时候可以使用另一个文件进行
+%     参考文献的整理然后再使用，具体参考文献文件参考同一文件夹下的11ref文件
+%     \begin{thebibliography}{99}
+%         \bibitem{article1}陈立辉，苏伟，蔡川，陈晓云.\emph{基于LaTex的Web数学公式提取方法研究}[J].计算机科学。2014(06)
+%         \bibitem{book1}William H. Press,Saul A. Teukolsky,
+%         William T. Vetterling,Brian P. Elannery,
+%         \emph{Numerical Recipes 3rd Edition:The Art of Scientific Computing}
+%         Cambridge University Press, New York,2007.
+%         \bibitem{latexGuide} Kopka Helmut, W. Daly Patrick,
+%         \emph{Guide to LaTeX}, $4^{th}$ Edition.
+%         Available at \texttt{http://www.amazon.com}.
+%         \bibitem{latexMath} Graetzer George, \emph{Math Into \LaTeX},
+%         BirkhÃxuser Boston; 3 edition (June 22, 2000).
+%     \end{thebibliography}
+    同样还可以
+    use \cite{mittelbach2004}
+    \bibliography{ref}
+\end{document}

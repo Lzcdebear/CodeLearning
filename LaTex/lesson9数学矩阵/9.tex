@@ -1,0 +1,77 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{ctex}
+
+% 正文区
+\begin{document}
+    \[
+        % matrix格式，在矩阵两侧没有括号
+        \begin{matrix}
+            0 & 1 \\
+            1 & 0
+        \end{matrix} \quad
+        % pmatrix格式，在矩阵两侧加小括号
+        \begin{pmatrix}
+            0 & 1 \\
+            1 & 0
+        \end{pmatrix} \quad
+        % bmatrix格式，在矩阵两侧加方括号
+        \begin{bmatrix}
+            0 & 1 \\
+            1 & 0
+        \end{bmatrix} \quad
+        % Bmatrix格式，在矩阵两侧加花括号
+        \begin{Bmatrix}
+            0 & 1 \\
+            1 & 0
+        \end{Bmatrix} \quad
+        % vmatrix格式，在矩阵两侧加单个竖线
+        \begin{vmatrix}
+            0 & 1 \\
+            1 & 0
+        \end{vmatrix} \quad
+        % Vmatrix格式，在矩阵两侧加双竖线
+        \begin{Vmatrix}
+            0 & 1 \\
+            1 & 0
+        \end{Vmatrix} \quad
+    \]
+    
+    % 常用的省略号：dots, vdots, ddots
+    \[
+        A = \begin{bmatrix}
+            a_{11} & \dots & a_{1n} \\
+            \vdots & \ddots & \vdots \\
+            0 & \dots & a_{nn}
+        \end{bmatrix}_{n \times n}
+    \]
+
+    % 跨行的省略号 \hdotsfor{行数}
+    \[
+        \begin{pmatrix}
+            1 & \frac 12 & \dots & \frac 1n \\
+            \hdotsfor{4} \\
+            m & \frac ms & \dots & frac mn
+        \end{pmatrix}
+    \]
+
+    % 还有行间的小矩阵，也就是矩阵高度和行高度一样
+    公式$ z = (x,y)$也可以使用
+    \begin{math}
+        \left(
+            \begin{smallmatrix}
+                x & -y \\ y & x
+            \end{smallmatrix}
+        \right)
+    \end{math}来表示
+
+    % array环境类似tabular，在可选参数中可以选择 r l c显示竖线
+    \[
+        \begin{array}{r|r}
+            \frac 12 & 0\\
+            \hline
+            0 & -\frac abc \\
+        \end{array}
+    \]
+\end{document}

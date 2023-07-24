@@ -1,0 +1,55 @@
+这里将会介绍
+    字体族
+    字体系列 粗细 宽度
+    字体形状 直立 斜体 伪斜体 小型大写
+    字体大小
+% 正文区
+    % 其中可以使用 {} 来限制字体文本的格式限制文本
+    % 设置字体族 罗马字体，打字机字体，无衬线字体 
+    \textrm{}
+    \textsf{}
+    \texttt{}
+    \rmfamily 
+    \sffamily 
+    \ttfamily 
+    % 设置字体系列 粗细 宽度
+    \textmd{}
+    \textbf{}
+    {\mdseries }
+    {\bfseries }
+
+    % 设置字体形状 直立 斜体 伪斜体 小型大写
+    \textup{}
+    \textit{}
+    \textsl{}
+    \textsc{}
+
+    {\upshape }
+    {\itshape }
+    {\slshape }
+    {\scshape }
+
+    % 设置字体格式
+    % 中文格式
+    {\songti 宋体}\quad
+    {\heiti 黑体}\quad
+    {\fangsong 仿宋}\quad
+    {\kaishu 楷书}
+    % 中文中的粗体使用的是黑体，而斜体使用的是楷书
+    
+    % 字体大小
+    % 使用的比较大小标准是根据开头的 documentclass 确定的，可以在{}前加入[数字+pt]来设置标准大小的磅数
+    {\tiny          Hello}\\
+    {\scriptsize    Hello}\\
+    {\footnotesize  Hello}\\
+    {\small         Hello}\\
+    {\normalsize    Hello}\\
+    {\large         Hello}\\
+    {\Large         Hello}\\
+    {\LARGE         Hello}\\
+    {\huge          Hello}\\
+    {\Huge          Hello}\\
+    % 中文字号的使用可以在 cmd 中输入 texdoc ctex 来进行查看
+    
+    在正文中不建议使用大量的格式，而是应该在导言区内定义一个新命令然后进行修改
+    \newcommand{\myfont}{\textit{\textbf{\textsf{Fancy Text}}}}

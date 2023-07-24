@@ -1,0 +1,35 @@
+% 导言区
+\documentclass{ctexart}
+
+% 正文区
+\begin{document}
+在表格中使用的时候使用 tabular 进行表格的开始
+
+表格在创建的时候需要规定对齐方式，
+具体的方式可以使用 l c r 来分别表示左中右对齐
+在规定表格格式的时候还可以使用 | 进行表格竖线的显示
+在表格定义的时候，空格是没有意义的，是否有空格不影响表格的创建格式
+
+想要显示横线，则需要在每一行输入后换行输入 \textbackslash hline
+
+如果连续使用两个 \textbackslash hline 则会显示双横线
+竖线同理
+
+对于对齐方式还可以使用\enspace p{} 进行表格宽度的限制，
+如果输入的内容超过表格的宽度则会自动换行
+
+    \begin{tabular}{| l || c | c  r  p{1.5cm}}
+        姓名 & 语文 & 数学 & 外语 & 备注 \\
+        \hline
+        张三 & 87 & 100 & 93 & 优秀 \\
+        \hline \hline
+        李四 & 75 & 64 & 52 & 补考另行通知 \\
+        王二 & 80 & 82 & 78 & \\
+    \end{tabular}\\
+其余的内容可以使用\\
+\enspace texdoc booktab\enspace \\
+\enspace texdoc longtab\enspace \\
+\enspace texdoc tabu\enspace \\
+进行阅读
+
+\end{document}

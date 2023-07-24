@@ -1,0 +1,41 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{ctex}
+\usepackage{amssymb}
+
+% 正文区
+\begin{document}
+    %可以使用gather环境进行多行公式的排版
+    %gather中如果没有*的话会对公式进行自动编号，使用\\进行换行
+    \begin{gather}
+        a + b = b + a\\
+        av  va
+    \end{gather}
+    \begin{gather*}
+        a + b = b + a\\
+        a\times v=v\times a
+    \end{gather*}
+    \begin{gather}
+        a + b = b + a \notag \\
+        av  va \notag \\
+        life is simple
+    \end{gather}
+    %在结束的地方加上notag将不会编号
+    %align能够帮助进行公式的对齐,对齐的位置是&所定位的地方
+    \begin{align}
+        aa &= b\\
+        b  &= c
+    \end{align}
+    其他的一些操作可以使用
+    equation环境
+    进行调整
+
+    比如在equation后split就能完成公式换行对齐，对齐位置依旧是\&
+
+    也可在equation后case就能完成类似分段函数排版的形式，
+    在\& 位置处分节，每行都是如此，分节后的下一节自动对齐
+
+    使用equation的好处是就算公式再长由于使用的只有一个equation所以编号
+    只会编一次
+\end{document}

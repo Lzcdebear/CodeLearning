@@ -1,0 +1,44 @@
+% 导言区
+\documentclass{article} % book report letter
+% 这里还有一个方法就是直接将文件格式从 article 改为 ctex 的
+% 其中包括 ctexart ctexrep ctexbook，对应原版，除了 letter
+\usepackage{ctex}
+% 如果想要在latex中使用中文需要以下操作
+% 将编译器改为 xelatex
+% 将编码格式改为 utf-8
+
+% 如果出现latex中没有的函数可以使用定义的方式
+% 以下就是定义一个符号叫做 \degree 目的就是右上显示度的符号
+\newcommand\degree{^\circ}
+\title{\heiti 杂谈为什么物理这么难}
+\author{Nicolai}
+\date{\today}
+
+
+% 正文区
+\begin{document}
+    \maketitle    
+    % 其中的book report letter
+    % 百分号就是相似 python 中的 井号
+    % $$符号中间的部分会以公式格式输出，符号外面部分则为文本
+    % 如果想要输出的文本换行则需要空一行
+    % $$ $$之间文本同样为数学模式下的输出，但是会居中换行
+    Hello World!
+    let $f(x)$ be defined by $f(x) = x + y$
+
+    Hello World!
+    % 如果空行内有注释将不会换行，必须要再空一行
+
+    let $f(x)$ be defined by $$f(x) = x + y$$ this formula is writen by myself
+    
+    % 如果使用之前的设置，那在正文中将可以使用中文
+    加油，今天又是被生活战胜的一天
+    
+    并且可以在文本中插入一些公式就比如
+
+    勾股定理用数学的方式表达就是在三角形$ABC$中，假设$\angle C=90\degree$,则会有
+    \begin{equation}
+        AB^2 = BC^2 + AC^2
+    \end{equation}
+    % 这里的equation将会生产和 $$ 一样的效果的公式，但是在最右侧将会有编号
+\end{document}

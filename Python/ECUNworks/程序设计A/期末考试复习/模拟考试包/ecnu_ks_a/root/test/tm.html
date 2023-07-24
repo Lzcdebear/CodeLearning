@@ -1,0 +1,378 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>模拟卷</title>
+<style type="text/css">
+<!--
+body {
+	line-height: 26px;
+}
+.red {
+	color: #F00;
+	font-weight: bold;
+}
+pre {
+	font-family: Consolas;
+	line-height: normal;
+	font-size: medium;
+}
+-->
+</style>
+</head>
+
+<body>
+<h2 align="center">华东师范大学&middot;程序设计基础期末试卷</h2>
+<h3 align="center">2020年～2021第一学期（模拟）卷（本试卷答卷时间为 90分钟，满分100分） </h3>
+<p align="center"><strong><u>特别注意：1.考试结束后不要关机；2.操作题结果必须保存在<span class="red">c:\ecnu_ks\root\</span>中，否则没有分数。</u></strong></p>
+<p><strong>一. 选择题（每小题2分，15题 共30分）</strong></p>
+<ol>
+  <li>下面说法中不正确的是：__________。
+    <ol type="A">
+      <li>Python是一种高级语言</li>
+      <li>Python是一种跨平台语言</li>
+      <li>Python是一种开源语言</li>
+      <li>Python是一种静态语言</li>
+    </ol>
+  </li>
+  <li>以下数据类型中属于序列的是：__________。 
+    <ol type="A">
+      <li>dict</li>
+      <li>set</li>
+      <li>str</li>
+      <li>int</li>
+    </ol>
+  </li>
+  <li>下面哪一个不是合法的变量名：__________
+    <ol type="A">
+      <li>as</li>
+      <li>abc</li>
+      <li>str_a</li>
+      <li>_a_str</li>
+    </ol>
+  </li>
+  <li>定义 x=-2，表达式 x%3 的结果是：__________
+    <ol type="A">
+      <li>2</li>
+      <li>1</li>
+      <li>-1</li>
+      <li>-2</li>
+    </ol>
+  </li>
+  <li>当键盘输入“2”的时候，程序<br />
+    x=input()<br />
+    print(&quot;2*x的值：{:.0f}&quot;.format(2*x))<br />
+    的输出结果是：__________。
+<ol type="A">
+      <li>2*x的值：4</li>
+      <li>2*x的值：4</li>
+      <li>2*x的值：22</li>
+      <li>TypeError</li>
+    </ol>
+  </li>
+  <li>在循环语句中，__________语句的作用是提前结束整个循环体。
+    <ol type="A">
+      <li>while</li>
+      <li>for</li>
+      <li>break</li>
+      <li>continue</li>
+    </ol>
+  </li>
+  <li>x={} 语句执行后，x即为一个________。
+    <ol type="A">
+      <li>列表</li>
+      <li>元组</li>
+      <li>字典</li>
+      <li>集合</li>
+    </ol>
+  </li>
+  <li>设有变量定义：x=[1,2,3]和y=x，则执行语句：y[1]=0后，x=_________。
+    <ol type="A">
+      <li>[ ]</li>
+      <li>[1，0，3]</li>
+      <li>[0，2，3]</li>
+      <li>[1，2，3]</li>
+    </ol>
+  </li>
+  <li>字典 d={1:2,3:4,5:6}，表达式len(d)的值为_________。
+    <ol type="A">
+      <li>6</li>
+      <li>9</li>
+      <li>12</li>
+      <li>3</li>
+    </ol>
+  </li>
+  <li>设有变量定义：g={1,2,3,3,'1'}，则g的长度为_________。
+    <ol type="A">
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+    </ol>
+  </li>
+  <li>设有变量：s='abcdb'，则s.find('b')的值为_________。
+    <ol type="A">
+      <li>1</li>
+      <li>2</li>
+      <li>5</li>
+      <li>4</li>
+    </ol>
+  </li>
+  <li>执行语句s='python’，s[2:]表示:_________。
+    <ol type="A">
+      <li>&quot;ython&quot;</li>
+      <li>&quot;th&quot;</li>
+      <li>&quot;thon&quot;</li>
+      <li>&quot;yt&quot;</li>
+    </ol>
+  </li>
+  <li>设有函数定义：def abc(d):(换行并缩进)print(d)，则以下正确的函数调用语句是_________。
+    <ol type="A">
+      <li> abc(0)</li>
+      <li>abc(24*5)+1</li>
+      <li>abc(24)*5</li>
+      <li>abc(abc(24))</li>
+    </ol>
+  </li>
+  <li>下面说法中正确的是：_________。
+    <ol type="A">
+      <li>函数必须先定义，后调用。</li>
+      <li>函数必须有函数名</li>
+      <li>函数必须有返回值</li>
+      <li>函数必须有参数</li>
+    </ol>
+  </li>
+  <li>函数调用时所提供的参数可以是_________。
+    <ol type="A">
+      <li>常量</li>
+      <li>变量</li>
+      <li>函数</li>
+      <li>以上都可以</li>
+    </ol>
+  </li>
+ 
+</ol>
+</p>
+<strong>二. 程序填空（每空5分，3题 共30分）</strong>
+<ol>
+  <li> 在Python环境下打开c:\ecnu_ks\root\<span class="red">fillblank_1.py</span>程序源文件，并将其另存为&ldquo;<span class="red">ans21-学号-姓名.py</span>&rdquo;，存放在<span class="red">c:\ecnu_ks\root</span>中。 按下列要求对文件中的下划线进行填空（<span class="red">用填空内容代替下划线，除此之外，不能改动其它任何地方，也不得增删行</span>），调试并运行之。
+<ol type="a">
+      <li>BMI值：<br>
+        程序功能:从键盘分两次输入一个人的身高和体重的数字，在屏幕上显示输出这个人的身体质量指数（BMI），BMI 的计算公式是 BMI = 体重（kg）/ 身高^2（m2）。<br> 
+      输出时小数点后保留1位。<br></li>
+            
+      <li>原始程序如下图所示：
+        <table width="100%" border="2" cellpadding="1" cellspacing="0">
+          <tr>
+            <td><pre>
+#fillblank_1.py
+h,w=float(input("身高：")),_____【1】_________
+bmi=____【2】____________
+print("BMI是{:.1f}".format(bmi))
+</pre></td>
+          </tr>
+        </table>
+      </li>
+      <li>程序运行结果示例如下图所示：
+        <table width="100%" border="2" cellpadding="1" cellspacing="0">
+          <tr>
+            <td><pre>
+>>>  
+身高：1.78   
+体重：78   
+BMI是24.6   
+>>>
+</pre></td>
+          </tr>
+        </table><br />
+      </li>
+    </ol>
+  </li>
+  <li> 在Python环境下打开c:\ecnu_ks\root\<span class="red">fillblank_2.py</span>程序源文件，并将其另存为&ldquo;<span class="red">ans22-学号-姓名.py</span>&rdquo;，存放在<span class="red">c:\ecnu_ks\root</span>中。 按下列要求对文件中的下划线进行填空（<span class="red">用填空内容代替下划线，除此之外，不能改动其它任何地方，也不得增删行</span>），调试并运行之。
+    <ol type="a">
+      <li>程序功能：输入一个字符串，输出去除标点符号后的字符串。<br>
+		  注：string.punctuation 可用于返回所有标点符号
+	  </li>      
+      <li>原始程序如下图所示：
+        <table width="100%" border="2" cellpadding="1" cellspacing="0">
+          <tr>
+            <td><pre>
+#fillblank_2.py
+import string
+str1 = input("请输入一个字符串：\n")
+s=_______【1】______
+for ch in str1:
+    if _______【2】______:
+        continue
+    else:
+        s+=ch
+print(s)
+</pre></td>
+          </tr>
+        </table>
+      </li>
+      <li>程序运行结果示例如下图所示：
+        <table width="100%" border="2" cellpadding="1" cellspacing="0">
+          <tr>
+            <td><pre>
+>>>  
+请输入一个字符串：  
+a,b.c,d,e:f  
+abcdef    
+>>>    
+</pre></td>
+          </tr>
+        </table><br />
+      </li>
+    </ol>
+  </li>  <li> 在Python环境下打开c:\ecnu_ks\root\<span class="red">fillblank_3.py</span>程序源文件，并将其另存为&ldquo;<span class="red">ans23-学号-姓名.py</span>&rdquo;，存放在<span class="red">c:\ecnu_ks\root</span>中。 按下列要求对文件中的下划线进行填空（<span class="red">用填空内容代替下划线，除此之外，不能改动其它任何地方，也不得增删行</span>），调试并运行之。
+    <ol type="a">
+      <li>程序功能：有两份节选的美国州人口统计表，存储在两个字典ad和bd当中，请将ad字典中的与bd字典中的州名不重复的键值对保存在bd中，并显示输出到屏幕上。</li>      
+      <li>原始程序如下图所示：
+        <table width="100%" border="2" cellpadding="1" cellspacing="0">
+          <tr>
+            <td><pre>
+#fillblank_3.py
+ad = {'Georgia':9919945,
+'Hawaii':1392313,
+'Idaho':1595728,
+'Illinois':12875255,
+'Indiana':6537334,
+'Iowa':3074186}
+bd= {'Illinois':12875255,
+'Indiana':6537334,
+'Iowa':3074186,
+'Kansas':2885905,
+'Kentucky':4380415,
+'Louisiana':4601893
+}
+
+for a in ad:
+    if a not in bd:
+         __【1】______
+for a in bd:
+    print('{}:{}'.format(a,  __【2】______))
+</pre></td>
+          </tr>
+        </table>
+      </li>
+      <li>程序运行结果示例如下图所示：
+        <table width="100%" border="2" cellpadding="1" cellspacing="0">
+          <tr>
+            <td><pre>
+>>>  
+Illinois:12875255  
+Indiana:6537334  
+Iowa:3074186  
+Kansas:2885905  
+Kentucky:4380415  
+Louisiana:4601893  
+Georgia:9919945  
+Hawaii:1392313  
+Idaho:1595728  
+>>>  
+</pre></td>
+          </tr>
+        </table><br />
+      </li>
+    </ol>
+</li></ol>
+<p><strong>三. 程序改错题（每题10分，1题 共10分）</strong></p>
+<ol>
+  <li>在Python环境下打开c:\ecnu_ks\root\<span class="red">bug1.py</span>程序源文件，并将其另存为&ldquo;<span class="red">ans31-学号-姓名.py</span>&rdquo;，存放在<span class="red">c:\ecnu_ks\root</span>中。<span class="red">不得增删行</span>，按下列要求进行改错编辑，使其能正确执行。
+    <ol type="a">
+      <li>程序功能：实现华氏温度转化为摄氏温度。</li>
+      <li>程序的函数部分有5处错误，请改正（不能增删行），使程序能正常运行并输出结果。</li>
+		<li>原始程序如下图所示：
+        <table width="100%" border="2" cellpadding="1" cellspacing="0">
+          <tr>
+            <td><pre>
+#bug1.py
+def getCelsius(f):   #此句无错误
+        c= (h- 32) *5/9
+        return ssd
+
+f=input('输入华氏温度:')       #输入华氏温度
+c= Change(f)   #求摄氏温度
+print("hsd=%.1f, ssd=%.1f"%(f c)); #输出结果
+</pre></td>
+          </tr>
+        </table>
+      </li>
+      <li>正确的程序运行示例如下图所示：
+        <table width="100%" border="2" cellpadding="1" cellspacing="0">
+          <tr>
+            <td><pre>
+输入华氏温度:23
+hsd=23.0, ssd=-5.0
+>>> 
+</pre></td>
+          </tr>
+        </table>
+      </li>
+    </ol>
+<br />
+<p><strong>四. 程序编写（每题15分，2题，共30分）</strong></p>
+<ol>
+  <li>按照下列要求，设计完成一个程序。在Python环境下，用IDLE打开c:\ecnu_ks\root\<span class="red">pro1.py</span>程序源文件，将程序源代码另存为&ldquo;<span class="red">ans41-学号-姓名.py</span>&rdquo;，存放在<span class="red">c:\ecnu_ks\root</span>中。
+    <ol type="a">
+    <li>程序功能：完成小伙伴外出游玩时AA制费用的计算与补差。<br />
+		以空格隔开的多人记录花销，逗号隔开的每人姓名和花销，输入游玩过程中每人已付的以整数为单位的多次费用（比如：豆豆,5 小胖,2,7,9 八戒,0），费用均为正整数。统计游玩结束后的人均消费以及每人的补差金额。<br />
+		每人补差中的姓名和补差金额之间用制表符分隔；补差金额最小宽度为8位，小数点保留2位，并加上正负号。<br />
+		pro1.py中前两行注释语句可以在调试程序时用复制、粘贴作为输入数据，方便调试。第三行为现成的代码，它会将你的输入转换为每个人一个字符串组成的列表，可以修改（提示字符串不能改动）。
+    </li> 
+    <li>程序运行示例如下图所示）：
+             <table width="100%" border="2" cellpadding="1" cellspacing="0">
+          <tr>
+            <td><pre>
+>>>
+请在下方输入空格隔开的多人记录花销（逗号隔开的每人姓名和花销）：
+John,1,2 Lucy,3,6 Nancy,3,6,9 豆豆,5 小胖,2,7,9 长脚兄,8,12 八戒,0
+人均消费：10.43元
+每人补差：
+John	   -7.43
+Lucy	   -1.43
+Nancy	   +7.57
+豆豆	   -5.43
+小胖	   +7.57
+长脚兄	   +9.57
+八戒	  -10.43
+>>>
+</pre></td>
+         
+        </table>
+        <br />
+      </li>
+    </ol>
+  </li>
+
+  <li>按照下列要求，设计完成一个程序。在Python环境下，用IDLE打开c:\ecnu_ks\root\<span class="red">pro2.py</span>程序源文件，将程序源代码另存为&ldquo;<span class="red">ans42-学号-姓名.py</span>&rdquo;，存放在<span class="red">c:\ecnu_ks\root</span>中。
+    <ol type="a">
+    <li>程序功能：筛选符合条件的疫苗数据。<br />
+		在程序内的列表Vaccines中，存放着一批疫苗临床试验的数据，每款疫苗信息保存在子列表中，包括“疫苗名”和在不同人群中测试所获得的有效率数据。<br />
+		编写函数screenVac()，函数有2个形参，第1个形参为列表，用于接收某款疫苗的所有有效率数据，第2个形参为浮点型，用于接收指定的筛选有效率，要求函数筛选出该组大于等于该筛选有效率的数据，并将筛选出的数据置于新列表中返回。<br />
+		主程序读取Vaccines列表，由键盘输入需要筛选的有效率，利用函数screenVac()进行筛选，按如下格式输出结果（疫苗名和数据结果间以制表符相隔）。
+    </li>    
+    <li>程序运行示例结果如下图所示：
+        <table width="100%" border="2" cellpadding="1" cellspacing="0">
+          <tr>
+            <td><pre>
+>>>
+请输入需要筛选的有效率：
+0.91
+疫苗A的结果:	[0.91, 0.92, 0.93]
+疫苗B的结果:	[0.91]
+疫苗C的结果:	[0.92, 0.94, 0.93, 0.91]
+疫苗D的结果:	无
+疫苗E的结果:	无
+>>>
+</pre></td>     
+        </table>
+        <br />
+      </li>
+    </ol>
+  </li>
+</ol>
+<p class="red">注意：考试结束后千万不要关机！</p>
+</body>
+</html>
