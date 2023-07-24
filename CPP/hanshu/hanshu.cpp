@@ -7,6 +7,7 @@ int max(int num1, int num2);
 // 如果想让函数内改变的值也传输到外部需要使用例如
 // void swap(int &x,int &y)
 // 这样的函数才可以
+// 也就是添加 &
  
 int main ()
 {
@@ -42,11 +43,11 @@ int max(int num1, int num2)
 {
    // 局部变量声明
    int result;
- 
+
    if (num1 > num2)
       result = num1;
    else
       result = num2;
- 
+
    return result; 
 }
