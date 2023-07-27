@@ -10,7 +10,9 @@
 				"-g",
 				"${file}",
 				"-o",
-				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"-I","F:\\OneDrive\\Coding\\CPP\\CPPtongxunluguanli\\Include",
+				"F:\\OneDrive\\Coding\\CPP\\CPPtongxunluguanli\\Lib\\gongneng.cpp"
 			],
 			"options": {
 				"cwd": "C:/mingw64/bin"
