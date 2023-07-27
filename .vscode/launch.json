@@ -13,7 +13,7 @@
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}/**",
             "environment": [],
-            "externalConsole": true,            //推荐打开，这样输出结果会打印在cmd窗口
+            "externalConsole": false,            //推荐打开，这样输出结果会打印在cmd窗口
             "MIMode": "gdb",
             "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",        //注意一下调试器的路径，路径为gdb所在的位置
             "setupCommands": [

@@ -64,8 +64,8 @@ void addPerson(Contacts * ctc)
         ctc->personArray[ctc->m_Size].m_Addr = addr;
         
         ctc->m_Size ++;
-        cout<<"添加成功";
-        system("pause");
-        system("cls");      //清屏功能
+        cout<<"添加成功"<<endl;
+        // system("pause");
+        // system("cls");      //清屏功能
     }
 }
