@@ -21,5 +21,12 @@ struct Contacts
 
 
 //函数声明
-void showMenu();        
-void addPerson(Contacts * ctc);
+void showMenu();
+void showChange();
+void addPerson(Contacts* ctc);
+void showPerson(Contacts* ctc);
+void delPerson(Contacts* ctc);
+void findPerson(Contacts* ctc);
+void updatePerson(Contacts* ctc);
+void delContacts(Contacts* ctc);
+int isExit(Contacts* ctc, string name);
