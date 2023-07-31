@@ -18,6 +18,11 @@ void func(int a)
     cout<<"func的调用 The Second"<<endl;
 }
 
+// void func(int a, int b=10)//这个重载的时候和上面的函数能够重复使用出现二义性，所以无法重载
+// {
+    // cout<<a+b;
+// }
+
 int main()
 {
     func();
