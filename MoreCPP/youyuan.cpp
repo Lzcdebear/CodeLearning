@@ -11,12 +11,12 @@ using namespace std;
 成员函数也可以
 */
 class GoodBoy;
+class GoodGay;
 
 class Building
 {
     friend void goodGay(Building &build);
     friend class GoodGay;
-    friend void GoodBoy::privisit();
 public:
     Building()
     {
@@ -71,7 +71,7 @@ void GoodBoy::visit()
 }
 void GoodBoy::privisit()
 {
-    cout<<"正在访问"<<building->m_Bedroom<<endl;
+    cout<<"正在访问"<<endl;
 }
 
 void test01()
