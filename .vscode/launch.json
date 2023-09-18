@@ -5,7 +5,14 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "g++.exe - Build and debug active file",        //配置名称里cpp改为g++
+            "type": "java",
+            "name": "hello",
+            "request": "launch",
+            "mainClass": "hello",
+            "projectName": "Coding_5f4975ba"
+        },
+        {
+            "name": "g++.exe - Build and debug active file",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
@@ -13,9 +20,9 @@
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}/**",
             "environment": [],
-            "externalConsole": false,            //推荐打开，这样输出结果会打印在cmd窗口
+            "externalConsole": false,
             "MIMode": "gdb",
-            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",        //注意一下调试器的路径，路径为gdb所在的位置
+            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -23,7 +30,7 @@
                     "ignoreFailures": false
                 }
             ],
-            "preLaunchTask": "C/C++: g++.exe build active file"        //cpp改为g++，与tasks.json的label相对应
+            "preLaunchTask": "C/C++: g++.exe build active file"
         }
     ]
 }
