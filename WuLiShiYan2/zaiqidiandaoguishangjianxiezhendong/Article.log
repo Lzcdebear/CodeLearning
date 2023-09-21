@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.21)  18 SEP 2023 20:13
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.21)  21 SEP 2023 19:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -388,14 +388,33 @@ File: figure//ecnu.png Graphic file (type bmp)
 <figure//ecnu.png>
  [1
 
-] (./Article.aux) ) 
+] (./Article.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+ (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+ (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
+\tf@toc=\write3
+\openout3 = `Article.toc'.
+
+LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <10.53937> not available
+(Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 59.
+ [1]
+File: figure//yuanli1.jpg Graphic file (type bmp)
+<figure//yuanli1.jpg>
+
+Missing character: There is no 和 (U+548C) in font [lmroman7-regular]:mapping=tex-text;!
+[2] [3] [4] (./Article.aux) ) 
 Here is how much of TeX's memory you used:
- 9046 strings out of 478630
- 238408 string characters out of 5847730
- 1845012 words of memory out of 5000000
- 29078 multiletter control sequences out of 15000+600000
- 514089 words of font info for 54 fonts, out of 8000000 for 9000
+ 9196 strings out of 478630
+ 244367 string characters out of 5847730
+ 1859012 words of memory out of 5000000
+ 29195 multiletter control sequences out of 15000+600000
+ 517024 words of font info for 78 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  89i,5n,97p,362b,275s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Article.pdf (1 page).
+Output written on Article.pdf (5 pages).
