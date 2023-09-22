@@ -9,17 +9,18 @@
 \contentsline {subsection}{\numberline {4.1}系统调节}{4}{}%
 \contentsline {subsubsection}{\numberline {4.1.1}静态调节}{4}{}%
 \contentsline {subsubsection}{\numberline {4.1.2}动态调节}{4}{}%
-\contentsline {subsection}{\numberline {4.2}测量x-t数据}{4}{}%
-\contentsline {subsection}{\numberline {4.3}验证位移方程}{6}{}%
-\contentsline {subsection}{\numberline {4.4}验证振动周期与初始状态无关}{6}{}%
-\contentsline {subsection}{\numberline {4.5}验证周期公式$T=2\pi \sqrt {\frac {m}{k}}$}{6}{}%
-\contentsline {subsection}{\numberline {4.6}验证能量守恒定律}{6}{}%
-\contentsline {section}{\numberline {五、}实验原始数据}{6}{}%
-\contentsline {section}{\numberline {六、}实验数据处理}{6}{}%
-\contentsline {subsection}{\numberline {6.1}验证位移方程}{6}{}%
-\contentsline {subsection}{\numberline {6.2}验证振动周期与初始状态无关}{6}{}%
-\contentsline {subsection}{\numberline {6.3}验证周期公式$T=2\pi \sqrt {\frac {m}{k}}$}{6}{}%
-\contentsline {subsection}{\numberline {6.4}验证能量守恒定律}{6}{}%
-\contentsline {section}{\numberline {七、}思考题}{6}{}%
-\contentsline {subsection}{\numberline {7.1}思考题一}{6}{}%
-\contentsline {subsection}{\numberline {7.2}思考题二}{6}{}%
+\contentsline {subsection}{\numberline {4.2}测量x-t数据并验证位移方程}{4}{}%
+\contentsline {subsection}{\numberline {4.3}验证振动周期与初始状态无关}{5}{}%
+\contentsline {subsubsection}{\numberline {4.3.1}验证振动周期与初振幅无关}{5}{}%
+\contentsline {subsubsection}{\numberline {4.3.2}验证振动周期与初相位无关}{6}{}%
+\contentsline {subsection}{\numberline {4.4}验证周期公式$T=2\pi \sqrt {\frac {m}{k}}$}{6}{}%
+\contentsline {subsection}{\numberline {4.5}验证能量守恒定律}{6}{}%
+\contentsline {section}{\numberline {五、}实验原始数据}{7}{}%
+\contentsline {section}{\numberline {六、}实验数据处理}{7}{}%
+\contentsline {subsection}{\numberline {6.1}验证位移方程}{7}{}%
+\contentsline {subsection}{\numberline {6.2}验证振动周期与初始状态无关}{7}{}%
+\contentsline {subsection}{\numberline {6.3}验证周期公式$T=2\pi \sqrt {\frac {m}{k}}$}{7}{}%
+\contentsline {subsection}{\numberline {6.4}验证能量守恒定律}{7}{}%
+\contentsline {section}{\numberline {七、}思考题}{7}{}%
+\contentsline {subsection}{\numberline {7.1}思考题一}{7}{}%
+\contentsline {subsection}{\numberline {7.2}思考题二}{7}{}%
