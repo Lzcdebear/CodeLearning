@@ -59,7 +59,8 @@
 \newpage
 \section{实验摘要}
   \subsection{实验概要}
-  简谐振动是周期运动中最简单的运动方式。研究简谐振动是了解周期运动最简单最理想的模型。对于简谐振动而言，其动力学特征是受力情况满足$F=-kx$。其中$x$为偏离平衡位置的位移大小。
+  简谐振动是周期运动中最简单的运动方式。研究简谐振动是了解周期运动最简单最理想的模型。对于简谐振动而言，
+  其动力学特征是受力情况满足$F=-kx$。其中$x$为偏离平衡位置的位移大小。
   本实验就是在气垫导轨上研究简谐子在简谐振动的时候的主要特征及其运动形式。
   \subsection{实验目的}
   1.\quad 了解简谐振动运动规律的验证方法及要求。
@@ -127,10 +128,8 @@
 \end{equation}
 
 \section{实验装置器材介绍}
-  \subsection{实验仪器}
-  气垫导轨，滑块，计时仪器，弹簧数对，重物质量块，物理天平，米尺，
-  若干不同当光片。
-  \subsection{实验仪器展示}
+气垫导轨，滑块，计时仪器，弹簧数对，重物质量块，物理天平，米尺，
+若干挡光片。
 
 \section{实验内容及实验步骤}
   \subsection{系统调节}
@@ -146,6 +145,9 @@
     运动。所以在滑块通过两个光电门的时候的速度应该是相等的。所以以一定初速度
     释放滑块记录滑块通过两个光电门的速度大小并作出相应的调节，最终使得滑块通过
     两光电门的速度相差不超过5\%。
+  \subsection{弹簧弹力系数测量}
+  测量弹簧原本长度，在悬挂质量块后再次测量长度，多次悬挂不同质量的重物测量弹簧的型变量，通过计算得到
+  弹簧的弹性系数。导轨弹簧弹性系数等于两侧弹簧弹性系数的和，即$k_{\mbox{总}}=k_{1}+k_{2}$。
   \subsection{测量x-t数据并验证位移方程}
   记录滑块开始运动为起点，挡光片前后按照运动方向规定，即向右运动则挡光片右侧边为前沿，反之亦然。让滑块在
   导轨自由振动直到停下，此时挡光片前侧为平衡位置，也就是光电门$I$所在位置。
@@ -184,30 +186,145 @@
   \end{equation}
   从式中就能获得一组线性关系的变量$\ln T \mbox{和} \ln \frac{m}{k}$。由此可以通过数据处理的方式求出两者线性关系的斜率
   b以及$\ln T$轴的截距，并和理论值进行比较。
-
-  \subsection{验证能量守恒定律}
-  将滑块上挡光片换成U型挡光片，利用物理天平对滑块和弹簧进行称重，并记录。
-
-  固定花魁啊的初振幅$A_{0}$的大小，应该满足$A_{0}>0.2m$，将光电门放在平衡位置和初振幅之间，改变位置至少5次以上，
-  每一次改变光电门位置都需要测量并记录滑块通过光电门的速度以及光电门距离平衡位置的距离。
-
-  整个系统的机械能是滑块在初振幅位置的时候的弹性势能。
-  之后再通过测得的速度和质量以及光电门所在的位置计算得到滑块通过光电门的时候的动能以及弹性势能，求和后就能得到该位置
-  的机械能。
-
-  最后将计算得到的机械能与最初的总机械能进行比较，查看是否验证机械能守恒定律。
+\newpage
 
 \section{实验原始数据}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{yuanshishujv1.jpg}
+  \caption{实验原理辅助用图}\label{yuanshishujv1}
+\end{figure}
+\newpage
+%----------------------------------------------------------------------------
+\begin{figure}[h]
+  \centering
+  \includegraphics[height=1\textwidth,width=1\textwidth]{yuanshishujv2.jpg}
+  \caption{实验原理辅助用图}\label{yuanshishujv2}
+\end{figure}
+\newpage
+%----------------------------------------------------------------------------
+\begin{figure}[h]
+  \centering
+  \includegraphics[height=1\textwidth,width=1\textwidth]{yuanshishujv3.jpg}
+  \caption{实验原理辅助用图}\label{yuanshishujv3}
+\end{figure}
+\newpage
 
 \section{实验数据处理}
+弹簧质量显示如表\ref{tanhuangzhiliang}
+\begin{table}[h]
+  \centering   
+  \caption{学生考试成绩单}\label{tanhuangzhiliang}
+  \begin{tabular}{| l || l |}
+      \hline
+      弹性系数的弹簧 & 弹簧质量(克)\\
+      \hline
+      0.961 & 13.61 \\
+      \hline
+      5.499 & 20.28 \\
+      \hline
+      8.828 & 17.62 \\
+      \hline
+      2.510 & 17.06 \\
+      \hline                       
+  \end{tabular}
+\end{table}
   \subsection{验证位移方程}
+  \begin{figure}[b]
+    \centering
+    \begin{minipage}[b]{0.48\textwidth}
+      \centering
+      \includegraphics[width=0.46\textwidth]{yanzhengweiyifangchengshujv.png}
+      \caption{验证位移方程数据}\label{yanzhengweiyifangchengshujv}
+    \end{minipage}
+    \begin{minipage}[b]{0.48\textwidth}
+      \centering
+      \includegraphics[width=0.46\textwidth]{yanzhengweiyifangchengzuotu.png}
+      \caption{验证位移方程作图法}\label{yanzhengweiyifangchengzuotu}
+    \end{minipage}
+  \end{figure}
+
+  实验数据处理如图\ref{yanzhengweiyifangchengshujv}，其中计算可得实验理论$A_{0}=2.12dm$，而实验所得
+  斜率，即实际测量的实际$A_{0}=2.1459dm$，两者的相差程度，即百分差为$1.2217\%$。可以证明位移方程
+  $x=A\sin \left( \omega t + {\varphi}_{0} \right) \mbox{在}{\varphi}_{0} = 0 $时成立。
+
+  实验中的误差可能来源于
+
+  1、每次释放位置不能保证完全相同
+
+  2、光电门传感器精度限制，以及挡光板的宽度
+
+  3、实验中气垫滑轨不能保证完全水平，出现倾斜
+
   \subsection{验证振动周期与初始状态无关}
+  \begin{figure}[t]
+    \centering
+    \includegraphics[height=0.3\textwidth,width=0.5\textwidth]{yanzhengwuguanshujv.png}
+    \caption{验证振动周期与初始状态无关数据处理}\label{yanzhengwuguanshujv}
+  \end{figure}
+  验证振动周期与初始状态无关实验的数据及数据处理如图\ref{yanzhengwuguanshujv}所展示的那样。每个数据和该
+  数据所在组平均值之间的相差不超过0.01s，除以八个周期后近似可以为相等，标准差也小于0.01。能验证振动周期与
+  初始状态无关。
+
+  实验中的误差可能来源于
+  
+  1、每次释放位置不能保证完全相同
+
+  2、光电门传感器精度限制，以及挡光板的宽度
+
+  3、实验中气垫滑轨不能保证完全水平，出现倾斜
+
   \subsection{验证周期公式$T=2\pi \sqrt{\frac{m}{k}}$}
-  \subsection{验证能量守恒定律}
+  \begin{figure}[b]
+    \centering
+    \begin{minipage}[b]{0.48\textwidth}
+      \centering
+      \includegraphics[width=0.46\textwidth]{yanzhengzhouqihanshu.png}
+      \caption{验证周期公式$T=2\pi \sqrt{\frac{m}{k}}$实验数据}\label{yanzhengzhouqihanshu}
+    \end{minipage}
+    \begin{minipage}[b]{0.48\textwidth}
+      \centering
+      \includegraphics[width=0.46\textwidth]{yanzhengzhouqihanshuzuotu.png}
+      \caption{验证周期公式$T=2\pi \sqrt{\frac{m}{k}}$数据处理}\label{yanzhengzhouqigongshizuotu}
+    \end{minipage}
+  \end{figure}
+  验证周期公式的实验数据如图\ref{yanzhengzhouqihanshu}所示，实验数据处理如图\ref{yanzhengzhouqigongshizuotu}
+  所示那样。本实验误差较大，涉及不确定度较多。
+  
+  实验中理论图像的斜率等于$\frac{1}{2}$，实验中理论截距为$\ln{2\pi}$。实际实验中图像的
+  斜率等于$0.3122$，实际截距为$1.7187$。
+  实验中理论和实际数据的百分差，斜率为$37.56\%$，截距为$6.48\%$
+
+  实验中的误差可能来源于 
+  
+  1、每次释放位置不能保证完全相同
+
+  2、光电门传感器精度限制，以及挡光板的宽度引入的误差。同时涉及质量称量，引入新的误差
+
+  3、实验中气垫滑轨不能保证完全水平，出现倾斜
+
+  实验中理论和实际的误差比较大，需要更多数据及更进一步的实验。其中斜率的误差较截距较大。
+\newpage
 
 \section{思考题}
-  \subsection{思考题一}
-  \subsection{思考题二}
+  \subsection{如何开展实验探究弹簧质量对滑块振动周期的影响}
+  控制滑块和载重片的质量恒定，准备若干弹簧，弹簧需要拥有相同的弹性系数但是质量不同。
+  可以考虑使用不同材质做成的弹簧进行实验探究。
+
+  将光电门I放置在平衡位置，固定初振幅，利用不同质量的的弹簧，测量在
+  \begin{equation}
+    \frac{\mbox{滑块总质量}}{\mbox{弹簧弹性系数}}=\frac{m}{k}=a\mbox{a为常数}
+  \end{equation}
+  的条件下，不同质量的弹簧测得的周期。
+  
+  之后通过式\ref{zhouqitanhuang}所得公式两边取对数得到
+  \begin{equation}
+    \ln T=\ln 2\pi + \frac{1}{2} \ln \frac{m+\frac{1}{3}m_{s}}{k}
+  \end{equation}
+  
+  通过实验的到$\ln \frac{m+\frac{1}{3}m_{s}}{k}$和$\ln T$实验测得的值，通过作图法或者最小二乘法，求出
+  斜率b和$\ln T$轴的截距，并与理论值对比，得到实验结论。
+  \subsection{测量滑块在作阻尼振动时的半衰期}
 
 
 \end{document}
