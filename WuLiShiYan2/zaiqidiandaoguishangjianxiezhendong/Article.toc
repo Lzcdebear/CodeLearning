@@ -18,6 +18,9 @@
 \contentsline {subsection}{\numberline {6.1}验证位移方程}{10}{}%
 \contentsline {subsection}{\numberline {6.2}验证振动周期与初始状态无关}{10}{}%
 \contentsline {subsection}{\numberline {6.3}验证周期公式$T=2\pi \sqrt {\frac {m}{k}}$}{11}{}%
-\contentsline {section}{\numberline {七、}思考题}{13}{}%
-\contentsline {subsection}{\numberline {7.1}如何开展实验探究弹簧质量对滑块振动周期的影响}{13}{}%
-\contentsline {subsection}{\numberline {7.2}测量滑块在作阻尼振动时的半衰期}{13}{}%
+\contentsline {section}{\numberline {七、}思考题}{12}{}%
+\contentsline {subsection}{\numberline {7.1}如何开展实验探究弹簧质量对滑块振动周期的影响}{12}{}%
+\contentsline {subsection}{\numberline {7.2}测量滑块在作阻尼振动时的半衰期}{12}{}%
+\contentsline {section}{\numberline {八、}实验中个人的思考与感想}{13}{}%
+\contentsline {subsection}{\numberline {8.1}对于实验个人观点}{13}{}%
+\contentsline {subsection}{\numberline {8.2}实验中的总结}{13}{}%
