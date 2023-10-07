@@ -12,7 +12,7 @@
     }
 }
 
-\title{研究弦线上的驻波现象}
+\title{非线性元件的伏安特性研究}
 \author{陆知辰-10225301456}
 \date{\today}
 \graphicspath{{figure/}}
@@ -33,7 +33,7 @@
   \vspace*{0.3\baselineskip}
   
   % 具体实验名称
-  \huge 研究弦线上的驻波现象
+  \huge 非线性元件的福伏安特性研究
   
   % 空行用于调整时间和其他信息之间的间距
   \vspace*{2\baselineskip}
@@ -59,106 +59,129 @@
 \newpage
 \section{实验摘要}
   \subsection{实验概要}
-  驻波是由两列传播方向相反、振幅和频率都相等，且相位差恒定的简写波叠加而成的。
+  伏安特性描述了电子元件在两端通过直流电压和通过元件的电流之间的关系。
+
+  非线性元件就是在电子元件两端通过直流电压和通过元件的电流之间的关系不是线性的。
+  现实中有很多电子元件都是非线性的。就如实验中将要用到的二极管、灯泡中的钨丝等都是非线性元件。
+  非线性元件的电阻总是与一定的物理过程相联系，如发热、发光和能级跃迁等。
+
+  本次实验主要研究非线性元件电路设计和测量导通方法。
 
   \subsection{实验目的}
-  1.\quad 观察弦线上的驻波现象。
+  1.\quad 了解测量电路中电路元件的选取方法、调节方法。
 
-  2.\quad 研究弦线张力、振动频率、振幅三者对驻波形成的影响。
+  2.\quad 掌握待测元件的基本特性，能测量二极管的正向导通电压。
   
-  3.\quad 学会如何从驻波理论出发，指定验证驻波波长和拉力、频率关系的实验方案。
+  3.\quad 掌握非线性元件伏安特性的测量电路和研究方法。
 
 \section{实验原理}
-\begin{figure}[b]
-  \centering
-  \includegraphics[height=0.3\textwidth,width=1\textwidth]{yuanli1.jpg}
-  \caption{实验原理辅助用图}\label{figureyuanli1}
-\end{figure}
-实验中使用的器材如图\ref{figureyuanli1}。实验中使用该装置获得拉紧的弦线，通过振动弦线产生驻波。
-金属弦线一端固定在振动源，另一端固定一个砝码。砝码能够用来使金属弦线拉紧。
-同时由于刀口的存在，所以弦线无法振动，所以振动在这个位置被反射，由此形成了从右往左的波和
-从左往右的反射波。在这样的条件下也能产生驻波在弦线上。
+  \subsection{伏安特性}
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=1\textwidth]{fuantexingdianlu.jpg}
+    \caption{伏安特性测试电路及非线性元件伏安特性曲线}\label{fuantexingdianlu}
+  \end{figure}
+  非线性元件的伏安特性可以使用如图\ref{fuantexingdianlu}。电路通过调节$R_{0}$
+  来调节$R$以及非线性元件分的电压。再通过$R$的阻值大小来最终控制非线性元件两端
+  的电压。电子元件并联的电压表电阻具有较大内阻，在测量这类电阻较低的电子元件的时候
+  引入的系统误差较小，可以忽略不计。
 
-实验中将最靠近振动端的波节作为测量$L$的起始点，该点到有刀口的可动支架的距离$L$为半波长的整数倍
-\begin{equation}
-  L=n \frac{\lambda}{2}
-\end{equation}
+  根据欧姆定律$R=\frac{U}{I}$，通过图\ref{fuantexingdianlu}中所展示的电路，由
+  待测元件两侧的电压$U$以及电流$I$可以计算得到待测元件的阻值$R$。但是非线性元件的
+  阻值$R$并不是一个定值，所以当描述非线性元件的电阻的时候需要指明工作的状态，即指出
+  工作电流或者工作电压。
 
-根据对于简谐振动的已学知识，实验中在一根拉紧的弦线上传播的机械振动横波可以被描述为
-\begin{equation}\label{jixiezhendonghengbo}
-  y\(x \, t\)=A\sin \( \omega t \pm kx\)
-\end{equation}
-在式\ref{jixiezhendonghengbo}中$y$是弦线在$x$处在$t$时刻的位移。$A$为振幅，$\omega$是振动的角频率，
-$k$是角波数。对于式\ref{jixiezhendonghengbo}中出现的对象同时还应该满足波动方程
-\begin{equation}\label{bodongfangcheng}
-  \frac{\partial ^{2} y\(x,t\)}{\partial x^{2}} = \frac{1}{v^{2}} \frac{\partial ^{2} y\(x,t\)}{\partial t^{2}}
+  非线性元件的电阻可用两种方式表示。第一种为静态电阻，用$R_{D}$表示；另一种为动态
+  电阻，用$R_{rp}$表示。动态电阻等于工作点附近的电压改变量和电流改变量的比值，可以
+  通过伏安特性曲线得到。如图\ref{fuantexingdianlu}展示的那样，在$Q$点附近的
+  静态电阻和动态电阻可以表示为
+  \begin{equation}
+    R_{D}=\frac{U_{Q}}{I_{Q}}
 
-  \mbox{其中} v^{2} = \frac{\omega ^{2}}{k^{2}}
-\end{equation}
+    R_{rp}=\frac{\Delta U}{\Delta I}
+  \end{equation}
 
-当开始振动弦线的时候，振动源会给弦线力的作用，这里假设张力为$F_{T}$，弦线的密度为$\rho _{2}$，则
-可以得到弦线上沿弦线传播的横波的速度为
-\begin{equation}\label{bosufangcheng}
-  v=\sqrt[2]{\frac{F_{T}}{\rho _{2}}}
-\end{equation}
+  \subsection{白炽灯灯丝的伏安特性}
+  \begin{figure}[b]
+    \centering
+    \includegraphics[width=1\textwidth]{dengpaofuantexing.jpg}
+    \caption{灯泡伏安特性曲线}\label{dengpaofuantexing}
+  \end{figure}
+  钨丝类的灯泡发光后，灯丝的电阻会由于发热随着温度升高而增。这意味着通过灯丝的电流越大，
+  灯丝发热越严重，电阻也越大。由于温度差异而产生的电阻差异可能相差几倍甚至几十倍。灯泡
+  两端的电压以及通过灯泡的电流之间的关系如图\ref{dengpaofuantexing}所示。它们之间的关系
+  可以表示为
+  \begin{equation}\label{shidengpaofuantexing}
+    U=KI^{n}
+  \end{equation}
+  其中$K$和$n$是和灯泡有关的参数。
 
-而弦线两端固定，且长度为$L$，所以同时还需要满足振动的边界条件$y(0)=y(L)=0$，由于两端的端点是固定的，所以
-传播的时候产生的波和反射波最终会相互叠加在弦线上形成驻波。驻波应该满足以下条件：
-\begin{equation}\label{zhubofangcheng}
-  y_{n}\(x,t\)=A\cos \omega _{n} t \sin k_{n} x
-\end{equation}
+  将式\ref{shidengpaofuantexing}两端取对数，将非线性的关系转化为线性关系
+  \begin{equation}
+    \ln U=\ln K+n\ln I
+  \end{equation}
+  通过实验测量$U$和$I$关系，再进行作图法或者最小二乘法确定$K$和$n$的值。
 
-同时还应该满足
-\begin{equation}\label{zhendongmoshi}
-  f_{n}=\frac{\omega _{n}}{2\pi}=\frac{nv}{2L}=nf_{1}\mbox{，其中}f_{1}=\frac{v}{2L}
-\end{equation}
-在式\ref{zhendongmoshi}中，$f_{1}$为基频，$f_{n}$为$n$次谐波的频率，由此可以得到
-波长的表达形式为$\lambda_{n}=2\frac{L}{n}$
+  \subsection{半导体二极管的伏安特性}
+    \subsubsection{半导体二极管介绍}
+    半导体二极管又称为晶体二极管，也是非线性元件。在电路中二极管具有单向导电性。
+    由于能够控制电流流过的方向，所以二极管能够在电路中发挥很多作用，比如整流、检波、
+    限幅、元件保护以及数字电路中作为开关的元件。
+    \begin{figure}[tbh]
+      \centering
+      \includegraphics[width=1\textwidth]{bandaoti.jpg}
+      \caption{半导体二极管示意图}\label{bandaoti}
+    \end{figure}
+    二极管是通过两种不同导电性能的半导体进行结合后产生的，这两种半导体分别为
+    $n$型半导体以及$p$型半导体。这两种半导体结合后会产生$PN$结。正极由$p$型半导体引出，
+    负极由$n$型半导体引出，最终产生的结构以及电路中的示意如图\ref{bandaoti}。
 
-\begin{figure}[b]
-  \centering
-  \includegraphics[height=0.3\textwidth,width=1\textwidth]{zhuboyanshi.jpg}
-  \caption{光电门与滑块位置关系示意图}\label{zhuboyanshi}
-\end{figure}
+    二极管两端的电压$U$和流过二极管的电流$I$之间的关系满足式\ref{shierjiguan}。
+    \begin{equation}
+      I=I_{s}\(e^{ \frac{qU}{kT}}-1 \)
+    \end{equation}
+    式子中的$q=1.602\times 10^{-19}C$为电子电荷量的绝对值，
+    $k=1.381\times 10^{-23}J/K$为玻尔兹曼常数，$T$为热力学温度，$I_{s}$为反向饱和电流。
+    \begin{figure}[tbh]
+      \centering
+      \includegraphics[width=1\textwidth]{erjiguanfuantexing.jpg}
+      \caption{半导体二极管伏安特性曲线}\label{erjiguanfuantexing}
+    \end{figure}
+    
+    半导体二极管的主要特点就是单向导电性，其伏安特性曲线如图\ref{erjiguanfuantexing}。由此可以看出，
+    二极管在正向电压较小的时候，电流值较小，而一旦电压增加到超过阈值电压$U_{D}$之后，正向电流开始明显
+    增大，随着电压增加电流也在急速增大，伏安特性曲线近似可以看为一条直线。将该直线反向延长和$x$轴
+    相交于$U_{D}$，$U_{D}$为正向导通阈值电压
 
-图\ref{zhuboyanshi}演示了在当$n\leq 4$的时候驻波的示意图像。其中$N$为波节。波节就是
-振幅恒等于0的位置，$A$为波腹。波腹就是振幅最大的位置。由此图像可以直接通过观察得出$\lambda$
-以及$f_{n}$表达。
+    而对半导体二极管加上反向电压的时候，反向电流极小而且随电压变化缓慢，但当反向电压最终超过击穿
+    电压时候$U_{b}$，电流将急剧增大，二极管被击穿后仍可以恢复到正常工作，但是由于发热等原因实际上
+    仍然会对二极管产生不可逆的损害，最终造成二极管永久损坏。
+    
+  \subsection{稳压二极管的伏安特性}
+  \subsection{发光二极管的伏安特性}
 
-根据之前得到的式\ref{bosufangcheng}能够进一步推导得出波长$\lambda$的表达形式为
-\begin{equation}\label{bochangfangcheng}
-  \lambda = \frac{v}{f} =\frac{1}{f}\sqrt[2]{\frac{F_{T}}{\mu}}
-\end{equation}
-再对式\ref{bochangfangcheng}两边取对数，就可以进一步得到
-\begin{equation}\label{bochangduishufangcheng}
-  \ln \lambda = \frac{1}{2} \ln F_{T}-\frac{1}{2} \ln \mu - \ln f
-\end{equation}
-通过式\ref{bochangduishufangcheng}可以通过实验得到数据并对数据进行
-图像化处理后得到$\lambda - T$以及$\lambda -f$的图像和拟合方程。
-由此验证弦线中$\lambda - T$以及$\lambda -f$的特性。
 
 \section{实验装置器材介绍}
-频率可调节的机械振动源、实验台、固定滑轮、刻度尺、不同粗细的弦线若干、
-砝码盘、砝码若干、电子天平、频闪灯
+
 
 \section{实验内容及实验步骤}
-  \subsection{实验准备}
-  实验前测量砝码的质量并记录，多次测量取平均值。并正确组装装置，保证实验中刀口能固定弦线，
-  能产生反射波。
-  \subsection{预实验}
-  在装置组装完成后打开各项设备的开关，进行预实验。观察不同张力下的半波长出现的数量。之后调节
-  机械振动源改变波动频率，观察不同波动频率下半波长出现的数量。之后调节刀口位置，左右滑动刀口的
-  滑轮，观察振幅改变情况以及半波长出现的数量。
-
-  通过预实验得到定性的结果，并定性描述弦线张力、波动频率、振幅三者对驻波形成的影响。
   \subsection{}
-
+  \subsection{}
+  \subsection{}
   \subsection{}
     \subsubsection{}
     \subsubsection{}
 
   \subsection{}
 \newpage
+
+
+
+
+
+
+
+
 
 
 
