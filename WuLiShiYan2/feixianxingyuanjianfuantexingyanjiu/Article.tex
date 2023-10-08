@@ -136,6 +136,7 @@
     $n$型半导体以及$p$型半导体。这两种半导体结合后会产生$PN$结。正极由$p$型半导体引出，
     负极由$n$型半导体引出，最终产生的结构以及电路中的示意如图\ref{bandaoti}。
 
+    \subsubsection{半导体二极管伏安特性}
     二极管两端的电压$U$和流过二极管的电流$I$之间的关系满足式\ref{shierjiguan}。
     \begin{equation}
       I=I_{s}\(e^{ \frac{qU}{kT}}-1 \)
@@ -156,10 +157,31 @@
     而对半导体二极管加上反向电压的时候，反向电流极小而且随电压变化缓慢，但当反向电压最终超过击穿
     电压时候$U_{b}$，电流将急剧增大，二极管被击穿后仍可以恢复到正常工作，但是由于发热等原因实际上
     仍然会对二极管产生不可逆的损害，最终造成二极管永久损坏。
-    
-  \subsection{稳压二极管的伏安特性}
-  \subsection{发光二极管的伏安特性}
 
+  \subsection{稳压二极管的伏安特性}
+  稳压二极管是一种特殊的硅二极管，伏安特性曲线如图\ref{wenyafuantexing}
+  \begin{figure}[tbh]
+    \centering
+    \includegraphics[width=1\textwidth]{wenyafuantexing.jpg}
+    \caption{稳压二极管伏安特性曲线}\label{wenyafuantexing}
+  \end{figure}
+  稳压二极管的伏安特性曲线和普通二极管的和普通二极管类似，只是反向特性曲线较普通二极管更陡。
+
+  对于稳压二极管而言，当电压小于反向击穿电压的时候，它和普通二极管一样。但是一旦电压大于反向击穿
+  电压，则在电压增加一个微小量后电流将产生巨大的变化，这说明在很大的电流范围内需要的电压是近似
+  不变的。因为这个特性，稳压二极管可以在电路中作为稳压的器件。同时稳压二极管的反向击穿是可逆的，
+  当反向击穿电压消失后稳压二极管优惠回复正常。但是和普通的二极管一样，反向击穿是有允许的电压范围的，
+  稳压二极管也是一样，如果反向电流超过的了允许范围，则稳压二极管会一样一位电流过大而发热而损坏。
+  
+  由于具有以上特性，稳压二极管一般用在稳压或者恒流的电路中。
+
+  \subsection{发光二极管的伏安特性}
+  \begin{figure}[b]
+    \centering
+    \includegraphics[width=1\textwidth]{faguangfuantexing.jpg}
+    \caption{发光二极管伏安特性曲线}\label{faguangfuantexing}
+  \end{figure}
+  发光二极管，也就是常说的LED一般是由$III-V$族化合物
 
 \section{实验装置器材介绍}
 
@@ -181,40 +203,13 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 \section{实验原始数据}
 \begin{figure}[h]
   \centering
-  \includegraphics[width=1\textwidth]{yuanshishujv1.jpg}
-  \caption{实验原理辅助用图}\label{yuanshishujv1}
+  \includegraphics[width=1\textwidth]{yuanshishujv.jpg}
+  \caption{实验原始数据}\label{yuanshishujv}
 \end{figure}
 \newpage
-%----------------------------------------------------------------------------
-\begin{figure}[h]
-  \centering
-  \includegraphics[height=1\textwidth,width=1\textwidth]{yuanshishujv2.jpg}
-  \caption{实验原理辅助用图}\label{yuanshishujv2}
-\end{figure}
-\newpage
-%----------------------------------------------------------------------------
-\begin{figure}[h]
-  \centering
-  \includegraphics[height=1\textwidth,width=1\textwidth]{yuanshishujv3.jpg}
-  \caption{实验原理辅助用图}\label{yuanshishujv3}
-\end{figure}
-\newpage
-
 \section{实验数据处理}
 弹簧质量显示如表\ref{tanhuangzhiliang}
 \begin{table}[h]
