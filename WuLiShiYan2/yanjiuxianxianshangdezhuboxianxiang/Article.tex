@@ -4,6 +4,7 @@
 \usepackage{graphicx}
 \usepackage{gbt7714}
 \usepackage{wrapfig}
+\usepackage{multirow}
 \ctexset{
     % 修改 section。
     section={   
@@ -67,13 +68,13 @@
   2.\quad 研究弦线张力、振动频率、振幅三者对驻波形成的影响。
   
   3.\quad 学会如何从驻波理论出发，指定验证驻波波长和拉力、频率关系的实验方案。
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=0.4\textwidth,width=1\textwidth]{yuanli1.jpg}
+    \caption{实验原理辅助用图}\label{figureyuanli1}
+  \end{figure}
 
 \section{实验原理}
-\begin{figure}[b]
-  \centering
-  \includegraphics[height=0.3\textwidth,width=1\textwidth]{yuanli1.jpg}
-  \caption{实验原理辅助用图}\label{figureyuanli1}
-\end{figure}
 实验中使用的器材如图\ref{figureyuanli1}。实验中使用该装置获得拉紧的弦线，通过振动弦线产生驻波。
 金属弦线一端固定在振动源，另一端固定一个砝码。砝码能够用来使金属弦线拉紧。
 同时由于刀口的存在，所以弦线无法振动，所以振动在这个位置被反射，由此形成了从右往左的波和
@@ -86,15 +87,14 @@
 
 根据对于简谐振动的已学知识，实验中在一根拉紧的弦线上传播的机械振动横波可以被描述为
 \begin{equation}\label{jixiezhendonghengbo}
-  y\(x \, t\)=A\sin \( \omega t \pm kx\)
+  y(x,t)=A\sin ( \omega t \pm kx)
 \end{equation}
 在式\ref{jixiezhendonghengbo}中$y$是弦线在$x$处在$t$时刻的位移。$A$为振幅，$\omega$是振动的角频率，
 $k$是角波数。对于式\ref{jixiezhendonghengbo}中出现的对象同时还应该满足波动方程
 \begin{equation}\label{bodongfangcheng}
-  \frac{\partial ^{2} y\(x,t\)}{\partial x^{2}} = \frac{1}{v^{2}} \frac{\partial ^{2} y\(x,t\)}{\partial t^{2}}
-
-  \mbox{其中} v^{2} = \frac{\omega ^{2}}{k^{2}}
+  \frac{\partial ^{2} y(x,t)}{\partial x^{2}} = \frac{1}{v^{2}} \frac{\partial ^{2} y(x,t)}{\partial t^{2}}
 \end{equation}
+其中$v^{2} = \frac{\omega ^{2}}{k^{2}}$
 
 当开始振动弦线的时候，振动源会给弦线力的作用，这里假设张力为$F_{T}$，弦线的密度为$\rho _{2}$，则
 可以得到弦线上沿弦线传播的横波的速度为
@@ -105,7 +105,7 @@ $k$是角波数。对于式\ref{jixiezhendonghengbo}中出现的对象同时还�
 而弦线两端固定，且长度为$L$，所以同时还需要满足振动的边界条件$y(0)=y(L)=0$，由于两端的端点是固定的，所以
 传播的时候产生的波和反射波最终会相互叠加在弦线上形成驻波。驻波应该满足以下条件：
 \begin{equation}\label{zhubofangcheng}
-  y_{n}\(x,t\)=A\cos \omega _{n} t \sin k_{n} x
+  y_{n}(x,t)=A\cos \omega _{n} t \sin k_{n} x
 \end{equation}
 
 同时还应该满足
@@ -117,8 +117,8 @@ $k$是角波数。对于式\ref{jixiezhendonghengbo}中出现的对象同时还�
 
 \begin{figure}[b]
   \centering
-  \includegraphics[height=0.3\textwidth,width=1\textwidth]{zhuboyanshi.jpg}
-  \caption{光电门与滑块位置关系示意图}\label{zhuboyanshi}
+  \includegraphics[height=0.3\textwidth,width=0.7\textwidth]{zhuboyanshi.jpg}
+  \caption{驻波演示示意图}\label{zhuboyanshi}
 \end{figure}
 
 图\ref{zhuboyanshi}演示了在当$n\leq 4$的时候驻波的示意图像。其中$N$为波节。波节就是
@@ -151,7 +151,7 @@ $k$是角波数。对于式\ref{jixiezhendonghengbo}中出现的对象同时还�
   滑轮，观察振幅改变情况以及半波长出现的数量。
 
   通过预实验得到定性的结果，并定性描述弦线张力、波动频率、振幅三者对驻波形成的影响。
-  \subsection定性描述弦线张力、振动频率、振幅三者对驻波形成影响}
+  \subsection{定性描述弦线张力、振动频率、振幅三者对驻波形成影响}
   结合预实验得出结果。
   \subsection{实验验证弦线张力、振动频率和波长的关系}
     \subsubsection{验证弦线张力和波长之间的关系}
@@ -174,8 +174,8 @@ $k$是角波数。对于式\ref{jixiezhendonghengbo}中出现的对象同时还�
 \section{实验原始数据}
 \begin{figure}[h]
   \centering
-  \includegraphics[width=1\textwidth]{yuanshishujv.jpg}
-  \caption{实验原始数据}\label{yuanshishujv}
+  \includegraphics[height=1\textwidth,width=1\textwidth]{shiyanshujv.jpg}
+  \caption{实验原始数据}\label{shiyanshujv}
 \end{figure}
 \newpage
 
@@ -186,23 +186,23 @@ $k$是角波数。对于式\ref{jixiezhendonghengbo}中出现的对象同时还�
 \begin{table}[h]
   \centering   
   \caption{实验所用砝码质量及砝码盘质量}\label{famazhiliang}
-  \begin{tabular}{| l || l |}
+  \begin{tabular}{| l || l || l |}
       \hline
       砝码 & 质量(克) & 不确定度\\
       \hline
-      始终添加砝码盘 & 40.2 & \pm 0.0134\\
+      始终添加砝码盘 & 40.2 & $\pm$ 0.0134\\
       \hline
-      始终添加的砝码 & 45.0 & \pm 0.0134\\
+      始终添加的砝码 & 45.0 & $\pm$ 0.0134\\
       \hline
-      选择添加砝码1 & 24.8 & \pm 0.0212\\
+      选择添加砝码1 & 24.8 & $\pm$ 0.0212\\
       \hline
-      选择添加砝码2 & 24.9 & \pm 0.0134\\
+      选择添加砝码2 & 24.9 & $\pm$ 0.0134\\
       \hline
-      选择添加砝码3 & 25.0 & \pm 0.0134\\
+      选择添加砝码3 & 25.0 & $\pm$ 0.0134\\
       \hline
-      选择添加砝码4 & 24.9 & \pm 0.0134\\
+      选择添加砝码4 & 24.9 & $\pm$ 0.0134\\
       \hline
-      选择添加砝码5 & 24.9 & \pm 0.0212\\
+      选择添加砝码5 & 24.9 & $\pm$ 0.0212\\
       \hline                       
   \end{tabular}
 \end{table}
@@ -210,7 +210,7 @@ $k$是角波数。对于式\ref{jixiezhendonghengbo}中出现的对象同时还�
 实验原始数据数字化后结果如图\ref{shiyanshujvexl}
 \begin{figure}[h]
   \centering
-  \includegraphics[width=1\textwidth]{shiyanshujvexl.jpg}
+  \includegraphics[width=1\textwidth]{shiyanshujvexl.png}
   \caption{实验原始数据数字化结果}\label{shiyanshujvexl}
 \end{figure}
 
