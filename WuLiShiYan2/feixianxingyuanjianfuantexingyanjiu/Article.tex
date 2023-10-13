@@ -13,7 +13,7 @@
 }
 
 \title{非线性元件的伏安特性研究}
-\author{陆知辰-10225301456}
+\author{陆知辰-10225301478}
 \date{\today}
 \graphicspath{{figure/}}
 
@@ -201,17 +201,22 @@
 稳压电源、电阻箱、可变电位器、九孔板、待测试二极管、待测试稳压二极管、待测试小灯泡、导线若干
 
 \section{实验内容及实验步骤}
-  \subsection{测量小灯泡灯丝的伏安特性曲线}
-  \(1\) 记录小灯泡的额定电压和额定电流
-
-  \(2\) 依照图\ref{fuantexingdianlu}链接电路，将小灯泡接入电路中，位置取代二极管所在位置。
-        调节电压，从0开始增大，使得$U\mbox{和}I$不要超出小灯泡的额定电压和额定电流。
-        实验中需要测试15组数据
-
-  \(3\) 最终进行实验数据的处理，将数据绘制在作图纸上，绘制小灯泡的伏安特性曲线。并和
-        式\ref{shidengpaofuantexing}相比较，取对数，最终得到K和n的值
-
   \subsection{测量普通二极管的正向伏安特性曲线}
+
+  \begin{figure}[b]
+    \centering
+    \begin{minipage}[b]{0.48\textwidth}
+      \centering
+      \includegraphics[width=0.46\textwidth]{zhengxiangdianlu.jpg}
+      \caption{二极管正向连通电路示意图}\label{zhengxiangdianlu.jpg}
+    \end{minipage}
+    \begin{minipage}[b]{0.48\textwidth}
+      \centering
+      \includegraphics[width=0.46\textwidth]{fanxiangdianlu.jpg}
+      \caption{二极管反向连通电路示意图}\label{fanxiangdianlu}
+    \end{minipage}
+  \end{figure}
+
   \(1\) 先使用数字多用表判断二极管的正负极。具体操作如下\\
   将数字多用表调节到二极管挡位，红黑表笔分别链接二极管的两端，观察万用表的示数。\\
   交换红黑表笔，在观察示数。\\
@@ -219,7 +224,7 @@
   若反向链接，则显示为短路状态。\\
   若正反两个方向测得的结果一致，则表明该二极管已损坏。
 
-  \(2\) 按照图\ref{fuantexingdianlu}连接电路，将普通二极管连入伏安特性测量电路中。链接的时候注意
+  \(2\) 按照图\ref{zhengxiangdianlu}连接电路，将普通二极管连入伏安特性测量电路中。链接的时候注意
         正负极链接电源是否正确。调节电压，从0开始缓慢增加，观察电流。其中电流不要超过20mA，以免烧坏二极管。
         实验中需要测试15组数据。
 
@@ -231,9 +236,9 @@
   \subsection{测量稳压二极管的正向、反向伏安特性曲线}
   \(1\) 用数字多用表判断稳压二极管的正负极。
   
-  \(2\) 按照图\ref{fuantexingdianlu}连接电路，注意电流正向导通。测量15组数据
+  \(2\) 按照图\ref{zhengxiangdianlu}连接电路，注意电流正向导通。测量15组数据
 
-  \(3\) 按照图\ref{fuantexingdianlu}链接电路，注意电流反向导通。测试稳压二极管反向击穿电流特性。注意
+  \(3\) 按照图\ref{fanxiangdianlu}链接电路，注意电流反向导通。测试稳压二极管反向击穿电流特性。注意
         电流不要超过30mA，测量15组数据。测量反向击穿电压。
 
   \(4\) 在做图纸上作图得到伏安特性曲线。
@@ -241,23 +246,37 @@
   \subsection{测量发光二极管正向伏安特性曲线}
   \(1\) 参照普通二极管的实验步骤进行实验。测量15组数据。
 
-  \(2\) 计算发光二极管的峰值波长
+  \(2\) 总共需要进行三个发光二极管的数据的测量和计算。
 
-  \subsection{}
+  \(3\) 计算发光二极管的峰值波长
 \newpage
-
-
-
-
-
 
 
 \section{实验原始数据}
 \begin{figure}[h]
   \centering
   \includegraphics[width=1\textwidth]{yuanshishujv.jpg}
-  \caption{实验原始数据}\label{yuanshishujv}
+  \caption{实验原始数据1}\label{yuanshishujv}
 \end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \newpage
 \section{实验数据处理}
 弹簧质量显示如表\ref{tanhuangzhiliang}
