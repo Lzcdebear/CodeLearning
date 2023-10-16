@@ -1,5 +1,6 @@
 \documentclass{ctexart}
 \usepackage{amsmath}
+\usepackage{float}
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{gbt7714}
@@ -33,7 +34,7 @@
   \vspace*{0.3\baselineskip}
   
   % 具体实验名称
-  \huge 非线性元件的福伏安特性研究
+  \huge 非线性元件的伏安特性研究
   
   % 空行用于调整时间和其他信息之间的间距
   \vspace*{2\baselineskip}
@@ -97,14 +98,15 @@
   静态电阻和动态电阻可以表示为
   \begin{equation}
     R_{D}=\frac{U_{Q}}{I_{Q}}
-
+  \end{equation}
+  \begin{equation}
     R_{rp}=\frac{\Delta U}{\Delta I}
   \end{equation}
 
   \subsection{白炽灯灯丝的伏安特性}
-  \begin{figure}[b]
+  \begin{figure}[t]
     \centering
-    \includegraphics[width=1\textwidth]{dengpaofuantexing.jpg}
+    \includegraphics[width=0.5\textwidth,height=0.3\textheight]{dengpaofuantexing.jpg}
     \caption{灯泡伏安特性曲线}\label{dengpaofuantexing}
   \end{figure}
   钨丝类的灯泡发光后，灯丝的电阻会由于发热随着温度升高而增。这意味着通过灯丝的电流越大，
@@ -123,24 +125,24 @@
   通过实验测量$U$和$I$关系，再进行作图法或者最小二乘法确定$K$和$n$的值。
 
   \subsection{半导体二极管的伏安特性}
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=1\textwidth,height=0.3\textheight]{bandaoti.jpg}
+    \caption{半导体二极管示意图}\label{bandaoti}
+  \end{figure}
     \subsubsection{半导体二极管介绍}
     半导体二极管又称为晶体二极管，也是非线性元件。在电路中二极管具有单向导电性。
     由于能够控制电流流过的方向，所以二极管能够在电路中发挥很多作用，比如整流、检波、
     限幅、元件保护以及数字电路中作为开关的元件。
-    \begin{figure}[tbh]
-      \centering
-      \includegraphics[width=1\textwidth]{bandaoti.jpg}
-      \caption{半导体二极管示意图}\label{bandaoti}
-    \end{figure}
     二极管是通过两种不同导电性能的半导体进行结合后产生的，这两种半导体分别为
     $n$型半导体以及$p$型半导体。这两种半导体结合后会产生$PN$结。正极由$p$型半导体引出，
     负极由$n$型半导体引出，最终产生的结构以及电路中的示意如图\ref{bandaoti}。
+    \begin{equation}\label{erjiguan}
+      I=I_{s}(e^{ \frac{qU}{kT}}-1)
+    \end{equation}
 
     \subsubsection{半导体二极管伏安特性}
-    二极管两端的电压$U$和流过二极管的电流$I$之间的关系满足式\ref{shierjiguan}。
-    \begin{equation}
-      I=I_{s}\(e^{ \frac{qU}{kT}}-1 \)
-    \end{equation}
+    二极管两端的电压$U$和流过二极管的电流$I$之间的关系满足式\ref{erjiguan}。
     式子中的$q=1.602\times 10^{-19}C$为电子电荷量的绝对值，
     $k=1.381\times 10^{-23}J/K$为玻尔兹曼常数，$T$为热力学温度，$I_{s}$为反向饱和电流。
     \begin{figure}[tbh]
@@ -176,7 +178,7 @@
   由于具有以上特性，稳压二极管一般用在稳压或者恒流的电路中。
 
   \subsection{发光二极管的伏安特性}
-  \begin{figure}[b]
+  \begin{figure}[t]
     \centering
     \includegraphics[width=1\textwidth]{faguangfuantexing.jpg}
     \caption{发光二极管伏安特性曲线}\label{faguangfuantexing}
@@ -192,8 +194,8 @@
   自辐射发光，所以发射光谱的峰值波长$\lambda$和发光材料的禁带宽度$E_{g}$相对应。但是事实上对于大多数半导体发光材料而言，发射光进入
   空气之前已经经历了多次反射，所以造成了短波长光被大量吸收，从而造成峰值波长相对应的光子能量要小于发光材料的禁带宽度。
 
-  辐射跃迁所发出的光子的峰值波长$\lambda$可以由式\ref{fengzhibochang}来计算
-  \begin{equation}
+  辐射跃迁所发出的光子的峰值波长$\lambda$可以由式\ref{fenzibochang}来计算
+  \begin{equation}\label{fenzibochang}
     \lambda \approx 1240/E_{g} \quad (nm)
   \end{equation}
 
@@ -208,7 +210,7 @@
     \begin{minipage}[b]{0.48\textwidth}
       \centering
       \includegraphics[width=0.46\textwidth]{zhengxiangdianlu.jpg}
-      \caption{二极管正向连通电路示意图}\label{zhengxiangdianlu.jpg}
+      \caption{二极管正向连通电路示意图}\label{zhengxiangdianlu}
     \end{minipage}
     \begin{minipage}[b]{0.48\textwidth}
       \centering
@@ -253,135 +255,177 @@
 
 
 \section{实验原始数据}
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
-  \includegraphics[width=1\textwidth]{yuanshishujv.jpg}
-  \caption{实验原始数据1}\label{yuanshishujv}
+  \includegraphics[width=0.9\textwidth,height=0.8\textheight]{dianzu.jpg}
+  \caption{实验原始数据1}\label{dianzu}
 \end{figure}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 \newpage
-\section{实验数据处理}
-弹簧质量显示如表\ref{tanhuangzhiliang}
-\begin{table}[h]
-  \centering   
-  \caption{弹簧弹性系数及该系数弹簧的质量对应关系示意图}\label{tanhuangzhiliang}
-  \begin{tabular}{| l || l |}
-      \hline
-      弹性系数的弹簧 & 弹簧质量(克)\\
-      \hline
-      0.961 & 13.61 \\
-      \hline
-      5.499 & 20.28 \\
-      \hline
-      8.828 & 17.62 \\
-      \hline
-      2.510 & 17.06 \\
-      \hline                       
-  \end{tabular}
-\end{table}
-  \subsection{验证位移方程}
-  \begin{figure}[b]
-    \centering
-    \begin{minipage}[b]{0.48\textwidth}
-      \centering
-      \includegraphics[width=0.46\textwidth]{yanzhengweiyifangchengshujv.png}
-      \caption{验证位移方程数据}\label{yanzhengweiyifangchengshujv}
-    \end{minipage}
-    \begin{minipage}[b]{0.48\textwidth}
-      \centering
-      \includegraphics[width=0.46\textwidth]{yanzhengweiyifangchengzuotu.png}
-      \caption{验证位移方程作图法}\label{yanzhengweiyifangchengzuotu}
-    \end{minipage}
-  \end{figure}
 
-  实验数据处理如图\ref{yanzhengweiyifangchengshujv}，其中计算可得实验理论$A_{0}=2.12dm$，而实验所得
-  斜率，即实际测量的实际$A_{0}=2.1459dm$，两者的相差程度，即百分差为$1.2217\%$。可以证明位移方程
-  $x=A\sin \left( \omega t + {\varphi}_{0} \right) \mbox{在}{\varphi}_{0} = 0 $时成立。
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth,height=0.8\textheight]{LED1.jpg}
+  \caption{实验原始数据2}\label{LED1}
+\end{figure}
+\newpage
 
-  实验中的误差可能来源于
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth,height=0.8\textheight]{LED2.jpg}
+  \caption{实验原始数据3}\label{LED2}
+\end{figure}
+\newpage
 
-  1、每次释放位置不能保证完全相同
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth,height=0.8\textheight]{putong1.jpg}
+  \caption{实验原始数据4}\label{putong1}
+\end{figure}
+\newpage
 
-  2、光电门传感器精度限制，以及挡光板的宽度
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth,height=0.8\textheight]{putong2.jpg}
+  \caption{实验原始数据5}\label{putong2}
+\end{figure}
+\newpage
 
-  3、实验中气垫滑轨不能保证完全水平，出现倾斜
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth,height=0.8\textheight]{putong3.jpg}
+  \caption{实验原始数据6}\label{putong3}
+\end{figure}
+\newpage
 
-  \subsection{验证振动周期与初始状态无关}
-  \begin{figure}[t]
-    \centering
-    \includegraphics[height=0.3\textwidth,width=0.5\textwidth]{yanzhengwuguanshujv.png}
-    \caption{验证振动周期与初始状态无关数据处理}\label{yanzhengwuguanshujv}
-  \end{figure}
-  验证振动周期与初始状态无关实验的数据及数据处理如图\ref{yanzhengwuguanshujv}所展示的那样。每个数据和该
-  数据所在组平均值之间的相差不超过0.01s，除以八个周期后近似可以为相等，标准差也小于0.01。能验证振动周期与
-  初始状态无关。
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth,height=0.8\textheight]{wenyazhengxiang1.jpg}
+  \caption{实验原始数据7}\label{wenyazhengxiang1}
+\end{figure}
+\newpage
 
-  实验中的误差可能来源于
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth,height=0.8\textheight]{wenyazhengxiang2.jpg}
+  \caption{实验原始数据8}\label{wenyazhengxiang2}
+\end{figure}
+\newpage
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth,height=0.8\textheight]{wenyafanxiang.jpg}
+  \caption{实验原始数据9}\label{wenyafanxiang}
+\end{figure}
+\newpage
+
+
+
+
+
+% \section{实验数据处理}
+% 弹簧质量显示如表\ref{tanhuangzhiliang}
+% \begin{table}[h]
+%   \centering   
+%   \caption{弹簧弹性系数及该系数弹簧的质量对应关系示意图}\label{tanhuangzhiliang}
+%   \begin{tabular}{| l || l |}
+%       \hline
+%       弹性系数的弹簧 & 弹簧质量(克)\\
+%       \hline
+%       0.961 & 13.61 \\
+%       \hline
+%       5.499 & 20.28 \\
+%       \hline
+%       8.828 & 17.62 \\
+%       \hline
+%       2.510 & 17.06 \\
+%       \hline                       
+%   \end{tabular}
+% \end{table}
+%   \subsection{验证位移方程}
+%   \begin{figure}[b]
+%     \centering
+%     \begin{minipage}[b]{0.48\textwidth}
+%       \centering
+%       \includegraphics[width=0.46\textwidth]{yanzhengweiyifangchengshujv.png}
+%       \caption{验证位移方程数据}\label{yanzhengweiyifangchengshujv}
+%     \end{minipage}
+%     \begin{minipage}[b]{0.48\textwidth}
+%       \centering
+%       \includegraphics[width=0.46\textwidth]{yanzhengweiyifangchengzuotu.png}
+%       \caption{验证位移方程作图法}\label{yanzhengweiyifangchengzuotu}
+%     \end{minipage}
+%   \end{figure}
+
+%   实验数据处理如图\ref{yanzhengweiyifangchengshujv}，其中计算可得实验理论$A_{0}=2.12dm$，而实验所得
+%   斜率，即实际测量的实际$A_{0}=2.1459dm$，两者的相差程度，即百分差为$1.2217\%$。可以证明位移方程
+%   $x=A\sin \left( \omega t + {\varphi}_{0} \right) \mbox{在}{\varphi}_{0} = 0 $时成立。
+
+%   实验中的误差可能来源于
+
+%   1、每次释放位置不能保证完全相同
+
+%   2、光电门传感器精度限制，以及挡光板的宽度
+
+%   3、实验中气垫滑轨不能保证完全水平，出现倾斜
+
+%   \subsection{验证振动周期与初始状态无关}
+%   \begin{figure}[t]
+%     \centering
+%     \includegraphics[height=0.3\textwidth,width=0.5\textwidth]{yanzhengwuguanshujv.png}
+%     \caption{验证振动周期与初始状态无关数据处理}\label{yanzhengwuguanshujv}
+%   \end{figure}
+%   验证振动周期与初始状态无关实验的数据及数据处理如图\ref{yanzhengwuguanshujv}所展示的那样。每个数据和该
+%   数据所在组平均值之间的相差不超过0.01s，除以八个周期后近似可以为相等，标准差也小于0.01。能验证振动周期与
+%   初始状态无关。
+
+%   实验中的误差可能来源于
   
-  1、每次释放位置不能保证完全相同
+%   1、每次释放位置不能保证完全相同
 
-  2、光电门传感器精度限制，以及挡光板的宽度
+%   2、光电门传感器精度限制，以及挡光板的宽度
 
-  3、实验中气垫滑轨不能保证完全水平，出现倾斜
+%   3、实验中气垫滑轨不能保证完全水平，出现倾斜
 
-  \subsection{验证周期公式$T=2\pi \sqrt{\frac{m}{k}}$}
-  \begin{figure}[b]
-    \centering
-    \begin{minipage}[b]{0.48\textwidth}
-      \centering
-      \includegraphics[width=0.46\textwidth]{yanzhengzhouqihanshu.png}
-      \caption{验证周期公式$T=2\pi \sqrt{\frac{m}{k}}$实验数据}\label{yanzhengzhouqihanshu}
-    \end{minipage}
-    \begin{minipage}[b]{0.48\textwidth}
-      \centering
-      \includegraphics[width=0.46\textwidth]{yanzhengzhouqihanshuzuotu.png}
-      \caption{验证周期公式$T=2\pi \sqrt{\frac{m}{k}}$数据处理}\label{yanzhengzhouqigongshizuotu}
-    \end{minipage}
-  \end{figure}
-  验证周期公式的实验数据如图\ref{yanzhengzhouqihanshu}所示，实验数据处理如图\ref{yanzhengzhouqigongshizuotu}
-  所示那样。本实验误差较大，涉及不确定度较多。
-  实验中理论图像的斜率等于$\frac{1}{2}$，实验中理论截距为$\ln{2\pi}$。实际实验中图像的
-  斜率等于$0.3122$，实际截距为$1.7187$。
-  实验中理论和实际数据的百分差，斜率为$37.56\%$，截距为$6.48\%$
+%   \subsection{验证周期公式$T=2\pi \sqrt{\frac{m}{k}}$}
+%   \begin{figure}[b]
+%     \centering
+%     \begin{minipage}[b]{0.48\textwidth}
+%       \centering
+%       \includegraphics[width=0.46\textwidth]{yanzhengzhouqihanshu.png}
+%       \caption{验证周期公式$T=2\pi \sqrt{\frac{m}{k}}$实验数据}\label{yanzhengzhouqihanshu}
+%     \end{minipage}
+%     \begin{minipage}[b]{0.48\textwidth}
+%       \centering
+%       \includegraphics[width=0.46\textwidth]{yanzhengzhouqihanshuzuotu.png}
+%       \caption{验证周期公式$T=2\pi \sqrt{\frac{m}{k}}$数据处理}\label{yanzhengzhouqigongshizuotu}
+%     \end{minipage}
+%   \end{figure}
+%   验证周期公式的实验数据如图\ref{yanzhengzhouqihanshu}所示，实验数据处理如图\ref{yanzhengzhouqigongshizuotu}
+%   所示那样。本实验误差较大，涉及不确定度较多。
+%   实验中理论图像的斜率等于$\frac{1}{2}$，实验中理论截距为$\ln{2\pi}$。实际实验中图像的
+%   斜率等于$0.3122$，实际截距为$1.7187$。
+%   实验中理论和实际数据的百分差，斜率为$37.56\%$，截距为$6.48\%$
 
-  实验中的误差可能来源于 
+%   实验中的误差可能来源于 
   
-  1、每次释放位置不能保证完全相同
+%   1、每次释放位置不能保证完全相同
 
-  2、光电门传感器精度限制，以及挡光板的宽度引入的误差。同时涉及质量称量，引入新的误差
+%   2、光电门传感器精度限制，以及挡光板的宽度引入的误差。同时涉及质量称量，引入新的误差
 
-  3、实验中气垫滑轨不能保证完全水平，出现倾斜
+%   3、实验中气垫滑轨不能保证完全水平，出现倾斜
 
-  实验中理论和实际的误差比较大，需要更多数据及更进一步的实验。其中斜率的误差较截距较大。
-\newpage
+%   实验中理论和实际的误差比较大，需要更多数据及更进一步的实验。其中斜率的误差较截距较大。
+% \newpage
 
-\section{思考题}
-  \subsection{小灯泡不发光的时候电阻为“冷态电阻”。设计实验测得冷态电阻}
+% \section{思考题}
+%   \subsection{小灯泡不发光的时候电阻为“冷态电阻”。设计实验测得冷态电阻}
 
-  \subsection{如何根据实验数据获得pn结$I-U$关系经验公式}
+%   \subsection{如何根据实验数据获得pn结$I-U$关系经验公式}
 
-  \subsection{如何采用光学方法测量并获得发光二极管的峰值波长}
+%   \subsection{如何采用光学方法测量并获得发光二极管的峰值波长}
 
-  \subsection{如果使用示波器直接观察稳压二极管的伏安特性曲线，在本实验基础上需要增加什么装置。对比试验并列出说明关键操作步骤}
-\newpage
+%   \subsection{如果使用示波器直接观察稳压二极管的伏安特性曲线，在本实验基础上需要增加什么装置。对比试验并列出说明关键操作步骤}
+% \newpage
 
 \section{实验中个人的思考与感想}
   \subsection{对于实验个人观点}
