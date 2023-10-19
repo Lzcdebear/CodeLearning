@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.21)  16 OCT 2023 18:49
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.21)  17 OCT 2023 04:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -457,14 +457,43 @@ File: figure//wenyazhengxiang2.jpg Graphic file (type bmp)
  [17]
 File: figure//wenyafanxiang.jpg Graphic file (type bmp)
 <figure//wenyafanxiang.jpg>
- [18] [19] (./Article.aux) ) 
+ [18]
+File: figure//dianzushujv.png Graphic file (type bmp)
+<figure//dianzushujv.png>
+File: figure//dianzuzuotu.png Graphic file (type bmp)
+<figure//dianzuzuotu.png>
+File: figure//putongshujv.png Graphic file (type bmp)
+<figure//putongshujv.png>
+File: figure//putongzuotu.png Graphic file (type bmp)
+<figure//putongzuotu.png>
+ [19]
+File: figure//wenyazhengxiangshujv.png Graphic file (type bmp)
+<figure//wenyazhengxiangshujv.png>
+File: figure//wenyazhengxiangzuotu.png Graphic file (type bmp)
+<figure//wenyazhengxiangzuotu.png>
+ [20]
+File: figure//wenyafanxiangshujv.png Graphic file (type bmp)
+<figure//wenyafanxiangshujv.png>
+ [21]
+File: figure//wenyafanxiangzuotu.png Graphic file (type bmp)
+<figure//wenyafanxiangzuotu.png>
+ [22]
+File: figure//ledshujv.png Graphic file (type bmp)
+<figure//ledshujv.png>
+File: figure//ledzuotu1.png Graphic file (type bmp)
+<figure//ledzuotu1.png>
+File: figure//ledzuotu2.png Graphic file (type bmp)
+<figure//ledzuotu2.png>
+File: figure//ledzuotu3.png Graphic file (type bmp)
+<figure//ledzuotu3.png>
+ [23] [24] [25] [26] (./Article.aux) ) 
 Here is how much of TeX's memory you used:
- 9489 strings out of 478630
- 253118 string characters out of 5847730
+ 9621 strings out of 478630
+ 256563 string characters out of 5847730
  1860012 words of memory out of 5000000
- 29468 multiletter control sequences out of 15000+600000
+ 29588 multiletter control sequences out of 15000+600000
  517024 words of font info for 78 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 89i,6n,97p,362b,298s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,8n,97p,362b,298s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Article.pdf (20 pages).
+Output written on Article.pdf (27 pages).

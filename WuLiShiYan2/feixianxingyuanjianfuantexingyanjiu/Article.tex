@@ -203,8 +203,11 @@
 稳压电源、电阻箱、可变电位器、九孔板、待测试二极管、待测试稳压二极管、待测试小灯泡、导线若干
 
 \section{实验内容及实验步骤}
-  \subsection{测量普通二极管的正向伏安特性曲线}
+  \subsection{测量普通电阻通电后的伏安特性曲线}
+  连通电路，测量在不同电压下流过电阻的电流大小。
+  并记录实验数据，绘制图像观察直线斜率和电阻阻值大小。
 
+  \subsection{测量普通二极管的正向伏安特性曲线}
   \begin{figure}[b]
     \centering
     \begin{minipage}[b]{0.48\textwidth}
@@ -226,7 +229,7 @@
   若反向链接，则显示为短路状态。\\
   若正反两个方向测得的结果一致，则表明该二极管已损坏。
 
-  \(2\) 按照图\ref{zhengxiangdianlu}连接电路，将普通二极管连入伏安特性测量电路中。链接的时候注意
+  \(2\) 按照图\ref{zhengxiangdianlu}连接电路，将普通二极管连入伏安特性测量电路中。连接的时候注意
         正负极链接电源是否正确。调节电压，从0开始缓慢增加，观察电流。其中电流不要超过20mA，以免烧坏二极管。
         实验中需要测试15组数据。
 
@@ -322,116 +325,167 @@
 
 
 
-% \section{实验数据处理}
-% 弹簧质量显示如表\ref{tanhuangzhiliang}
-% \begin{table}[h]
-%   \centering   
-%   \caption{弹簧弹性系数及该系数弹簧的质量对应关系示意图}\label{tanhuangzhiliang}
-%   \begin{tabular}{| l || l |}
-%       \hline
-%       弹性系数的弹簧 & 弹簧质量(克)\\
-%       \hline
-%       0.961 & 13.61 \\
-%       \hline
-%       5.499 & 20.28 \\
-%       \hline
-%       8.828 & 17.62 \\
-%       \hline
-%       2.510 & 17.06 \\
-%       \hline                       
-%   \end{tabular}
-% \end{table}
-%   \subsection{验证位移方程}
-%   \begin{figure}[b]
-%     \centering
-%     \begin{minipage}[b]{0.48\textwidth}
-%       \centering
-%       \includegraphics[width=0.46\textwidth]{yanzhengweiyifangchengshujv.png}
-%       \caption{验证位移方程数据}\label{yanzhengweiyifangchengshujv}
-%     \end{minipage}
-%     \begin{minipage}[b]{0.48\textwidth}
-%       \centering
-%       \includegraphics[width=0.46\textwidth]{yanzhengweiyifangchengzuotu.png}
-%       \caption{验证位移方程作图法}\label{yanzhengweiyifangchengzuotu}
-%     \end{minipage}
-%   \end{figure}
+\section{实验数据处理}
+  \subsection{测量普通电阻通电后的伏安特性曲线}
+  \begin{wrapfigure}[4]{l}{4cm}\label{dianzushujv}
+    \centering
+    \includegraphics[width=0.1\textwidth,height=0.4\textheight]{dianzushujv.png}
+    \caption{电阻数据}
+  \end{wrapfigure}
 
-%   实验数据处理如图\ref{yanzhengweiyifangchengshujv}，其中计算可得实验理论$A_{0}=2.12dm$，而实验所得
-%   斜率，即实际测量的实际$A_{0}=2.1459dm$，两者的相差程度，即百分差为$1.2217\%$。可以证明位移方程
-%   $x=A\sin \left( \omega t + {\varphi}_{0} \right) \mbox{在}{\varphi}_{0} = 0 $时成立。
+  实验中测得的电阻导通数据如图\ref{dianzushujv}。对数据进行处理最终得到图\ref{dianzuzuotu}。
 
-%   实验中的误差可能来源于
+  \begin{figure}[H]\label{dianzuzuotu}
+    \centering
+    \includegraphics[width=0.4\textwidth,height=0.3\textheight]{dianzuzuotu.png}
+    \caption{电阻结果作图}
+  \end{figure}
 
-%   1、每次释放位置不能保证完全相同
+  最终得到的实验结果较为满意，基本符合欧姆定律，可能由于测量时间较短，所以电阻发热不严重没有
+  影响其阻值，得到的伏安特性曲线也是较为完美的直线。实验较为成功。
 
-%   2、光电门传感器精度限制，以及挡光板的宽度
+  \subsection{测量普通二极管的正向伏安特性曲线}
+  \begin{wrapfigure}[2]{l}{4cm}\label{putongshujv}
+    \centering
+    \includegraphics[width=0.1\textwidth,height=0.3\textheight]{putongshujv.png}
+    \caption{普通二极管数据}
+  \end{wrapfigure}
 
-%   3、实验中气垫滑轨不能保证完全水平，出现倾斜
+  实验中测得的普通二极管
+  伏安特性曲线数据如图\ref{putongshujv}。对数据进行处理最终得到图\ref{putongzuotu}。
 
-%   \subsection{验证振动周期与初始状态无关}
-%   \begin{figure}[t]
-%     \centering
-%     \includegraphics[height=0.3\textwidth,width=0.5\textwidth]{yanzhengwuguanshujv.png}
-%     \caption{验证振动周期与初始状态无关数据处理}\label{yanzhengwuguanshujv}
-%   \end{figure}
-%   验证振动周期与初始状态无关实验的数据及数据处理如图\ref{yanzhengwuguanshujv}所展示的那样。每个数据和该
-%   数据所在组平均值之间的相差不超过0.01s，除以八个周期后近似可以为相等，标准差也小于0.01。能验证振动周期与
-%   初始状态无关。
+  \begin{figure}[H]\label{putongzuotu}
+    \centering
+    \includegraphics[width=0.4\textwidth,height=0.3\textheight]{putongzuotu.png}
+    \caption{普通二极管伏安特性曲线作图}
+  \end{figure}
 
-%   实验中的误差可能来源于
+  最终得到的实验结果表明整个实验数据得到的图形基本符合非线性元件的e为底的指数曲线拟合结果。
+  \subsection{测量稳压二极管伏安特性曲线}
+  实验包括两部分，一部分是正向导通的情况下的伏安特性曲线，另一部分是反向导通的情况下的伏安特性曲线。
   
-%   1、每次释放位置不能保证完全相同
+  \subsubsection{测量稳压二极管的正向伏安特性曲线}
 
-%   2、光电门传感器精度限制，以及挡光板的宽度
+  \begin{wrapfigure}[4]{l}{4cm}\label{wenyazhengxiangshujv}
+    \centering
+    \includegraphics[width=0.1\textwidth,height=0.4\textheight]{wenyazhengxiangshujv.png}
+    \caption{稳压二极管正向导通数据}
+  \end{wrapfigure}
+  实验中测得的稳压二极管正向导通的时候的
+  伏安特性曲线数据如图\ref{wenyazhengxiangshujv}。对数据进行处理最终得到图\ref{wenyazhengxiangzuotu}。
+  \begin{figure}[H]\label{wenyazhengxiangzuotu}
+    \centering
+    \includegraphics[width=0.4\textwidth,height=0.3\textheight]{wenyazhengxiangzuotu.png}
+    \caption{稳压二极管正向导通伏安特性曲线作图}
+  \end{figure}
 
-%   3、实验中气垫滑轨不能保证完全水平，出现倾斜
+  \subsubsection{测量稳压二极管的反向伏安特性曲线}
 
-%   \subsection{验证周期公式$T=2\pi \sqrt{\frac{m}{k}}$}
-%   \begin{figure}[b]
-%     \centering
-%     \begin{minipage}[b]{0.48\textwidth}
-%       \centering
-%       \includegraphics[width=0.46\textwidth]{yanzhengzhouqihanshu.png}
-%       \caption{验证周期公式$T=2\pi \sqrt{\frac{m}{k}}$实验数据}\label{yanzhengzhouqihanshu}
-%     \end{minipage}
-%     \begin{minipage}[b]{0.48\textwidth}
-%       \centering
-%       \includegraphics[width=0.46\textwidth]{yanzhengzhouqihanshuzuotu.png}
-%       \caption{验证周期公式$T=2\pi \sqrt{\frac{m}{k}}$数据处理}\label{yanzhengzhouqigongshizuotu}
-%     \end{minipage}
-%   \end{figure}
-%   验证周期公式的实验数据如图\ref{yanzhengzhouqihanshu}所示，实验数据处理如图\ref{yanzhengzhouqigongshizuotu}
-%   所示那样。本实验误差较大，涉及不确定度较多。
-%   实验中理论图像的斜率等于$\frac{1}{2}$，实验中理论截距为$\ln{2\pi}$。实际实验中图像的
-%   斜率等于$0.3122$，实际截距为$1.7187$。
-%   实验中理论和实际数据的百分差，斜率为$37.56\%$，截距为$6.48\%$
+  \begin{wrapfigure}[3]{l}{4cm}\label{wenyafanxiangshujv}
+    \centering
+    \includegraphics[width=0.3\textwidth,height=0.4\textheight]{wenyafanxiangshujv.png}
+    \caption{稳压二极管反向导通数据}
+  \end{wrapfigure}
+  实验中测得的稳压二极管反向导通的时候的
+  伏安特性曲线数据如图\ref{wenyafanxiangshujv}。对数据进行处理最终得到图\ref{wenyafanxiangzuotu}。
+  \newpage
+  \begin{figure}[h]\label{wenyafanxiangzuotu}
+    \centering
+    \includegraphics[width=0.4\textwidth,height=0.3\textheight]{wenyafanxiangzuotu.png}
+    \caption{稳压二极管反向导通伏安特性曲线作图}
+  \end{figure}
 
-%   实验中的误差可能来源于 
-  
-%   1、每次释放位置不能保证完全相同
+  从实验结果和数据处理后形成的图像观察可以得出无论是正向导通还是反向导通，稳压二极管
+  曲线的趋势和普通二极管正向导通时候的图像是相似的，而具体而言，正向导通的导通电压阈值
+  相较于反向导通的导通电压阈值要小很多，这也体现了二极管单向导通的性质，即便是稳压二极管上
+  仍有体现。并且稳压二极管的曲线更加陡，相同电压变化下电流变化更大。
+\newpage
 
-%   2、光电门传感器精度限制，以及挡光板的宽度引入的误差。同时涉及质量称量，引入新的误差
+  \subsection{测量发光二极管的正向伏安特性曲线}
+  \begin{figure}[H]\label{ledshujv}
+    \centering
+    \begin{minipage}{\textwidth}
+    \includegraphics[width=0.2\textwidth,height=0.5\textheight]{ledshujv.png}
+    \end{minipage}
+    \caption{LED灯数据}
+  \end{figure}
+    实验中测得的LED灯的
+  伏安特性曲线数据如图\ref{ledshujv}。对数据进行处理最终得到图\ref{ledzuotu}。
+  \begin{figure}[H]\label{ledzuotu}
+    \centering
+    \begin{minipage}{\linewidth}
+    \includegraphics[width=0.47\textwidth,height=0.3\textheight]{ledzuotu1.png}\hfill
+    \includegraphics[width=0.47\textwidth,height=0.3\textheight]{ledzuotu2.png}\hfill
+    \includegraphics[width=0.47\textwidth,height=0.3\textheight]{ledzuotu3.png}
+    \end{minipage}
+    \caption{LED灯作图结果}
+  \end{figure}
 
-%   3、实验中气垫滑轨不能保证完全水平，出现倾斜
+  从实验结果和数据处理后形成的图像观察可以得出无论哪种颜色的发光半导体最终产生的曲线
+  依旧和普通二极管的伏安特性曲线相似。而不同颜色的二极管的导通后的倾斜趋势不同，这也
+  体现在不同二极管的所需要的导通电压阈值不同。通过计算最终得到的灯管的波长如下表\ref{bochang}
 
-%   实验中理论和实际的误差比较大，需要更多数据及更进一步的实验。其中斜率的误差较截距较大。
-% \newpage
+  \begin{table}[h]
+    \centering   
+    \caption{不同LED灯管发光波长计算}\label{bochang}
+    \begin{tabular}{| l || l |}
+        \hline
+        发光灯管颜色 & 波长数值\\
+        \hline
+        红色 & 707.567 \\
+        \hline
+        黄色 & 676.687 \\
+        \hline
+        绿色 & 644.808 \\
+        \hline
+    \end{tabular}
+  \end{table}
 
-% \section{思考题}
-%   \subsection{小灯泡不发光的时候电阻为“冷态电阻”。设计实验测得冷态电阻}
+  最终得到的结果误差较大，出现明显向红光偏移的趋势，分析误差产生原因：
 
-%   \subsection{如何根据实验数据获得pn结$I-U$关系经验公式}
+  1.  二极管发热导致伏安特性曲线不是相同状态下测得的
 
-%   \subsection{如何采用光学方法测量并获得发光二极管的峰值波长}
+  2.  二极管发光的时候也有红光产生，但是由于灯罩原因滤掉红光
 
-%   \subsection{如果使用示波器直接观察稳压二极管的伏安特性曲线，在本实验基础上需要增加什么装置。对比试验并列出说明关键操作步骤}
-% \newpage
+  3.  二极管出现故障，或者仪器误差
+
+  4.  测量过程中未等待二极管达到稳定工作状态就记录数据
+
+\section{思考题}
+  \subsection{思考题二}
+  可以通过实验数据并进行拟合后得到曲线公式，此公式就是经验公式。
+  \subsection{思考题三}
+  可以直接检测光谱和光强，然后就能得出峰值波长。同样也可以使用
+  双缝干涉类似的实验通过测量干涉图像数据通过计算得到峰值波长。
+  \subsection{思考题四}
+  使用示波器直接显示稳压二极管的伏安特性曲线还需要可变直流电源，该电源
+  还需要能够改变电流方向。同时，还需要示波器一台。电路连接：
+  将直流电源的正极连接到稳压二极管的阳极。
+  再将直流电源的负极连接到稳压二极管的阴极。
+  连接一个限制电流的电阻到稳压二极管的阴极，然后将另一端连接到直流电源的负极。
+  连接示波器的探头，一个连接到稳压二极管的阳极，另一个连接到电阻和直流电源之间的连接点。
+
+  然后控制直流电源，逐步增加电流大小，注意记录数据点位置。
+
+  实验中通过调节电流源来控制通过二极管的电流。在实验中需要注意电流大小变化不能太大。
 
 \section{实验中个人的思考与感想}
   \subsection{对于实验个人观点}
+  实验通过这种描点的方法来得到二极管的伏安特性曲线，这种方法也是非常常见的。
+  实际实验中的电路和书上的电路时不太一样的，所以实验中也无法得到书上要求的0V的电压数据，
+  都是从零点几的电压开始调节。实验中可以有限压和限流两个旋钮进行调节二极管两侧分得电压，
+  其中限压的控制更加大范围，而限流是在限压的基础上进行控制的。这可以避免电压过大，也方便
+  实验中控制电压。
 
+  实验中二极管会发热，在使用了一段时间以后二极管温度会有所上升，虽然不大，但是总是有些
+  发热，所以还是会对实验中的数据测量产生误差。
+
+  同样实验中一个电路做完所有实验也存在一定不合理性，因为不同二极管的导通电压阈值是不同的，
+  导通后的曲线也是不同的，所以可能出现实验中对于某个二极管合适，但是对于另一个二极管电压
+  太小或者太大的问题，这也是无法达到0V带来的问题。并且实验中在测量的时候经常会出现处在某个
+  范围电压的时候电流一直跳动的情况，这也会读数产生很大影响，很难确定具体数据哪个更合适。
   \subsection{实验中的总结}
-
-
-
+  小幅度调节电压，测量电压和电流数据，将数据记录并作图，得到伏安特性曲线。
+  实验中需要注意等待电流数据稳定，读数也要注意数据跳动不停的问题，还有要尽量大范围测量
+  二极管数据，在能使二极管正常工作的前提下尽量扩大电压调节的范围。
 \end{document}
