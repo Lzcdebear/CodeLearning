@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.21)  19 OCT 2023 19:13
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.21)  23 OCT 2023 18:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -419,33 +419,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <10.53937> not available
 (Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 61.
  [1]
-Underfull \hbox (badness 10000) in paragraph at lines 64--68
-
- []
-
 File: figure//RLCdianlu.jpg Graphic file (type bmp)
 <figure//RLCdianlu.jpg>
 File: figure//RLCwentaitexing.jpg Graphic file (type bmp)
 <figure//RLCwentaitexing.jpg>
-
-Overfull \hbox (2.33975pt too wide) in paragraph at lines 79--90
-[]$[]$  $[]$ 
- []
-
-[2]
+ [2]
 File: figure//RLCxiangpintexing.jpg Graphic file (type bmp)
 <figure//RLCxiangpintexing.jpg>
-
-Overfull \hbox (9.93507pt too wide) in paragraph at lines 118--119
- [][] 
- []
-
-
-Underfull \hbox (badness 1590) in paragraph at lines 115--120
-[]\TU/SimSun(0)/m/n/10.53937 而 实 验 中 相 位 差 随 着 电 源 频 率 变 化 关 系 如 图 \TU/lmr/m/n/10.53937 2.1[]\TU/SimSun(0)/m/n/10.53937 所 展 示 的 那 样。|
- []
-
-[3] [4] [5] [6] [7] (./Article.aux) ) 
+ [3] [4] [5] [6] [7] (./Article.aux) ) 
 Here is how much of TeX's memory you used:
  9402 strings out of 478630
  250950 string characters out of 5847730

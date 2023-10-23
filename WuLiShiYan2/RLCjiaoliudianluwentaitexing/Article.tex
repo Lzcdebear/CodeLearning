@@ -61,10 +61,10 @@
 \newpage
 \section{实验摘要}
   \subsection{实验概要}
-  电阻$R$，电感$L$和电容$C$是电路中最常见的三种元件。其中每个元件的作用如下\\
-  电阻：限流作用，类似于接在两根大直径管子之间的小直径管子限制水流量的作用，也能保护电路。\\
-  电容：电容器是一种能够储藏电荷的电子元件。\\
-  电感：主要起到滤波、振荡、延迟、陷波等作用，还有筛选信号、过滤噪声、稳定电流及抑制电磁波干扰等作用。\\
+  电阻R，电感L和电容C是电路中最常见的三种元件。其中每个元件的作用如下：\newline
+  电阻：限流作用，类似于接在两根大直径管子之间的小直径管子限制水流量的作用，也能保护电路。\newline
+  电容：电容器是一种能够储藏电荷的电子元件。\newline
+  电感：主要起到滤波、振荡、延迟、陷波等作用，还有筛选信号、过滤噪声、稳定电流及抑制电磁波干扰等作用。
 
   本实验研究RLC交流电路的稳态特征，并对RLC串联电路的品质因数Q进行测量
 
@@ -76,13 +76,13 @@
   3.\quad 了解交流电路的连接要求，能够根据Q值的测量要求选择频率调节的范围。
 
 \begin{figure}[H]
-  \begin{minipage}[H]{0.5\textwidth}\label{rlcdianlu}
+  \begin{minipage}[H]{0.4\textwidth}\label{rlcdianlu}
   \centering
   \caption{RLC电路}
   \includegraphics[width=\textwidth]{RLCdianlu.jpg}
   \end{minipage}
   \hfill
-  \begin{minipage}[H]{0.5\textwidth}\label{rlcwentaitexing}
+  \begin{minipage}[H]{0.4\textwidth}\label{rlcwentaitexing}
   \centering
   \caption{RLC稳态特性}
   \includegraphics[width=\textwidth]{RLCwentaitexing.jpg}
@@ -112,13 +112,12 @@
     \varphi = \arctan \frac{\omega L-\frac{1}{\omega C}}{R+R_{L}} 
   \end{equation}
   
-  而实验中相位差随着电源频率变化关系如图\ref{rlcxiangpintexing}所展示的那样。
   \begin{wrapfigure}[13]{l}{4.5cm}\label{rlcxiangpintexing}
     \centering
-    \includegraphics[width=0.4\textwidth,height=0.3\textheight]{RLCxiangpintexing.jpg}
+    \includegraphics[width=0.3\textwidth,height=0.3\textheight]{RLCxiangpintexing.jpg}
     \caption{RLC相频特性}
   \end{wrapfigure}
-
+  而实验中理论上应该出现的相位差随着电源频率变化关系如图\ref{rlcxiangpintexing}所展示的那样。
   从图\ref{rlcxiangpintexing}中以及$\varphi$的表达式式\ref{phibiaodashi}可以得出以下结论：
 
   1.\quad  当$\omega L > \frac{1}{\omega C}$时，有$\varphi > 0$，电流的相位落后于电源电压，整个电路
@@ -193,8 +192,20 @@
 \section{实验原始数据}
 % \begin{figure}[H]
 %   \centering
-%   \includegraphics[width=0.9\textwidth,height=0.8\textheight]{dianzu.jpg}
-%   \caption{实验原始数据1}\label{dianzu}
+%   \includegraphics[width=0.9\textwidth,height=0.8\textheight]{yuanshishujv1.jpg}
+%   \caption{实验原始数据1}
+% \end{figure}
+% \newpage
+% \begin{figure}[H]
+%   \centering
+%   \includegraphics[width=0.9\textwidth,height=0.8\textheight]{yuanshishujv2.jpg}
+%   \caption{实验原始数据2}
+% \end{figure}
+% \newpage
+% \begin{figure}[H]
+%   \centering
+%   \includegraphics[width=0.9\textwidth,height=0.8\textheight]{yuanshishujv3.jpg}
+%   \caption{实验原始数据3}
 % \end{figure}
 \newpage
 
@@ -334,6 +345,14 @@
 
 \section{实验中个人的思考与感想}
   \subsection{对于实验个人观点}
+  实验中使用的器材和书本使用不一样，所用的器材能够通过调节旋钮改变电压表所接接口。实验中可以通过在不同接口处
+  连接不同电路部分而可以通过调节旋钮改变实验中电压表所接电路。虽然这样可以方便实验记录，但是实验中的电路连接会导致
+  很多问题，导致实验中出现很多未知的问题。而且更多的接口也可能由于接口接触不良等问题导致实验中出现波形难以察觉的问题。
+
+  实验中测量相位差的方式是通过调节示波器上的指针位置读取两指针之间的$\frac{1}{\Delta t}$在进行计算的方法进行实验测试。
+  这其中会引入很多不确定度，在调节指针的时候也会出现很大的误差，由于很难调节两指针位置能够恰好满足实验的要求，导致实验
+  误差进一步增大。当然这可能和我使用的实验器材有关，似乎隔壁几位的器材由于更为先进所以能直接读出相位差，相较于他们我实验的
+  误差应该会更大。
   \subsection{实验中的总结}
 
 \end{document}
