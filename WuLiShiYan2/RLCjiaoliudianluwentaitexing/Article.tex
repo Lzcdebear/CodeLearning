@@ -190,158 +190,115 @@
 \newpage
 
 \section{实验原始数据}
-% \begin{figure}[H]
-%   \centering
-%   \includegraphics[width=0.9\textwidth,height=0.8\textheight]{yuanshishujv1.jpg}
-%   \caption{实验原始数据1}
-% \end{figure}
-% \newpage
-% \begin{figure}[H]
-%   \centering
-%   \includegraphics[width=0.9\textwidth,height=0.8\textheight]{yuanshishujv2.jpg}
-%   \caption{实验原始数据2}
-% \end{figure}
-% \newpage
-% \begin{figure}[H]
-%   \centering
-%   \includegraphics[width=0.9\textwidth,height=0.8\textheight]{yuanshishujv3.jpg}
-%   \caption{实验原始数据3}
-% \end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth,height=0.8\textheight]{yuanshishujv.jpg}
+  \caption{实验原始数据1}
+\end{figure}
 \newpage
+
 
 \section{实验数据处理}
   \subsection{测量RLC串联电路的幅频特性和相频特性}
-%   \begin{wrapfigure}[4]{l}{4cm}\label{dianzushujv}
-%     \centering
-%     \includegraphics[width=0.1\textwidth,height=0.4\textheight]{dianzushujv.png}
-%     \caption{电阻数据}
-%   \end{wrapfigure}
+  实验中使用的器材如图\ref{qicai}
+  \begin{figure}[htbp]\label{qicai}
+    \begin{minipage}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{qicai1}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{qicai2}
+    \end{minipage}
+    
+    \begin{minipage}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{qicai3}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{qicai4}
+    \end{minipage}
+    \caption{实验所用器材展示}
+    \end{figure}
 
-%   实验中测得的电阻导通数据如图\ref{dianzushujv}。对数据进行处理最终得到图\ref{dianzuzuotu}。
+  \begin{figure}[H]\label{shujv}
+    \centering
+    \includegraphics[width=0.6\textwidth,height=0.4\textheight]{shujv.png}
+    \caption{实验数据}
+  \end{figure}
 
-%   \begin{figure}[H]\label{dianzuzuotu}
-%     \centering
-%     \includegraphics[width=0.4\textwidth,height=0.3\textheight]{dianzuzuotu.png}
-%     \caption{电阻结果作图}
-%   \end{figure}
+  \begin{figure}[H]\label{zuotu}
+    \centering
+    \begin{minipage}{\linewidth}
+    \includegraphics[width=0.47\textwidth,height=0.3\textheight]{f_ur_zuotu.png}\hfill
+    \includegraphics[width=0.47\textwidth,height=0.3\textheight]{f_varphi_zuotu.png}\hfill
+    \end{minipage}
+    \caption{$U_{R}-f$图形及$\varphi - f$图形}
+  \end{figure}
 
-%   最终得到的实验结果较为满意，基本符合欧姆定律，可能由于测量时间较短，所以电阻发热不严重没有
-%   影响其阻值，得到的伏安特性曲线也是较为完美的直线。实验较为成功。
+  实验结果如图\ref{shujv}所示，进行图像处理，在坐标轴上画出数据点获得图\ref{zuotu}。
 
-%   \subsection{测量普通二极管的正向伏安特性曲线}
-%   \begin{wrapfigure}[2]{l}{4cm}\label{putongshujv}
-%     \centering
-%     \includegraphics[width=0.1\textwidth,height=0.3\textheight]{putongshujv.png}
-%     \caption{普通二极管数据}
-%   \end{wrapfigure}
+  最终实验结果中$U_{R}-f$图形较为符合预期，实验较为成功。而$\varphi - f$图形结果较为失败，图形形状
+  不符合预期图像。
 
-%   实验中测得的普通二极管
-%   伏安特性曲线数据如图\ref{putongshujv}。对数据进行处理最终得到图\ref{putongzuotu}。
+  最终得到的结果误差较大，出现明显图像偏移扭曲，分析误差产生原因：
 
-%   \begin{figure}[H]\label{putongzuotu}
-%     \centering
-%     \includegraphics[width=0.4\textwidth,height=0.3\textheight]{putongzuotu.png}
-%     \caption{普通二极管伏安特性曲线作图}
-%   \end{figure}
-
-%   最终得到的实验结果表明整个实验数据得到的图形基本符合非线性元件的e为底的指数曲线拟合结果。
-%   \subsection{测量稳压二极管伏安特性曲线}
-%   实验包括两部分，一部分是正向导通的情况下的伏安特性曲线，另一部分是反向导通的情况下的伏安特性曲线。
-  
-%   \subsubsection{测量稳压二极管的正向伏安特性曲线}
-
-%   \begin{wrapfigure}[4]{l}{4cm}\label{wenyazhengxiangshujv}
-%     \centering
-%     \includegraphics[width=0.1\textwidth,height=0.4\textheight]{wenyazhengxiangshujv.png}
-%     \caption{稳压二极管正向导通数据}
-%   \end{wrapfigure}
-%   实验中测得的稳压二极管正向导通的时候的
-%   伏安特性曲线数据如图\ref{wenyazhengxiangshujv}。对数据进行处理最终得到图\ref{wenyazhengxiangzuotu}。
-%   \begin{figure}[H]\label{wenyazhengxiangzuotu}
-%     \centering
-%     \includegraphics[width=0.4\textwidth,height=0.3\textheight]{wenyazhengxiangzuotu.png}
-%     \caption{稳压二极管正向导通伏安特性曲线作图}
-%   \end{figure}
-
-%   \subsubsection{测量稳压二极管的反向伏安特性曲线}
-
-%   \begin{wrapfigure}[3]{l}{4cm}\label{wenyafanxiangshujv}
-%     \centering
-%     \includegraphics[width=0.3\textwidth,height=0.4\textheight]{wenyafanxiangshujv.png}
-%     \caption{稳压二极管反向导通数据}
-%   \end{wrapfigure}
-%   实验中测得的稳压二极管反向导通的时候的
-%   伏安特性曲线数据如图\ref{wenyafanxiangshujv}。对数据进行处理最终得到图\ref{wenyafanxiangzuotu}。
-%   \newpage
-%   \begin{figure}[h]\label{wenyafanxiangzuotu}
-%     \centering
-%     \includegraphics[width=0.4\textwidth,height=0.3\textheight]{wenyafanxiangzuotu.png}
-%     \caption{稳压二极管反向导通伏安特性曲线作图}
-%   \end{figure}
-
-%   从实验结果和数据处理后形成的图像观察可以得出无论是正向导通还是反向导通，稳压二极管
-%   曲线的趋势和普通二极管正向导通时候的图像是相似的，而具体而言，正向导通的导通电压阈值
-%   相较于反向导通的导通电压阈值要小很多，这也体现了二极管单向导通的性质，即便是稳压二极管上
-%   仍有体现。并且稳压二极管的曲线更加陡，相同电压变化下电流变化更大。
-% \newpage
+  1. 由于$U_{R}-f$图像较为符合预期，所以实验中$U_{R}\mbox{和}f$的测量没有出现大问题，而在测量
+    计算$\varphi$的时候需要手动确定相位差位置进行读数，可能在调节仪器的时候没有使测量的指针对准
+    两列波理论测量的位置，而由于实验中相位差测量是通过测量$\Delta t$来实现的，由于时间间隔较小，
+    较小的偏差就会产生较大的误差，所以出现偏差也较大。
+压二极管的曲线更加陡，相同电压变化下电流变化更大。
 
   \subsection{测量回路的品质因数Q值}
-%   \begin{figure}[H]\label{ledshujv}
-%     \centering
-%     \begin{minipage}{\textwidth}
-%     \includegraphics[width=0.2\textwidth,height=0.5\textheight]{ledshujv.png}
-%     \end{minipage}
-%     \caption{LED灯数据}
-%   \end{figure}
-%     实验中测得的LED灯的
-%   伏安特性曲线数据如图\ref{ledshujv}。对数据进行处理最终得到图\ref{ledzuotu}。
-%   \begin{figure}[H]\label{ledzuotu}
-%     \centering
-%     \begin{minipage}{\linewidth}
-%     \includegraphics[width=0.47\textwidth,height=0.3\textheight]{ledzuotu1.png}\hfill
-%     \includegraphics[width=0.47\textwidth,height=0.3\textheight]{ledzuotu2.png}\hfill
-%     \includegraphics[width=0.47\textwidth,height=0.3\textheight]{ledzuotu3.png}
-%     \end{minipage}
-%     \caption{LED灯作图结果}
-%   \end{figure}
+  \begin{wrapfigure}[16]{l}{4.5cm}\label{urf}
+    \centering
+    \includegraphics[width=0.3\textwidth,height=0.3\textheight]{f_ur_zuotu.png}
+    \caption{$U_{R}-f$图像及处理}
+  \end{wrapfigure}
 
-%   从实验结果和数据处理后形成的图像观察可以得出无论哪种颜色的发光半导体最终产生的曲线
-%   依旧和普通二极管的伏安特性曲线相似。而不同颜色的二极管的导通后的倾斜趋势不同，这也
-%   体现在不同二极管的所需要的导通电压阈值不同。通过计算最终得到的灯管的波长如下表\ref{bochang}
+  如图\ref{urf}所示，对图像进行数据处理，确定$\frac{U_{MAX}}{\sqrt{2}}$的水平线，和图形的交点
+  作垂线确定$f_{1}\mbox{和}f_{2}$。通过测量和计算可得两者的在x正半轴上的位置分别为
+  $f_{1}=2210.443Hz$和$f_{2}=2449.367Hz$。通过公式计算可得
+  \begin{equation}
+    Q=\frac{f_{0}}{f_{2}-f_{1}}=\frac{2321.521}{2449.367-2210.443}=9.716
+  \end{equation}
 
-%   \begin{table}[h]
-%     \centering   
-%     \caption{不同LED灯管发光波长计算}\label{bochang}
-%     \begin{tabular}{| l || l |}
-%         \hline
-%         发光灯管颜色 & 波长数值\\
-%         \hline
-%         红色 & 707.567 \\
-%         \hline
-%         黄色 & 676.687 \\
-%         \hline
-%         绿色 & 644.808 \\
-%         \hline
-%     \end{tabular}
-%   \end{table}
+  通过实验中的测量可以得到实验中电感两端的电压为$344.9mV$，信号源的电压为$41.4mV$，可以得到公式计算可得
+  \begin{equation}
+    Q=\frac{U_{L}}{U}=\frac{344.9}{41.4}=8.33
+  \end{equation}
 
-%   最终得到的结果误差较大，出现明显向红光偏移的趋势，分析误差产生原因：
+  实验中测得的数据和理论计算得到的数据的百分差为$14.3\%$，相差较大。
+  最终得到的结果误差较大，出现百分差较大的情况，分析误差产生原因：
 
-%   1.  二极管发热导致伏安特性曲线不是相同状态下测得的
+  1.  测量值可能不够准确，由于器材的误差出现导致实验得到的Q值不够准确。
 
-%   2.  二极管发光的时候也有红光产生，但是由于灯罩原因滤掉红光
+  2.  理论值可能不够准确，由于理论值通过作图得到，所以最终得到的数值和实际值也存在一定误差
 
-%   3.  二极管出现故障，或者仪器误差
-
-%   4.  测量过程中未等待二极管达到稳定工作状态就记录数据
+  3.  理论值和实验值都存在误差，导致误差方法出现较大的误差情况出现
 
 \section{思考题}
   \subsection{思考题一}
-
+  RLC电路对不同的频率有不同的阻抗，所以会发生改变。
   \subsection{思考题二}
+  它用来描述谐振电路的质量或其谐振能力。 
+  Q值越大，通频带宽度就越窄，电路的选择性能越好，抑非能力越强。
 
+  电路品质因数Q值的两种测量方法：
+  
+  一是根据公式$Q=\frac{UL}{U0}=\frac{UC}{U0}$测定，UC与UL分别为谐振时电容器C和电感线圈L上的电压。
+
+  二是通过测量谐振曲线的通频带宽度$\Delta f=f_{1}-f_{2}$，再根据$Q=\frac{f_{0}}{f_{1}-f_{2}}$求出Q值。
   \subsection{思考题三}
+  rlc中l的电阻对谐振曲线的影响是：
+  谐振时，对电路总电阻的大小有影响。电阻大，总电阻就大。
+  对谐振回路的Q值也有影响，电阻大，Q小。
+  对谐振回路的通频带和选择性有影响，电阻大，通频带宽，选择性差。
 
+  测量方法可以通过测量流过电感的电流频率通过$R_{L}=\frac{1}{2\pi * f_{L}}$得到。
 
 \section{实验中个人的思考与感想}
   \subsection{对于实验个人观点}
@@ -354,5 +311,7 @@
   误差进一步增大。当然这可能和我使用的实验器材有关，似乎隔壁几位的器材由于更为先进所以能直接读出相位差，相较于他们我实验的
   误差应该会更大。
   \subsection{实验中的总结}
-
+  在实验中学习了使用可以调节的元件控制电压表所读对象的方法。实验中电路的连接时实验中较为困难的地方。而实验中
+  其余的测量都较为机械化。在测量相位差的时候由于器材的显示进行读数的时候会出现较多误差。而且调节的时候对于
+  显示图像也没有放到最大，导致实验中读取的$\frac{1}{\Delta t}$误差较为大。
 \end{document}
