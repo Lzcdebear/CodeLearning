@@ -182,7 +182,7 @@
   式子中的$n_{x}\mbox{和}n_{y}$，分别为李萨如图的外切水平线的切点数和外切垂直线的切点数，如图\ref{lisaru}所示.
   \begin{figure}[H]\label{lisaru}
     \centering
-    \includegraphics[width=0.9\textwidth,height=0.4\textheight]{lisaru.jpg}
+    \includegraphics[width=0.9\textwidth,height=0.3\textheight]{lisaru.jpg}
     \caption{李萨如图形}
   \end{figure}
   
@@ -195,7 +195,7 @@
   这样，可以随时通过CPU 和逻辑控制电路把存放在存储器中的数字波形显示在显示屏上供使用者观察和测量.
   \begin{figure}[H]\label{shuzishiboqi}
     \centering
-    \includegraphics[width=0.9\textwidth,height=0.4\textheight]{shuzishiboqi.jpg}
+    \includegraphics[width=0.9\textwidth,height=0.2\textheight]{shuzishiboqi.jpg}
     \caption{数字示波器结构示意图}
   \end{figure}
 
@@ -257,32 +257,106 @@
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.6\textwidth,height=0.3\textheight]{shiyanjilu1.jpg}
+  \includegraphics[width=0.6\textwidth,height=0.2\textheight]{shiyanjilu1.jpg}
   \caption{实验记录1}
 \end{figure}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.6\textwidth,height=0.3\textheight]{shiyanjilu2.jpg}
+  \includegraphics[width=0.6\textwidth,height=0.2\textheight]{shiyanjilu2.jpg}
   \caption{实验记录2}
 \end{figure}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.6\textwidth,height=0.3\textheight]{shiyanjilu3.jpg}
+  \includegraphics[width=0.6\textwidth,height=0.2\textheight]{shiyanjilu3.jpg}
   \caption{实验记录3}
 \end{figure}
 \newpage
 
 \section{实验数据处理}
-  \subsection{测量RLC串联电路的幅频特性和相频特性}
-  \subsection{测量回路的品质因数Q值}
+  \subsection{信号电压有效值的测量}
+  实验测量的结果以及数据的处理如表\ref{dianyaceliang}所示。
+  \begin{table}[h]
+    \centering   
+    \caption{信号电压有效值的测量数据}\label{dianyaceliang}
+    \begin{tabular}{| l || l || c |}
+        \hline
+        $U_{P-P}/V$ & 原始值/V & 百分差/\%\\
+        \hline
+        4.26 & 4 & 6.5\\
+        \hline
+        6.32 & 6 & 5.3\\
+        \hline
+        2.17 & 2 & 8.5\\
+        \hline                       
+    \end{tabular}
+  \end{table}
+
+  实验中记录了示波器显示的电压$U_{P-P}$以及信号源显示电压“原始值”，并计算量百分差。
+  通过百分差可以看出数据的误差较小，但是对于越小的电压示波器显示的数据误差越大。
+
+  误差可能来自于信号源输出的电压和实际显示值有所误差，而示波器在测量过程中也可能会出现信号失真
+  导致对电压测量的误差。
+
+  \subsection{信号周期和频率的测量}
+  实验测量的结果以及数据的处理如表\ref{zhouqiceliang}所示。
+  \begin{table}[h]
+    \centering   
+    \caption{信号周期和频率数据据}\label{zhouqiceliang}
+    \begin{tabular}{| l || l || l || c |}
+        \hline
+        $T/ms$ & f/Hz & 信号源/Hz & 百分差/\%\\
+        \hline
+        0.252 & 3.96 & 4 & 1\\
+        \hline
+        0.169 & 5.89 & 6 & 1.8\\
+        \hline
+        0.1 & 9.92 & 10 & 0.8\\
+        \hline                       
+    \end{tabular}
+  \end{table}
+
+  实验中记录了示波器显示的周期以及频率，并记录信号源输出频率，并计算百分差。
+  通过百分差可以看出测量的结果误差较小。
+
+  \subsection{观察李萨如图像}
+  实验中使用的$f_{x}$为5k Hz，具体情况如表\ref{lisaruguancha}
+  \begin{table}[h]
+    \centering   
+    \caption{李萨如图形观察}\label{lisaruguancha}
+    \begin{tabular}{| l || l || l || c |}
+        \hline
+        $f_{y}$/kHz & x轴切点数 & y轴切点数 & 实验记录\\
+        \hline
+        2.5 & 2 & 1 & 1\\
+        \hline
+        7.5 & 2 & 3 & 1\\
+        \hline
+        10 & 1 & 2 & 3\\
+        \hline                       
+    \end{tabular}
+  \end{table}
 
 \section{思考题}
   \subsection{思考题一}
+  可能由于连接线出现接触不良等问题。也可能是信号源出现故障。
+
+  得到测量的波形需要将线路连接正确并且确保示波器显示处在相应的线路。
+
   \subsection{思考题二}
+  定零电压线。将示波器的输入耦合开关置于"GND'：档，
+  调节垂直位移旋钮，将荧光屏上的水平亮线(时基线)向与其极性相反的方向移动，
+  置于荧光屏的最顶端或最底端的坐标线上，
+  即被测电压为正极性，就将时基线移至最底端的坐标线上，反之则将时基线移至最顶端的坐标线上。
+
   \subsection{思考题三}
+  因为x、y轴的频率不是完整的倍数关系，图形就会来回翻动。反动快慢取决于两者及其整数倍之间的差。
+  也可能是单纯示波器坏了，或者信号源坏了。
 
 \section{实验中个人的思考与感想}
   \subsection{对于实验个人观点}
-  \subsection{实验中的总结}
+  实验操作和记录较为简单，实际中容易出现的问题是在调节信号源的时候容易出现故障，例如
+  当频率到达零后继续旋动旋钮减小会导致输出波形不稳定。
 
+  \subsection{实验中的总结}
+  学习了示波器的使用方法以及李萨如图像对于频率不同初相位相同的波的显示结果。
 \end{document}

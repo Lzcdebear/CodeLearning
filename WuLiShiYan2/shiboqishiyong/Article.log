@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.21)  4 NOV 2023 01:21
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.21)  4 NOV 2023 09:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -418,21 +418,20 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <10.53937> not available
 (Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 61.
- [1]
+ [1] [2]
 File: figure//monijiegou.jpg Graphic file (type bmp)
 <figure//monijiegou.jpg>
- [2]
+ [3]
 File: figure//shiboyuanli.jpg Graphic file (type bmp)
 <figure//shiboyuanli.jpg>
- [3] [4]
+ [4] [5]
 File: figure//jiaoliuceliang.jpg Graphic file (type bmp)
 <figure//jiaoliuceliang.jpg>
 File: figure//xiangweichaceliang.jpg Graphic file (type bmp)
 <figure//xiangweichaceliang.jpg>
- [5]
+ [6]
 File: figure//lisaru.jpg Graphic file (type bmp)
 <figure//lisaru.jpg>
- [6]
 File: figure//shuzishiboqi.jpg Graphic file (type bmp)
 <figure//shuzishiboqi.jpg>
  [7] [8] [9] [10]
@@ -445,14 +444,18 @@ File: figure//shiyanjilu2.jpg Graphic file (type bmp)
 <figure//shiyanjilu2.jpg>
 File: figure//shiyanjilu3.jpg Graphic file (type bmp)
 <figure//shiyanjilu3.jpg>
- [12] [13] [14] (./Article.aux) ) 
+ [12]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[13] [14] [15] (./Article.aux) ) 
 Here is how much of TeX's memory you used:
- 9582 strings out of 478630
- 260193 string characters out of 5847730
+ 9586 strings out of 478630
+ 260252 string characters out of 5847730
  1863012 words of memory out of 5000000
- 29556 multiletter control sequences out of 15000+600000
+ 29560 multiletter control sequences out of 15000+600000
  517714 words of font info for 80 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 89i,6n,97p,362b,275s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,11n,97p,362b,275s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Article.pdf (15 pages).
+Output written on Article.pdf (16 pages).
