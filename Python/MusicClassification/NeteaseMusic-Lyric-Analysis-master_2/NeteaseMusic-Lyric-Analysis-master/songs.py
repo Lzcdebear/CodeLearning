@@ -97,10 +97,10 @@ class Playlists(Songs):
             url = 'http://music.163.com/api/search/get/web?csrf_token=hlpretag=&hlposttag=&s={' \
                   + self.keyword + '}&type=1000&offset=0&order=hot&total=true&limit=' + str(self.limit)
             json_content = func.get_page(url).json()
-            with open(self.keyword + '.json', 'w', encoding='UTF-8') as f1:
+            with open(r'reg' + self.keyword + '.json', 'w', encoding='UTF-8') as f1:
                 text = json.dumps(json_content, ensure_ascii=False)
                 f1.write(text)
-        with open(self.keyword + '.json', encoding='UTF-8') as f2:
+        with open(r'reg' + self.keyword + '.json', encoding='UTF-8') as f2:
             p_json = json.load(f2)
         result = p_json['result']
         self.playlists = result['playlists']
@@ -115,4 +115,4 @@ class Playlists(Songs):
                 url = 'https://music.163.com/#/playlist?id=' + str(playlist['id'])
                 self.get_plist_songs(url)
                 print('completed ' + str(self.playlists.index(playlist) / len(self.playlists) * 100) + '%')
-            self.plist.to_csv(self.keyword + '-build-list.csv', encoding='UTF-8')
+            self.plist.to_csv(r'reg' + self.keyword + '-build-list.csv', encoding='UTF-8')
