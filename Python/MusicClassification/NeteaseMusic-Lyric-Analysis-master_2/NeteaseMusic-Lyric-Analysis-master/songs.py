@@ -13,7 +13,7 @@ from settings import Settings as st
 
 
 class Songs:
-    def __init__(self, keyword,limit):
+    def __init__(self, keyword, limit):
         # 初始歌单
         self.only_lyric = []
         self.plist = None
@@ -22,7 +22,7 @@ class Songs:
 
     def get_plist_songs(self, url):
         if self.plist is None:
-            self.plist = pd.DataFrame(columns=['id','name','url'])
+            self.plist = pd.DataFrame(columns=['id', 'name', 'url'])
         # 建立歌单index
         content = func.get_page(url).text
         # 新建bs对象
@@ -48,8 +48,8 @@ class Songs:
                 song_url = 'https://music.163.com' + song.a['href']
                 songs['url'].append(song_url)
                 songs['lyric'] = ''
-        df = pd.DataFrame(songs,columns=['id', 'name', 'url'])
-        self.plist = self.plist.append(df,ignore_index=True)
+        df = pd.DataFrame(songs, columns=['id', 'name', 'url'])
+        self.plist = self.plist.append(df, ignore_index=True)
 
     def get_lyric(self):
         """获得歌词"""
@@ -58,11 +58,11 @@ class Songs:
             print('file not found')
             exit(-1)
         plist = pd.read_csv(file_path)
-        plist = plist.drop('Unnamed: 0',axis=1)
+        plist = plist.drop('Unnamed: 0', axis=1)
         plist_temp = pd.DataFrame(columns=plist.columns)
         total = len(plist['id'])
-        n=0
-        for index,row in plist.iterrows():
+        n = 0
+        for index, row in plist.iterrows():
             url = 'http://music.163.com/api/song/lyric?os=pc&id=' \
                   + str(row['id']) \
                   + '&lv=-1&kv=-1&tv='
@@ -77,30 +77,30 @@ class Songs:
                     row['lyric'] = lyric
                     print('completed ' + str(round(index / total * 100, 2)) + '% ', end='')
                     print('added lyric id: ' + str(row['id']))
-                    plist_temp = plist_temp.append(row,ignore_index=True)
+                    plist_temp = plist_temp.append(row, ignore_index=True)
                 except:
                     continue
-            n+=1
+            n += 1
             if n == 300:
                 break
         plist = plist_temp.copy()
-        plist.to_csv('res/'+st.search_keyword + '-with-lyrics.csv', encoding='UTF-8')
+        plist.to_csv('res/' + st.search_keyword + '-with-lyrics.csv', encoding='UTF-8')
 
 
 class Playlists(Songs):
-    def __init__(self,keyword,limit):
-        super().__init__(keyword=keyword,limit=limit)
+    def __init__(self, keyword, limit):
+        super().__init__(keyword=keyword, limit=limit)
         self.playlists = []
 
     def get_playlists(self):
-        if not os.path.exists('res/'+self.keyword+'.json'):
+        if not os.path.exists('res/' + self.keyword + '.json'):
             url = 'http://music.163.com/api/search/get/web?csrf_token=hlpretag=&hlposttag=&s={' \
                   + self.keyword + '}&type=1000&offset=0&order=hot&total=true&limit=' + str(self.limit)
             json_content = func.get_page(url).json()
-            with open(r'reg' + self.keyword + '.json', 'w', encoding='UTF-8') as f1:
+            with open(r'res/' + self.keyword + '.json', 'w', encoding='UTF-8') as f1:
                 text = json.dumps(json_content, ensure_ascii=False)
                 f1.write(text)
-        with open(r'reg' + self.keyword + '.json', encoding='UTF-8') as f2:
+        with open(r'res/' + self.keyword + '.json', encoding='UTF-8') as f2:
             p_json = json.load(f2)
         result = p_json['result']
         self.playlists = result['playlists']
@@ -110,9 +110,9 @@ class Playlists(Songs):
         """递归补充歌单列表、歌曲信息"""
         if not os.path.exists(self.keyword + '-build-list.csv'):
             time.sleep(2)
-            self.plist = pd.DataFrame(columns=['id','name','url'])
+            self.plist = pd.DataFrame(columns=['id', 'name', 'url'])
             for playlist in self.playlists:
                 url = 'https://music.163.com/#/playlist?id=' + str(playlist['id'])
                 self.get_plist_songs(url)
                 print('completed ' + str(self.playlists.index(playlist) / len(self.playlists) * 100) + '%')
-            self.plist.to_csv(r'reg' + self.keyword + '-build-list.csv', encoding='UTF-8')
+            self.plist.to_csv(r'res/' + self.keyword + '-build-list.csv', encoding='UTF-8')
