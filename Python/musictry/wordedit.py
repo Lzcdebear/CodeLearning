@@ -10,6 +10,7 @@ from collections import Counter
 from Setting import Settings as st
 import os
 
+
 class WordEdit:
     def __init__(self):
         self.word_pool = []
