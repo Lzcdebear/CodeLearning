@@ -6,6 +6,7 @@
 \usepackage{gbt7714}
 \usepackage{pifont}
 \usepackage{wrapfig}
+\usepackage{multirow}
 \ctexset{
     % 修改 section。
     section={   
@@ -65,11 +66,11 @@
   可以用于测量材料的折射率、光源的光谱，它在光的反射、折射、干涉、偏振实验以及对某些材料的研究中具有重要应用。
   本实验要求实验者正确调整和使用分光计，利用分光计观察棱镜的色散光谱，测量棱镜对某些波长的光的折射率，并进一步理解折射率的大小与光波波长有关这一概念.
   \subsection{实验目的}
-  1.\quad 1、在分光计的调节中，为什么要先调节望远镜，在调节平台，最后调节平行光管。
+  1.\quad 在分光计的调节中，为什么要先调节望远镜，在调节平台，最后调节平行光管。
 
-  2.\quad 2、如果将分光计的结构与夫琅禾费衍射的光路进行对比，两者有何相似的地方？
+  2.\quad 如果将分光计的结构与夫琅禾费衍射的光路进行对比，两者有何相似的地方？
   
-  3.\quad 3、分光计处于待测量状态的标志有哪些？
+  3.\quad 分光计处于待测量状态的标志有哪些？
 
 \section{实验原理}
   \subsection{最小偏向角}
@@ -175,7 +176,7 @@
     使缝像既细锐又明亮，再微调狭缝与物镜间的距离，直至清晰、细锐的缝像与准线无视差为止，转动狭缝套简。
     使缝的取向与分划板上的竖直准线平行，拧紧平行光管的固定螺丝，调节平行光管倾度调节螺丝，使缝像位于望远镜分划板的中间。此时，分光计已全部调节完毕，处于待测状态。
 
-    \subsubsection{测棱镜的顶角$\alpha$}
+    \subsection{测棱镜的顶角$\alpha$}
     示意图可以参考图\ref{cedingjiao}。
     \begin{figure}[H]
       \centering
@@ -208,7 +209,7 @@
       \alpha=180^{\circ}-\varphi
     \end{equation}
 
-    \subsubsection{测棱镜对某波长光波的最小偏向角$\delta_{min}$}
+    \subsection{测棱镜对某波长光波的最小偏向角$\delta_{min}$}
     同一棱镜对不同波长的光波具有不同的折射率，不同波长光波所对应的最小偏向角$\delta_{min}$亦各不相同。
     必须分别进行测量。这里需要指出的是：以往折射率表中给出的某种材料的折射率。
     都是对波长为589.3 nm的钠黄光而言的。因此，与我们测得的结果并不相同。
@@ -254,38 +255,102 @@
 \newpage
 
 \section{实验数据处理}
-实验测得数据如表\ref{dingjiaoshujv}所示。
-\begin{table}[H]
-  \centering   
-  \caption{顶角大小测定与计算}\label{dingjiaoshujv}
-  \begin{tabular}{|c|c|c|c|}
-    \hline
-    $\varphi_{0}(1)$ & $\varphi_{0}(2)$ & $\Delta\varphi_{0}$ & $\Delta\varphi_{ave}$ & $\alpha$\\
-    \cline{1-3}
-    $341^{\circ}35^{'}$ & $101^{\circ}33^{'}$ & $120^{\circ}5^{'}$ & 0 & 0\\
-    \hline
-    $\varphi_{0}^{'}(1)$ & $\varphi_{1}^{'}(2)$ & $\Delta\varphi_{0}^{'}$ & $\Delta\varphi_{ave}$ & $\alpha$\\
-    \cline{1-3}
-    $161^{\circ}35^{'}$ & $281^{\circ}29^{'}$ & $120^{\circ}6^{'}$ & 0 & \\
-  \end{tabular}
-\end{table}
-通过计算可以得到顶角的数值为$59^{\circ}54.5^{'}$。
-\newpage
+  \subsection{测量顶角大小}
+  实验测得数据如表\ref{dingjiaoshujv}所示。
+  \begin{table}[H]
+    \centering   
+    \caption{顶角大小测定与计算}\label{dingjiaoshujv}
+    \begin{tabular}{||c|c|c|c|c||}
+      \hline
+      \hline
+      $\varphi_{0}(1)$ & $\varphi_{0}(2)$ & $\Delta\varphi_{0}$ & $\Delta\varphi_{ave}$ & $\alpha$\\
+      \hline
+      $341^{\circ}35^{'}$ & $101^{\circ}33^{'}$ & $120^{\circ}5^{'}$ & \multirow{3}{*}{$120^{\circ}5.5^{'}$} & \multirow{3}{*}{$59^{\circ}5.5^{'}$}\\
+      \cline{1-3}
+      $\varphi_{0}^{'}(1)$ & $\varphi_{1}^{'}(2)$ & $\Delta\varphi_{0}^{'}$ & & \\
+      \cline{1-3}
+      $161^{\circ}35^{'}$ & $281^{\circ}29^{'}$ & $120^{\circ}6^{'}$ & & \\
+      \hline
+      \hline
+    \end{tabular}
+  \end{table}
+  通过计算可以得到顶角的数值为$59^{\circ}54.5^{'}$。
+
+  \subsection{蓝光光波最小偏向角}
+  实验得到的数据及数据处理结果如图\ref{lanpianjiao}所示。
+  \begin{figure}[H]
+    \centering
+    \includegraphics[height=0.1\textwidth,width=1\textwidth]{lanpianjiao.png}
+    \caption{蓝光光波最小偏向角数据图}\label{lanpianjiao}
+  \end{figure}
+  通过结果可以看出最终得到的实验结果为蓝光光波的最小偏向角为$53^{\circ}33^{'}$。
+
+  通过公式计算得到的折射率为
+  \begin{equation}
+    n=\frac{\sin\frac{59^{\circ}54.5^{'}+53^{\circ}33^{'}}{2}}{\sin\frac{59^{\circ}54.5^{'}}{2}}=1.674
+  \end{equation}
+
+  \subsection{绿光光波最小偏向角}
+  实验得到的数据及数据处理结果如图\ref{lvpianjiao}所示。
+  \begin{figure}[H]
+    \centering
+    \includegraphics[height=0.1\textwidth,width=1\textwidth]{lvpianjiao.png}
+    \caption{绿光光波最小偏向角数据图}\label{lvpianjiao}
+  \end{figure}
+  通过结果可以看出最终得到的实验结果为绿光光波的最小偏向角为$51^{\circ}34.5^{'}$。
+
+  通过公式计算得到的折射率为
+  \begin{equation}
+    n=\frac{\sin\frac{59^{\circ}54.5^{'}+51^{\circ}34.5^{'}}{2}}{\sin\frac{59^{\circ}54.5^{'}}{2}}=1.655
+  \end{equation}
+
+  \subsection{误差分析}
+  \subsubsection{蓝光光波最小偏向角}
+  计算可得为$2^{'}45^{"}$。最终结果为$\delta_{min}=53^{\circ}33^{'}\pm 2^{'}45^{"}$。
+  \subsubsection{绿光光波最小偏向角}
+  计算可得为$4^{'}24^{"}$。最终结果为$\delta_{min}=51^{\circ}34^{'}\pm 4^{'}24^{"}$。
 
 \section{思考题}
   \subsection{夫琅和费衍射中分光计使用}
+  可以通过分光计观察到夫琅和费衍射现象。夫琅和费衍射的条件包括光波通过一个有限大小的开口，
+  并且开口的尺寸与波长的比值决定了衍射的效果。如果分光计的光源通过一个狭缝或小孔，
+  而这个狭缝或小孔的尺寸和光的波长相当，那么就有可能观察到夫琅和费衍射现象。
 
-  \subsection{分光计两个读书盘}
+  具体的实验可以如下设计：
+
+  将光线通过光栅，引发光的衍射。之后调节分光计，直到观察到清晰的衍射级数，再使用分光计进行
+  角度的测量。然后再通过夫琅和费衍射关系计算光栅常数。
+
+  \subsection{分光计两个读数盘}
+  分光计使用两个读数盘的原因是由于分光计的读数盘和中心轴之间可能存在偏心差，使用两个读数盘进行读数然后
+  取平均值的目的就是为了减少偏心差带来的影响。
 
   \subsection{是否重新寻找最小偏向角位置}
+  如果实验器材未发生改变移动，实验仪器也没有改变，在同一条件下测量不同谱线的最小偏向角的时候
+  不需要重新寻找最小偏向角的位置。因为最小偏向角的位置和观测无关，在条件不变的情况下是不变的。
 
   \subsection{棱镜色散光谱和光栅色散光谱特点分析}
+  两者相同点有：
 
+  1、都是色散现象，是复合光通过某种特定光学仪器后由于不同光的性质不同导致发生色散的情况。
+
+  2、都会显示出不同颜色的光谱。
+
+  而棱镜色散的图像更加分散，是由于不同光的折射率不同而产生的，所以光谱更加分散，不连续。
+  光栅色散是由于衍射现象而产生的色散，更加连续，光谱是连着的。
 \newpage
 
 \section{实验中个人的思考与感想}
   \subsection{对于实验个人观点}
-  
-  \subsection{实验中的总结}
+  实验中能够测量不同颜色光由于折射产生的偏向角。但是实际中如果分光镜的缝隙太小，则难以观察到现象。
+  而分光镜的缝隙太大则在测量中会引入误差，难以找到某一颜色光谱的中心。
 
+  而实验中的预备的调节步骤是极其重要的。如果调节不够准确，则之后连现象都不一定能够观察到。实验非常需要
+  耐心进行寻找。调平的二分之一调节法能够较为有效调节调平。
+
+  整个实验并不复杂，需要测量的内容也十分简单，主要是实验器材不方便使用。如果调节不当可能会观察到棱镜色散。
+  观察到连续渐变的色散光谱，而调节得当就能观察到实验的结果。非常有趣。
+
+  \subsection{实验中的总结}
+  通过实验学习了分光计的使用与调节。并且通过实验观察并测量了不同光的折射率不同的现象和数据。
 \end{document}

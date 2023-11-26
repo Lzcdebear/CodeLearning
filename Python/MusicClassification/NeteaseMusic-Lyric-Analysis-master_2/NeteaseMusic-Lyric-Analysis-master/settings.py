@@ -2,7 +2,7 @@ class Settings:
     # 切换按钮，如果为真，则执行爬取搜索结果的歌单，如果为假，则爬取单个歌单
     toggle = True
     # 设置搜索关键词
-    search_keyword = '欧美'
+    search_keyword = '流行'
     # 设置结果限制数
     result_limit = 20
 
