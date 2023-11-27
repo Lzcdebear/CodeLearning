@@ -38,15 +38,32 @@ y_pred = classifier.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print(f'Accuracy: {accuracy}')
 
-
-# 新数据
-new_data = ["tz"]  # 你的新数据，这里只有一个特征
-
-# 将新数据转换为特征向量
-new_data_vectorized = vectorizer.transform([' '.join(map(str, new_data))])
-
-# 进行预测
-prediction = classifier.predict(new_data_vectorized)
-
-# 输出预测结果
-print(f'预测结果: {prediction[0]}')
+print("请输入数据")
+print("如果输入 1 则使用默认测试数据内容，默认数据内容曲风为民谣")
+print("如果输入 0 则直接跳过")
+print("以下是示例格式")
+print("="*500)
+print("[('我', 15), ('着', 11), ('子弟', 7),('系', 5), ('过', 5), ('下', 5), ('这', 5)]")
+print("="*500)
+tz = input("请在此输入数据\t")
+if tz == str(1):
+    tz = "[('我', 15), ('着', 11), ('也', 8), ('骑', 8), ('风神', 8), ('要', 7), ('就', 7), ('呐', 7), ('捱', 7), ('子弟', 7), ('呀', 7), ('是', 6), ('有', 6), ('会', 6), ('又', 5), ('做', 5), ('系', 5), ('过', 5), ('下', 5), ('这', 5)]"
+    # 新数据
+    new_data = [tz]  # 你的新数据，这里只有一个特征
+    # 将新数据转换为特征向量
+    new_data_vectorized = vectorizer.transform([' '.join(map(str, new_data))])
+    # 进行预测
+    prediction = classifier.predict(new_data_vectorized)
+    # 输出预测结果
+    print(f'预测结果: {prediction[0]}')
+elif tz == str(0):
+    print("选择退出，将跳过预测直接结束程序。")
+else:
+    # 新数据
+    new_data = [tz]  # 你的新数据，这里只有一个特征
+    # 将新数据转换为特征向量
+    new_data_vectorized = vectorizer.transform([' '.join(map(str, new_data))])
+    # 进行预测
+    prediction = classifier.predict(new_data_vectorized)
+    # 输出预测结果
+    print(f'预测结果: {prediction[0]}')
