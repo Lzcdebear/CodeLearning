@@ -319,119 +319,120 @@
 
 
 \section{实验数据处理}
-%   \subsection{测量RLC串联电路的幅频特性和相频特性}
-%   实验中使用的器材如图\ref{qicai}
-%   \begin{figure}[htbp]\label{qicai}
-%     \begin{minipage}[t]{0.45\textwidth}
-%     \centering
-%     \includegraphics[width=\textwidth]{qicai1}
-%     \end{minipage}
-%     \hfill
-%     \begin{minipage}[t]{0.45\textwidth}
-%     \centering
-%     \includegraphics[width=\textwidth]{qicai2}
-%     \end{minipage}
-    
-%     \begin{minipage}[t]{0.45\textwidth}
-%     \centering
-%     \includegraphics[width=\textwidth]{qicai3}
-%     \end{minipage}
-%     \hfill
-%     \begin{minipage}[t]{0.45\textwidth}
-%     \centering
-%     \includegraphics[width=\textwidth]{qicai4}
-%     \end{minipage}
-%     \caption{实验所用器材展示}
-%     \end{figure}
+  \subsection{原始数据及使用的常数展示}
+  以下是使用对原始数据的整理和计算所用到的常数的展示。
 
-%   \begin{figure}[H]\label{shujv}
-%     \centering
-%     \includegraphics[width=0.6\textwidth,height=0.4\textheight]{shujv.png}
-%     \caption{实验数据}
-%   \end{figure}
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth,height=0.7\textheight]{shijianshujv.png}
+    \caption{实验得到数据}\label{shiyanshujv}
+  \end{figure}
+  \newpage
 
-%   \begin{figure}[H]\label{zuotu}
-%     \centering
-%     \begin{minipage}{\linewidth}
-%     \includegraphics[width=0.47\textwidth,height=0.3\textheight]{f_ur_zuotu.png}\hfill
-%     \includegraphics[width=0.47\textwidth,height=0.3\textheight]{f_varphi_zuotu.png}\hfill
-%     \end{minipage}
-%     \caption{$U_{R}-f$图形及$\varphi - f$图形}
-%   \end{figure}
+  \begin{figure}[H]
+    \begin{minipage}[t]{0.4\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{changshu.png}
+      \caption{所使用的常数}\label{changshu}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{0.6\textwidth}
+      实验所使用的常数和实验的数据如图\ref{shiyanshujv}和\ref{changshu}所示。
+    \end{minipage}
+  \end{figure}
 
-%   实验结果如图\ref{shujv}所示，进行图像处理，在坐标轴上画出数据点获得图\ref{zuotu}。
+  最终数据中还需要计算常数a和常数K，这两个数据和测量的结果有关，但是在计算中作为常数。
+  所以计算两个常数，使用的实验数据是每组实验得到的平均值，最终得到的结果如图
+  \ref{consta}和\ref{constk}所示。
 
-%   最终实验结果中$U_{R}-f$图形较为符合预期，实验较为成功。而$\varphi - f$图形结果较为失败，图形形状
-%   不符合预期图像。
+  \begin{figure}[H]
+    \centering
+    \begin{minipage}{0.45\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{consta.png}
+      \caption{常数a计算}\label{consta}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{constk.png}
+      \caption{常数K计算}\label{constk}
+    \end{minipage}
+    \vspace{1em} % 垂直间距
+  \end{figure}
 
-%   最终得到的结果误差较大，出现明显图像偏移扭曲，分析误差产生原因：
 
-%   1. 由于$U_{R}-f$图像较为符合预期，所以实验中$U_{R}\mbox{和}f$的测量没有出现大问题，而在测量
-%     计算$\varphi$的时候需要手动确定相位差位置进行读数，可能在调节仪器的时候没有使测量的指针对准
-%     两列波理论测量的位置，而由于实验中相位差测量是通过测量$\Delta t$来实现的，由于时间间隔较小，
-%     较小的偏差就会产生较大的误差，所以出现偏差也较大。
-% 压二极管的曲线更加陡，相同电压变化下电流变化更大。
 
-%   \subsection{测量回路的品质因数Q值}
-%   \begin{wrapfigure}[16]{l}{4.5cm}\label{urf}
-%     \centering
-%     \includegraphics[width=0.3\textwidth,height=0.3\textheight]{f_ur_zuotu.png}
-%     \caption{$U_{R}-f$图像及处理}
-%   \end{wrapfigure}
 
-%   如图\ref{urf}所示，对图像进行数据处理，确定$\frac{U_{MAX}}{\sqrt{2}}$的水平线，和图形的交点
-%   作垂线确定$f_{1}\mbox{和}f_{2}$。通过测量和计算可得两者的在x正半轴上的位置分别为
-%   $f_{1}=2210.443Hz$和$f_{2}=2449.367Hz$。通过公式计算可得
-%   \begin{equation}
-%     Q=\frac{f_{0}}{f_{2}-f_{1}}=\frac{2321.521}{2449.367-2210.443}=9.716
-%   \end{equation}
-
-%   通过实验中的测量可以得到实验中电感两端的电压为$344.9mV$，信号源的电压为$41.4mV$，可以得到公式计算可得
-%   \begin{equation}
-%     Q=\frac{U_{L}}{U}=\frac{344.9}{41.4}=8.33
-%   \end{equation}
-
-%   实验中测得的数据和理论计算得到的数据的百分差为$14.3\%$，相差较大。
-%   最终得到的结果误差较大，出现百分差较大的情况，分析误差产生原因：
-
-%   1.  测量值可能不够准确，由于器材的误差出现导致实验得到的Q值不够准确。
-
-%   2.  理论值可能不够准确，由于理论值通过作图得到，所以最终得到的数值和实际值也存在一定误差
-
-%   3.  理论值和实验值都存在误差，导致误差方法出现较大的误差情况出现
-
-% \section{思考题}
-%   \subsection{思考题一}
-%   RLC电路对不同的频率有不同的阻抗，所以会发生改变。
-%   \subsection{思考题二}
-%   它用来描述谐振电路的质量或其谐振能力。 
-%   Q值越大，通频带宽度就越窄，电路的选择性能越好，抑非能力越强。
-
-%   电路品质因数Q值的两种测量方法：
   
-%   一是根据公式$Q=\frac{UL}{U0}=\frac{UC}{U0}$测定，UC与UL分别为谐振时电容器C和电感线圈L上的电压。
+  \subsection{最大公约数法}
+  最大公约数法的结果展示如图\ref{zhijiefa}所示。
 
-%   二是通过测量谐振曲线的通频带宽度$\Delta f=f_{1}-f_{2}$，再根据$Q=\frac{f_{0}}{f_{1}-f_{2}}$求出Q值。
-%   \subsection{思考题三}
-%   rlc中l的电阻对谐振曲线的影响是：
-%   谐振时，对电路总电阻的大小有影响。电阻大，总电阻就大。
-%   对谐振回路的Q值也有影响，电阻大，Q小。
-%   对谐振回路的通频带和选择性有影响，电阻大，通频带宽，选择性差。
+  \begin{figure}[H]
+    \centering
+    \includegraphics[height=0.03\textwidth,width=1\textwidth]{zhijiefa.png}
+    \caption{最大公约数法结果展示}\label{zhijiefa}
+  \end{figure}
 
-%   测量方法可以通过测量流过电感的电流频率通过$R_{L}=\frac{1}{2\pi * f_{L}}$得到。
+  从结果中发现，如果通过计算机计算得到的结果是0，原因是实验测得的数据并不是标准的元电荷带电量的整数倍。
+  所以直接通过计算机计算将无法通过最大公约数法得到e的值的近似值大小。
+  
+  \subsection{倒过来验证法}
+  倒过来验证法得到的结果展示如图\ref{fanqiufa}所示。
 
-% \section{实验中个人的思考与感想}
-%   \subsection{对于实验个人观点}
-%   实验中使用的器材和书本使用不一样，所用的器材能够通过调节旋钮改变电压表所接接口。实验中可以通过在不同接口处
-%   连接不同电路部分而可以通过调节旋钮改变实验中电压表所接电路。虽然这样可以方便实验记录，但是实验中的电路连接会导致
-%   很多问题，导致实验中出现很多未知的问题。而且更多的接口也可能由于接口接触不良等问题导致实验中出现波形难以察觉的问题。
+  \begin{figure}[H]
+    \centering
+    \includegraphics[height=0.25\textwidth,width=1\textwidth]{fanqiufa.png}
+    \caption{倒过来验证法结果展示}\label{fanqiufa}
+  \end{figure}
 
-%   实验中测量相位差的方式是通过调节示波器上的指针位置读取两指针之间的$\frac{1}{\Delta t}$在进行计算的方法进行实验测试。
-%   这其中会引入很多不确定度，在调节指针的时候也会出现很大的误差，由于很难调节两指针位置能够恰好满足实验的要求，导致实验
-%   误差进一步增大。当然这可能和我使用的实验器材有关，似乎隔壁几位的器材由于更为先进所以能直接读出相位差，相较于他们我实验的
-%   误差应该会更大。
-%   \subsection{实验中的总结}
-%   在实验中学习了使用可以调节的元件控制电压表所读对象的方法。实验中电路的连接时实验中较为困难的地方。而实验中
-%   其余的测量都较为机械化。在测量相位差的时候由于器材的显示进行读数的时候会出现较多误差。而且调节的时候对于
-%   显示图像也没有放到最大，导致实验中读取的$\frac{1}{\Delta t}$误差较为大。
+  从倒过来验证法中可以看到最终得到的元电荷的大小和理论值之间的百分差在5\%上下，结果还是较为准确的。
+  因为在这个过程中是用已知理论值反过来去求的。
+
+  \subsection{作图法}
+  作图法得到的结果展示如图\ref{zuotufa}所示。
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[height=0.5\textwidth,width=1\textwidth]{zuotufa.png}
+    \caption{作图法结果展示}\label{zuotufa}
+  \end{figure}
+
+  从作图法中可以看到最终得到的元电荷的大小和理论值之间的百分差在25\%上下，结果偏差还是较大的。
+  在寻找符合条件的整数的时候选择的是使用GeoGraphic进行处理并寻找的。最后直线是在整数和测得的电荷量
+  的图上进行拟合后得到的直线的斜率。误差也较大。GeoGraphic的图像如图\ref{geotu}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[height=0.5\textwidth,width=0.6\textwidth]{geotu.png}
+    \caption{作图法结果展示}\label{geotu}
+  \end{figure}
+
+\section{思考题}
+  \subsection{思考题一}
+  对实验可能产生影响的因素主要有
+  油滴的质量和半径、空气阻力、电场的强度、环境温度和湿度、光学系统的精度、电荷的分布和偏离。
+  当然，操作者的技术也是主要影响因素。
+  \subsection{思考题二}
+  让极板平行的方法有：使用水平仪、利用水平线或激光、测量两侧高度。
+
+  如果平行极板不水平，可能会对密立根油滴实验的结果产生一些影响：
+  电场非均匀、测量误差、不稳定性，最终导致实验的测量产生误差的错误。
+
+\section{实验中个人的思考与感想}
+  \subsection{对于实验个人观点}
+  实验非常简单，只要喷油加调节加观察就能得到实验结果。但是实验往往在第一步喷油就结束了。
+  想要找到一个符合调节，平衡电压在200v左右，下落时间在20s左右的油滴真的非常困难。而且
+  挥发现象在我的实验仪器上非常明显，就会导致最终测试的时候非常容易出现还在调试平衡电压，准备测试了，
+  油滴开始扩散挥发原来越模糊。
+
+  总之实验非常需要耐心。但是原理上并不是非常难懂，主要就是一个受力情况的分析。
+  \subsection{实验中的总结}
+  实验通过测量油滴平衡电压和下降时间计算油滴的受力最终得到油滴所带电荷量。再通过油滴电荷量的
+  多个数据求元电荷的大小。
+
+  实验的两种测量方法动态法似乎能够更加准确一些。最终得到的数据的处理也使用了三种不同的方法。
+  
+  其中直接求最大公约数由于数据并不是准确的理论值，所以寻找比较麻烦，而其他两种中，倒过来计算明显准确很多，
+  但是这样和研究目的不符合，变成验证元电荷带电量了。而最后一种作图法得到的数据还是有不少偏差的。
 \end{document}
