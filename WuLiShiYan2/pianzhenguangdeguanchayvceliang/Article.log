@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.21)  12 DEC 2023 19:26
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.21)  12 DEC 2023 19:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -433,47 +433,34 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <10.53937> not available
 (Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 64.
- [1]
+ [1] [2]
 File: figure//pianzhentai.jpg Graphic file (type bmp)
 <figure//pianzhentai.jpg>
- [2]
+ [3]
 File: figure//pianzhengguangchansheng.jpg Graphic file (type bmp)
 <figure//pianzhengguangchansheng.jpg>
- [3]
+ [4]
 File: figure//bojingpianguanglu.jpg Graphic file (type bmp)
 <figure//bojingpianguanglu.jpg>
- [4]
+ [5]
 File: figure//jianbiefangfa.jpg Graphic file (type bmp)
 <figure//jianbiefangfa.jpg>
- [5]
+ [6]
 File: figure//jinyibujianbie.jpg Graphic file (type bmp)
 <figure//jinyibujianbie.jpg>
- [6]
+ [7]
 File: figure//shiyanguanglu.jpg Graphic file (type bmp)
 <figure//shiyanguanglu.jpg>
- [7] [8]
+ [8] [9]
 File: figure//yuanshishujv2.jpg Graphic file (type bmp)
 <figure//yuanshishujv2.jpg>
- [9]
+ [10]
 File: figure//yuanshishujv1.jpg Graphic file (type bmp)
 <figure//yuanshishujv1.jpg>
- [10]
-
-LaTeX Warning: Reference `shiyanzuotu' on page 11 undefined on input line 233.
-
+ [11]
 File: figure//zuotu.png Graphic file (type bmp)
 <figure//zuotu.png>
-
-LaTeX Warning: Reference `shujv2' on page 11 undefined on input line 243.
-
-[11] [12] (./Article.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+ [12] [13] (./Article.aux) ) 
 Here is how much of TeX's memory you used:
  9657 strings out of 478630
  258808 string characters out of 5847730
@@ -483,4 +470,4 @@ Here is how much of TeX's memory you used:
  36 hyphenation exceptions out of 8191
  89i,5n,97p,362b,275s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Article.pdf (13 pages).
+Output written on Article.pdf (14 pages).
