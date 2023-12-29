@@ -1,0 +1,20 @@
+\contentsline {section}{\numberline {一、}实验摘要}{2}{}%
+\contentsline {subsection}{\numberline {1.1}实验概要}{2}{}%
+\contentsline {subsection}{\numberline {1.2}实验目的}{2}{}%
+\contentsline {section}{\numberline {二、}实验原理}{2}{}%
+\contentsline {section}{\numberline {三、}实验装置器材介绍}{4}{}%
+\contentsline {section}{\numberline {四、}实验内容及实验步骤}{4}{}%
+\contentsline {section}{\numberline {五、}实验原始数据}{5}{}%
+\contentsline {section}{\numberline {六、}实验数据处理}{6}{}%
+\contentsline {subsection}{\numberline {6.1}计算波长}{6}{}%
+\contentsline {subsection}{\numberline {6.2}误差分析}{6}{}%
+\contentsline {subsubsection}{\numberline {6.2.1}$d_{1}$}{6}{}%
+\contentsline {subsubsection}{\numberline {6.2.2}$d_{2}$}{6}{}%
+\contentsline {subsubsection}{\numberline {6.2.3}$\delta x$}{7}{}%
+\contentsline {subsubsection}{\numberline {6.2.4}$D$}{7}{}%
+\contentsline {section}{\numberline {七、}思考题}{7}{}%
+\contentsline {subsection}{\numberline {7.1}思考题1}{7}{}%
+\contentsline {subsection}{\numberline {7.2}思考题2}{7}{}%
+\contentsline {section}{\numberline {八、}实验中个人的思考与感想}{8}{}%
+\contentsline {subsection}{\numberline {8.1}对于实验个人观点}{8}{}%
+\contentsline {subsection}{\numberline {8.2}实验中的总结}{8}{}%
