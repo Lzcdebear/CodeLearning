@@ -64,210 +64,238 @@
 \newpage
 \section{实验摘要}
   \subsection{实验概要}
-  比热容是热学中一个重要的物理量，物质比热容的测量是物理学的基本测量之一，
-  对于了解物质的结构、确定物质的相变以及新能源的开发和新材料的研制等方面，都起着重要作用。
-  测量液体比热容的方法有电加热法、冷却法、辐射法、混合法、比较法等。本实验采用比较法测量饱和食盐水的比热容。
+  铁磁物质是一种性能特异、用途广泛的材料.铁、钴、镍及其众多合金以及含铁的氧化物均属铁磁物质，
+  铁磁物质的一个特征是在外磁场作用下能被强烈磁化，故铁磁物质的磁导率很高，铁磁物质的另一个特征是磁滞现象，即磁化场停止作用后，
+  铁磁物质仍会保留磁化状态，磁滞现象有着广泛的应用.
 
   \subsection{实验目的}
-  1.\quad 了解学会用冷却法和比较法测量液体的比热容，并了解比较法的使用条件。
+  1.\quad 认识铁磁物质的磁化规律，比较不同铁磁材料的动态磁化特性。
 
-  2.\quad 学会用实验的方法考察热学系统的冷却速率同系统与环境间温度差之间的关系。
+  2.\quad 了解利用示波器测量铁磁材料动态磁滞回线的原理和方法。
   
-  3.\quad 了解冷却法所用仪器设计的依据，能够从降低误差的角度规划液体体积、拟定操作步骤。
+  3.\quad 测绘铁磁样品的磁滞回线和基本磁化曲线。
 
 \section{实验原理}
-  由牛顿冷却定律可知，一个表面温度为$\theta$的物体，在温度为$\theta_{0}$的环境中
-  自然冷却$(\theta > \theta_{0})$，
-  在单位时间里物体散失的热量$\delta Q / \delta t$与温度差$\theta - \theta_{0}$有下列关系：
+  \subsection{铁磁材料的磁滞现象}
+  图\ref{tieciqvxian}为铁磁物质磁感应强度B与磁场强度H之间的关系曲线。
+  图中的原点O表示磁化之前铁磁物质处于磁中性状态，即B=0，H=0.当磁场的H从零开始增加时，磁感应强度B随之缓慢上升，
+  如线段Oa所示；继之B随H迅速增长，如线段ab所示；其后B的增长又趋缓慢，并当H增至Hm时，
+  B到达饱和值.OabS称为起始磁化曲线。
+  当磁场从Hm逐渐减小至零，磁感应强度B并不沿起始磁化曲线恢复到原点O，
+  而是沿另一条新曲线SR下降。
+  比较线段OS和SR可知，减小B相应也减小，但B的变化滞后于H的变化，这种现象称为磁滞，磁滞的明显特征是当H=0时，B不为零，而保留剩磁B。
 
-  \begin{equation}
-    \frac{\delta Q}{\delta t} = k (\theta - \theta_{0})
-  \end{equation}
+  \begin{figure}[H]\label{tieciqvxian}
+    \centering
+    \includegraphics[width=0.8\textwidth,height=0.4\textheight]{tieciqvxian.jpg}
+    \caption{铁磁材料磁滞回线}
+  \end{figure}
 
-  设物质的热容为$C_{s}$，在散失热量$\delta Q$后，温度改变量为$\delta \theta$，
-  则$\delta Q = C_{s} \delta \theta$.
-  当物体温度的变化是准静态过程时，上式可改写为
+  当磁场反向从O逐渐变至$-H_{e}$。时，磁感应强度B消失.这说明要消除剩磁，
+  必须施加反向磁场，$H_{e}$称为矫顽力，它的大小反映铁磁材料保持剩磁状态的能力，线段RD称为退磁曲线。
+
+  图\ref{tieciqvxian}还表明，当磁场按$$H_{m}\rightarrow 0\rightarrow -H_{e}\rightarrow -H_{m}\rightarrow 0\rightarrow H_{e}\rightarrow H_{m}$$
+  次序变化，相应的磁感应强度B则沿闭合曲线SRDS'R'D'S'变化，这条闭合曲线称为磁滞回线。
+  所以，当铁磁材料处于交变磁场中时（如变压器中的铁芯），将沿磁滞回线反复被磁化→去磁→反向磁化→反向去磁，
+  在此过程中要消耗额外的能量，并以热的形式从铁磁材料中释放，这种损耗称为磁滞损耗，可以证明，磁滞损耗与磁滞回线所围面积成正比。
+
+  应该说明，当初始态为H=0,B=0的铁磁材料，在交变磁场强度由弱到强依次进行磁化，可以得到面积由小到大向外扩张的一簇磁滞回线，
+  如图\ref{tongyicailiaoqvxian}所示.这些磁滞回线顶点的连线称为铁磁材料的基本磁化曲线，由此可近似确定其磁导率$\mu =\frac{B}{H}$。
+  因B与H的关系成非线性，故铁磁材料的$\mu$不是常数，
+  而是随H而变化，如图\ref{muH}所示.铁磁材料的相对磁导率可高达数千乃至数万，这一特点是它用途广泛的主要原因之一。
+
+  \begin{figure}[H]
+    \begin{minipage}[t]{0.45\textwidth}
+      \centering
+      \includegraphics[width=\textwidth,height=0.3\textheight]{tongyicailiaoqvxian.jpg}
+      \caption{同一材料的一簇磁滞曲线}
+      \label{tongyicailiaoqvxian}
+    \end{minipage}
+    \begin{minipage}[t]{0.45\textwidth}
+      \centering
+      \includegraphics[width=\textwidth,height=0.3\textheight]{muH.jpg}
+      \caption{铁磁材料$\mu$和$H$的关系}
+      \label{muH}
+    \end{minipage}
+  \end{figure}
+
+  磁化曲线和磁滞回线是铁磁材料分类和选用的重要依据，图\ref{butongcailiaoqvxian}为常见的两种典型的磁滞回线。
+  其中软磁材料磁滞回线狭长，矫顽力、剩磁和磁滞损耗均较小，是制造变压器、电机、和交流磁铁的主要材料；而便磁材料磁滞回线较宽，矫顽力大，剩磁强，可用来制造永磁体。
+
+  \begin{figure}[H]\label{butongcailiaoqvxian}
+    \centering
+    \includegraphics[width=0.5\textwidth,height=0.3\textheight]{butongcailiaoqvxian.jpg}
+    \caption{不同材料的磁滞回线}
+  \end{figure}
+
+
+  \subsection{用示波器观察和测量磁滞回线的实验原理和线路}
+  在用示波器观察时，示波器工作在XY工作模式，其中x轴输人为磁场强度H，y轴输入为磁感应强度B。观察和测量磁滞回线和基本磁化曲线的线路如图\ref{shiyanyuanliluxian}所示。
+
+  \begin{figure}[H]\label{shiyanyuanliluxian}
+    \centering
+    \includegraphics[width=0.9\textwidth,height=0.3\textheight]{shiyanyuanxianlu.jpg}
+    \caption{实验原理线路}
+  \end{figure}
+
+  在图\ref{shiyanyuanliluxian}中待测样品为EI型砂钢片，被制为闭合的环形，然后均匀绕以励磁线圈$N_{1}$，和测量线圈$N_{2}$。
+  220V的交流电经电压变换后经过多挡开关$S_{1}$，加到励磁绕组$N_{1}$上，$S_{1}$可以调节加到$N_{1}$，上的电压值。$R_{1}$为可调电阻，
+  用来对励磁电流取样，其总值为5$\Omega$。调节$R_{1}$处的多挡开关，即以$0.5\Omega$等间隔改变可调电阻$R_{1}$与示波器并联部分的电阻，
+  从而可以调节输入到示波器上的电压$U_{H}$。
+
+  设通过$N_{1}$的交流励磁电流为i，根据安培环路定律，样品的磁场强度为
   
   \begin{equation}
-    \frac{\delta \theta}{\delta t} = \frac{k}{C_{s}} (\theta-\theta_{0})
+    H=\frac{N_{1} \cdot i}{L}
   \end{equation}
 
-  其中$\delta \theta / \delta t$为物体的冷却速率，$C_{s}$为物质的热容，$k$为物体的散热常数，
-  与物体的表面性质、表面积、物体周围介质的性质和状态以及物体表面温度等许多因素有关，
-  $\theta$和$\theta_{0}$分别为物体的温度和环境的温度。
-  k为负数，$\theta 0-\theta_{0}$的数值应该很小，在10~15$^{\circ} C$之间。
-
-  如果在实验中使环境温度$\theta$保持恒定，则可以认为$\theta$是常量，对上式进行积分，可以得到
+  式中L为样品的平均磁路长度，设$R_{1}$与示波器并联部分的电阻为$R_{1s}$，则有
 
   \begin{equation}
-    ln(\theta - \theta_{0}) = \frac{k}{C_{s}} t + b
+    U_{H}=R_{1s}i
   \end{equation}
-  式子中的b为常数
 
-  可以将上式看成为两个变量的线性方程：自变量为t
-  因变量为$ln(\theta - \theta_{0})$直线斜率为$k/C_{s}$.对于待测液体，
-  它的散热系数k和热容$C_{s}$是未知的，因而只是依靠待测液体的温度曲线难以获得待测液体的比热容，
-  为此，需要采用比较法开展实验.对两个实验系统在相同的实验条件下进行对比，
-  从而确定未知物理量的方法，叫作比较法。
+  在交流励磁电路恒定的情况下，$U_{H}$随可调电阻$R_{1}$的$R_{1s}$部分变大而变大。通过$U_{H}$和$R_{1s}$的值可以得到励磁电流的值。有
+
+  \begin{equation}
+    H=\frac{N_{1}}{LR_{1s}} \cdot U_{H}
+  \end{equation}
+
+  当式中$N_{i}$、$L$、$R_{1}$均已知的常数时，可由$U_{H}$确定$H$的值。
+
+  在交变磁场下，样品的磁感应强度瞬时值B由测量线圈和$R_{2}C_{2}$电路来确定，
+  根据法拉第电磁感应定律，由于样品中磁通量$\Phi$的变化，在测量线圈中产生的感生电动势的大小为
   
-  比较法作为一种实验方法，有广泛的应用。在本实验中，将纯净水作为标准液体，
-  饱和食盐水作为待测液体，在实验中用同一个容器分别盛水和盐水，
-  在这两种情况下保持系统的初始温度、表面积和环境温度等基本相同，
-  则系统盛水和盐水时的系数$k^{'}$与$k^{''}$相等，即
-
-  $$k^{'} = k^{''} = k$$
-
-  分别写出对已知标准液体（即纯净水）和待测液体（即饱和食盐水）进行冷却的公式，如下：
-
   \begin{equation}
-  \left\{  
-  \begin{aligned}
-      & ln(\theta - \theta_{0}) _{w} = \frac{k^{'}}{C^{'}_{s}} t + b^{'} \\
-      & ln(\theta - \theta_{0}) _{s} = \frac{k^{''}}{C^{''}_{s}} t + b^{''}
-  \end{aligned}
-  \right.
+    \varepsilon_{2} = N_{2} \frac{d\Phi}{dt}
   \end{equation}
 
-  式子中的$C^{'}_{s}$和$C^{''}_{s}$分别是系统装水和装盐水时的热容。
-
-  令$S^{'}$和$S^{''}$分别表示两个式子中的做出的两条直线的斜率，也就是
-
   \begin{equation}
-    S^{'} = \frac{k}{C^{'}_{s}} \mbox{,} S^{''} = \frac{k}{C^{''}_{s}}
+    \Phi = \frac{1}{N_{2}} \int \varepsilon_{2}dt 
   \end{equation}
 
-  于是可以得到
-
   \begin{equation}
-    S^{'} C^{'}_{s} = S^{''} C^{''}_{s}
+    B=\frac{\varepsilon}{S}=\frac{1}{N_{2}S} \int \varepsilon dt
   \end{equation}
 
-  式子中的$S' , S^{''}$ 都可以通过最小二乘法获得，热容 $C^{'}_{s}$ $C^{''}_{s}$ 分别为
+  式中S为样品的截面积。
 
+  如果忽略自感电动势和电路损耗，则回路方程为
+  
   \begin{equation}
-  \left\{
-  \begin{aligned}
-      & C^{'}_{s} = m^{'}c^{'}+m_{1}c_{1}+m_{2}c_{2}+\delta C^{'} \\
-      & C^{''}_{s} = m^{''}c_{x}+m_{1}c_{1}+m_{2}c_{2}+\delta C^{''}
-  \end{aligned}
-  \right.
+    \varepsilon_{2} = i_{2} R_{2} + U_{B}
   \end{equation}
 
-    其中m，$m^{''}$，$c^{'}$，$c_{x}$分别为水和盐水的质量及比热容。
-    $m_{1}$，$m_{2}$，$c_{1}$，$c_{2}$分别为量热器内筒和搅拌器的质量及比热容。
-    $\delta C^{'}$和$\delta C^{''}$分别为温度计浸入已知液体和待测液体部分的等效热容。
-    由于数字温度计测温时浸入液体部分的等效热容相对系统的很小，故可以忽略不计。最终可以得到
+  式中$i_{2}$为感生电流，$U_{B}$为积分电容$C_{2}$两端电压，设在$\Delta t$时间内$i_{2}$向电容$C_{2}$
+  充电电荷量为Q，则有
 
-    \begin{equation}
-      c_{x} = \frac{1}{m^{''}} [\frac{S^{'}C^{'}_{s}}{S^{''}} - (m_{1}c_{1} + m_{2}c_{2})]
-    \end{equation}
-    
-    其中水的比热容是$c^{'} = 4.18 J/(g \cdot K)$，量热器内同和搅拌器通常是使用金属铜制作，
-    比热容大概为$c_{1} = c_{2} = 0.389 J/(g \cdot K)$
+  \begin{equation}
+    U_{B}=\frac{Q}{C_{2}}
+  \end{equation}
 
-    在上述实验过程中，使实验系统进行自然冷却，
-    测出系统冷却过程中温度随时间的变化关系，并从中测定未知热学参量的方法，叫作冷却法。
+  \begin{equation}
+    \varepsilon_{2} = i_{2}R_{2} + \frac{Q}{C_{2}}
+  \end{equation}
+
+  如果选取足够大的$R_{2}$和$C_{2}$，使$i_{2}R_{2}>>\frac{Q}{c_{2}}$
+
+  \begin{equation}
+    \varepsilon_{2}=i_{2}R_{2}=\frac{dQ}{dt}R_{2}=C_{2}\frac{dU_{B}}{dt}R_{2}
+  \end{equation}
+
+  上式中可由$U_{B}$确定$B$，则有
+
+  \begin{equation}
+    B=\frac{C_{2}R_{2}}{N_{2}S} U_{B}
+  \end{equation}
+
+  综上所述，只要将$U_{H}$和$U_{B}$分别加到示波器的“X输入”和“Y输人”便可观察样品的B-H曲线，并可用示波器测出$U_{H}$和$U_{B}$值，进而根据公式计算出B和H。
 
 \section{实验装置器材介绍}
-由铜质的内简、外简和有机玻璃材质的盛水盘等组成的专用量热器，
-烧杯，恒温装置，测温装置等，该专用量热器如图\ref{qicai}所示。
-
-\begin{figure}[H]\label{qicai}
-  \centering
-  \includegraphics[width=0.5\textwidth,height=0.2\textheight]{qicai.jpg}
-  \caption{专用量热器示意图}
-\end{figure}
+磁滞回线实验仪、示波器
 
 \section{实验内容及实验步骤}
-  \subsection{仪器准备}
-  （1）本实验所用量热器外筒远小于盛水盘，实验开始时将盛水盘盛上适当深度的水。
+  \subsection{电路连接}
+  选择硅钢片材料（蓝色）磁芯，按电路图连接线路，并令$R_{1}=5\Omega$，“U选择”置于0位。$U_{H}$和$U_{B}$，分别接示波器的“X输入”和“Y输入”。
 
-  （2）在恒温装置中配置饱和食盐水、纯净水并使两种液体的温度保持在7$^{\circ}C$左右。
+  \subsection{样品退磁}
+  开启实验仪电源，转动“U选择”旋钮，令U从0增至3V，然后再转动旋钮，将U从最大值降为0，从而消除剩磁，确保样品处于磁中性状态，即B=H=0，如图\ref{tuicishiyi}所示.
 
-  （3）用电子天平给量热器内筒称重。
+  \begin{figure}[H]
+    \begin{minipage}[t]{0.45\textwidth}
+      \centering
+      \includegraphics[width=\textwidth,height=0.3\textheight]{tuicishiyi.jpg}
+      \caption{退磁示意图}
+      \label{tuicishiyi}
+    \end{minipage}
+    \begin{minipage}[t]{0.45\textwidth}
+      \centering
+      \includegraphics[width=\textwidth,height=0.3\textheight]{jibianxianxiang.jpg}
+      \caption{调节不当引起的畸变现象}
+      \label{jibianxianxiang}
+    \end{minipage}
+  \end{figure}
 
-  \subsection{测量饱和食盐水和纯净水的自然冷却过程}
-  （1）量热器内筒盛上约占内简 2/3 体积的饱和食盐水，用电子天平称重后放入量热器外筒中，
-  此时应保证饱和食盐水的温度比室温高10~15$^{\circ}C$。
+  \subsection{观察退磁回线}
+  令U=3.0V，开启示波器电源，并分别调节示波器X和Y轴的灵敏度，使显示屏上出现图形大小合适的磁滞回线，
+  若图形顶部出现编织状的小环，如图\ref{jibianxianxiang}所示，这时应该检查示波器的通道输入方式，
+  一般应选择“DC”，或者X通道“AC”，Y通道“DC”，并适当选择$R_{1}$值，或降低励磁电压U予以消除。
 
-  （2）每隔1min 记录一次饱和食盐水温度$\theta$和盛水容器冷却水的温度$\theta_{0}$，共测20 min。
+  \subsection{观察基本磁化曲线}
+  按步骤2对样品进行退磁，从U=0开始，
+  逐挡提高励磁电压，将在显示屏上得到面积由小到大一个套一个的一簇磁滞回线，
+  记录下这些磁滞回线顶点的B和H的值，并将B和H的值作图连线就是样品的基本磁化曲线。
 
-  （3）将量热器内简从外筒中取出，用纯净水清洗。
+  \subsection{已知条件}
+  调节U=3.0 V，$R_{1}=5\Omega$，测定样品的一组$U_{B}$、$U_{H}$值，并根据已知条件：L= 75 mm，S=120 $mm^{2}$，
+  $C_{2}=20\mu F$，$R_{2}=10k\Omega$，N=60匝，计算出相应的B和H的值。
 
-  （4）量热器内简盛上约占内简2/3体积的纯净水，用电子天平称重后放入量热器外筒中.
-  此时应保证饱和纯净水的温度比室温高10~15$^{\circ}C$，且纯净水与饱和食盐水的初温之差不超过1℃。
 
-  （5）每隔1min记录一次纯净水温度$\theta$和盛水容器中冷却水的温度$\theta_{0}$，共测20 min。
+  \subsection{$W_{BH}$}
+  根据得到的B和H的值作B-H曲线，根据曲线求得$B_{m}B_{r}H_{e}$等参数，并估算曲线的面积来求得$W_{BH}$。
 
-  \subsection{数据处理}
-  （1）在同一个直角坐标系中对纯净水及饱和食盐水分别
-  作“$ln(\theta - \theta_{0}) - t$”图，
-  检验分别得到的是否为一条直线。
-  如果是，则可以认为检验了原理中推导的两个公式，即被研究的系统的冷却速率同系统与环境之间温度差成正比。
+  \subsection{$\mu - H$曲线}
+  依次测定U=0.5、1.0、\dots、3.5V十组$U_{H}U_{B}$，计算得出相应的$H_{m}H_{m}\mu$，作出$\mu - H$曲线。
 
-  （2）分别求出纯净水和饱和食盐水的$ln(\theta - \theta_{0}) - t$ 直线的斜率$S^{'} , S^{''}$，
-  并通过比较法得出未知饱和食盐水的比热容$c_{x}$。
+
+  \subsection{不同曲线观察}
+  改变$R_{1}$，观察不同的磁化曲线。
+
+  \subsection{二次测量}
+  更换样品为另一个磁芯（$N_{1}=90$匝），重复上述步骤，并对比两种材料的测量结果。
 \newpage
 
 \section{实验原始数据}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.9\textwidth,height=0.8\textheight]{yuanshishujv.jpg}
-  \caption{实验原始数据}
+  \includegraphics[width=0.9\textwidth,height=0.8\textheight]{yuanshishujv1.jpg}
+  \caption{实验原始数据1}
+\end{figure}
+\newpage
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth,height=0.8\textheight]{yuanshishujv2.jpg}
+  \caption{实验原始数据2}
 \end{figure}
 \newpage
 
 
+
+
+
+
+
 \section{实验数据处理}
-实验数据处理后的图像如下图所示：
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.9\textwidth,height=0.5\textheight]{shujvchuli.png}
-  \caption{实验数据处理}
-\end{figure}
-
-此图为实验数据的初步处理，计算了$ln(\theta - \theta_{0})$ 的值的大小和后续所需要的数据。
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.5\textwidth,height=0.2\textheight]{nacl.png}
-  \caption{盐水图像}
-\end{figure}
-
-此图为盐水的数据图像化后的结果，可以从图中得到拟合直线的斜率等信息。
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.5\textwidth,height=0.2\textheight]{h2o.png}
-  \caption{纯水图像}
-\end{figure}
-
-此图为纯水的数据图像化后的结果，可以从图中得到拟合直线的斜率等信息。
-
-最终通过计算得到实验测得的饱和盐水溶液的比热容为1.554$J / (g \cdot K)$。
-
-实验得到的食盐水的比热容比较小，可能由于浓度比较高导致的。实验中的误差主要来自于实验器材本身和
-周围环境的变化。
-
 
 \section{思考题}
   \subsection{思考题一}
-  实验中确保饱和食盐水和纯净水都放置在相同类型、相同材质和相同容积的容器中，
-  以减少容器对实验结果的影响。同时还使饱和食盐水和纯净水的起始温度相同。
-  并提供尽量相同的实验环境条件。
-  并且为了防止液体在实验过程中因为蒸发或溢出而减少，这可以通过适当盖子覆盖容器来实现。
 
   \subsection{思考题二}
-  这样有利于稳定温度，减少外部温度变化对实验结果的影响。
-  同时保证散热平衡。稳定外部散热系数。
 
 \section{实验中个人的思考与感想}
   \subsection{对于实验个人观点}
-  实验过程非常简单，只需要选择合适的测量温度然后等待温度自己慢慢下降就可以，基本没什么难度。
-  而实验的原理也比较容易理解，主要通过的就是已知水的比热容这一点，通过饱和食盐水和纯净水降温
-  速度的比较最终得到相对于水的比热容，也就可以得到饱和食盐水的比热容。
 
   \subsection{实验中的总结}
-  通过测量饱和食盐水和纯净水在从一定温度在20min内的降温，利用比较法，得到饱和食盐水的比热容
-  约等于1.554$J / (g \cdot K)$。
+
 \end{document}

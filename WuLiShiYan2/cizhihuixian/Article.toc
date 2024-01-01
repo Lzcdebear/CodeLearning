@@ -1,0 +1,25 @@
+\contentsline {section}{\numberline {一、}实验摘要}{2}{}%
+\contentsline {subsection}{\numberline {1.1}实验概要}{2}{}%
+\contentsline {subsection}{\numberline {1.2}实验目的}{2}{}%
+\contentsline {section}{\numberline {二、}实验原理}{2}{}%
+\contentsline {subsection}{\numberline {2.1}铁磁材料的磁滞现象}{2}{}%
+\contentsline {subsection}{\numberline {2.2}用示波器观察和测量磁滞回线的实验原理和线路}{4}{}%
+\contentsline {section}{\numberline {三、}实验装置器材介绍}{7}{}%
+\contentsline {section}{\numberline {四、}实验内容及实验步骤}{7}{}%
+\contentsline {subsection}{\numberline {4.1}电路连接}{7}{}%
+\contentsline {subsection}{\numberline {4.2}样品退磁}{7}{}%
+\contentsline {subsection}{\numberline {4.3}观察退磁回线}{7}{}%
+\contentsline {subsection}{\numberline {4.4}观察基本磁化曲线}{8}{}%
+\contentsline {subsection}{\numberline {4.5}已知条件}{8}{}%
+\contentsline {subsection}{\numberline {4.6}$W_{BH}$}{8}{}%
+\contentsline {subsection}{\numberline {4.7}$\mu - H$曲线}{8}{}%
+\contentsline {subsection}{\numberline {4.8}不同曲线观察}{8}{}%
+\contentsline {subsection}{\numberline {4.9}二次测量}{8}{}%
+\contentsline {section}{\numberline {五、}实验原始数据}{9}{}%
+\contentsline {section}{\numberline {六、}实验数据处理}{11}{}%
+\contentsline {section}{\numberline {七、}思考题}{11}{}%
+\contentsline {subsection}{\numberline {7.1}思考题一}{11}{}%
+\contentsline {subsection}{\numberline {7.2}思考题二}{11}{}%
+\contentsline {section}{\numberline {八、}实验中个人的思考与感想}{11}{}%
+\contentsline {subsection}{\numberline {8.1}对于实验个人观点}{11}{}%
+\contentsline {subsection}{\numberline {8.2}实验中的总结}{11}{}%
