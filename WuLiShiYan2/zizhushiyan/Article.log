@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.21)  5 JAN 2024 02:55
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.21)  6 JAN 2024 02:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -434,9 +434,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <10.53937> not available
 (Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 63.
  [1]
+Underfull \hbox (badness 10000) in paragraph at lines 68--73
+
+ []
+
 File: figure//yuanlitu.jpg Graphic file (type bmp)
 <figure//yuanlitu.jpg>
- [2] [3] [4] [5]
+[2] [3] [4] [5]
 File: figure//shujvchuli0.jpg Graphic file (type bmp)
 <figure//shujvchuli0.jpg>
 File: figure//shujvchuli1.png Graphic file (type bmp)
@@ -460,14 +464,19 @@ File: figure//tanhuang1.png Graphic file (type bmp)
 <figure//tanhuang1.png>
 File: figure//tanhuang2.png Graphic file (type bmp)
 <figure//tanhuang2.png>
- [12] [13] (./Article.aux) ) 
+ [12] [13]
+File: figure//tuxaing1.png Graphic file (type bmp)
+<figure//tuxaing1.png>
+File: figure//tuxiang2.png Graphic file (type bmp)
+<figure//tuxiang2.png>
+ [14] [15] (./Article.aux) ) 
 Here is how much of TeX's memory you used:
- 9598 strings out of 478630
- 254233 string characters out of 5847730
- 1859012 words of memory out of 5000000
- 29565 multiletter control sequences out of 15000+600000
+ 9657 strings out of 478630
+ 257113 string characters out of 5847730
+ 1858012 words of memory out of 5000000
+ 29622 multiletter control sequences out of 15000+600000
  517714 words of font info for 80 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  89i,9n,97p,360b,295s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Article.pdf (14 pages).
+Output written on Article.pdf (16 pages).

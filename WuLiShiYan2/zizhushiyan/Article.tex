@@ -61,20 +61,23 @@
 \newpage
 \tableofcontents
 \newpage
-\section{实验摘要}
+\section{摘要}
 简谐振动是周期运动中最简单的运动方式。研究简谐振动是了解周期运动最简单最理想的模型。
 而当简谐振动中加入了和速度相关的粘性阻力的时候，振动将变为阻尼振动。
-本实验目的是测量阻尼振动一些参数。
 
-\section{实验原理}
-  \subsection{概叙}
-  一个自由振动系统由于外界和内部的原因，使其振动的能量逐渐减少，振幅因之逐渐衰减，最后停止振动，这就是阻尼振动。
-  在单摆和天平的实验中我们观察到阻尼振动，实际不仅在力学实验中，也不限于机械运动，例如，电流指针的运动，LRC振荡电路中的电流、电压变化等也是阻尼振动。
+本实验通过在气垫导轨上更换弹簧与配重获得不同实验条件，通过视频记录与数据记录获得不同周期中最大振幅数据，并进行数据处理
+得到在最大振幅处不同弹簧弹性系数与滑块质量下的若干周期的图像。
+并计算不同条件下的粘性阻尼系数与品质因数。\\
+\newline
+\textbf{关键词：} \quad 气垫导轨、阻尼振动、品质因数、弹性系数、粘性阻尼系数
 
-  \begin{figure}[H]\label{yuanlitu}
+\section{原理}
+  \subsection{背景知识}
+  \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth,height=0.1\textheight]{yuanlitu.jpg}
     \caption{阻尼振动原理图}
+    \label{yuanlitu}
   \end{figure}
 
   本实验的阻尼谐振子由气垫导轨上的滑块和一对弹簧组成，如图\ref{yuanlitu}
@@ -115,7 +118,7 @@
 
   阻尼振动振幅随着时间按指数规律衰减，也就是$A=A_{0} e^{-\delta t}$。而衰减速度除了时间相关，还和阻尼因素相关，也就是和$\delta=\frac{b}{2m}$，所以也和粘性阻尼常数b以及质量m相关。
 
-  \subsection{计算}
+  \subsection{进一步计算}
     \subsubsection{阻尼常数/粘性阻尼常数计算}
     将某一时刻的振幅和一个周期之后该位置的振幅进行比值计算，将会得到
 
@@ -135,7 +138,7 @@
       b = \frac{2m\Lambda}{T}
     \end{equation}
 
-    由此可以得到$\delta$或者b，需要测量的粮食质量以及周期以及振幅数据。
+    由此可以得到$\delta$或者b，需要测量的质量以及周期以及振幅数据。
 
     \subsubsection{品质因数}
     一个振动系统的品质因素又称Q值，是一个应用极为广泛的概念，它在交流电系统及无线电电子学中是一个很常见的术语。
@@ -174,10 +177,10 @@
   并通过描点观察振幅变化和周期变化。最终计算品质因数。
 
 
-\section{实验装置器材介绍}
+\section{装置器材}
 气垫导轨，滑块，摄像仪器，弹簧数对，重物质量块，物理天平，米尺
 
-\section{实验内容及实验步骤}
+\section{内容及步骤}
   \subsection{系统调节}
   安装完光电门传感器后测试光电门计时功能是否正常使用再进行导轨水平调整。
   导轨的水平调节通过导轨一端安装的调节螺丝，用于调节导轨横向与纵向的水平。
@@ -200,7 +203,7 @@
   通过视频方式记录小车位置，再对视频进行在处理得到数据集。
 \newpage
 
-\section{实验原始数据}
+\section{原始数据}
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.9\textwidth,height=0.85\textheight]{shujvchuli0.jpg}
@@ -231,7 +234,7 @@
 \newpage
 %----------------------------------------------------------------------------------------
 
-\section{实验数据处理}
+\section{数据处理}
 
   \subsection{数据对应关系}
   实验中使用的弹簧及其质量如表\ref{tanhuang}所示。
@@ -322,32 +325,78 @@
   \begin{table}[H]
     \centering   
     \caption{系列以及相关实验值计算}\label{jisuan}
+    \begin{tabular}{| c || c || c || c |}
+        \hline
+        系列序号 & b & $\Delta$ & Q\\
+        \hline
+        1 & 17.22 & 0.0395 & 60.39\\
+        \hline
+        2 & 26.75 & 0.0551 & 43.86\\
+        \hline
+        3 & 29.33 & 0.0547 & 41.02\\
+        \hline
+        4 & 21.07 & 0.0457 & 43.86\\
+        \hline
+        5 & 22.90 & 0.0449 & 60.04\\
+        \hline   
+        6 & 24.29 & 0.0527 & 51.82\\
+        \hline
+        7 & 21.86 & 0.0408 & 60.04\\
+        \hline                             
+    \end{tabular}
+  \end{table}
+
+  \subsection{误差分析}
+  \begin{table}[H]
+    \centering   
+    \caption{误差分析}
     \begin{tabular}{| c || c || c |}
         \hline
-        系列序号 &  & 质量（克）\\
+        系列序号 & 振幅（米） & 质量（千克）\\
         \hline
-        1 & 1.707+2.543 & 217.92\\
+        1 & 0.00067 & 0.00582\\
         \hline
-        2 & 1.707+2.543 & 242.76\\
+        2 & 0.00067 & 0.00582\\
         \hline
-        3 & 1.707+2.543 & 268.04\\
+        3 & 0.00067 & 0.00582\\
         \hline
-        4 & 1.707+2.543 & 230.43\\
+        4 & 0.00067 & 0.00582\\
         \hline
-        5 & 5.430+2.543 & 255.27\\
+        5 & 0.00067 & 0.00582\\
         \hline   
-        6 & 5.430+2.543 & 230.43\\
+        6 & 0.00067 & 0.00582\\
         \hline
-        7 & 5.430+2.543 & 268.04\\
+        7 & 0.00067 & 0.00582\\
         \hline                             
     \end{tabular}
   \end{table}
 \newpage
 
 
-\section{实验中个人的思考与感想}
-  \subsection{对于实验个人观点}
-  
-  \subsection{实验中的总结}
+\section{实验结论}
+  最终实验可以得出阻尼振动中周期随着质量增加而增加，振幅随着时间增加而减小。如图\ref{tuxiang1}和图\ref{tuxiang2}所示。
+  \begin{figure}[H]
+    \centering 
+    \includegraphics[width=0.65\textwidth,height=0.35\textheight]{tuxaing1.png}
+    \caption{图像1}
+    \label{tuxiang1}
+  \end{figure}
+
+  \begin{figure}[H]
+    \centering 
+    \includegraphics[width=0.65\textwidth,height=0.35\textheight]{tuxiang2.png}
+    \caption{图像2}
+    \label{tuxiang2}
+  \end{figure}
+
+  同时计算得到了实验中所使用设备条件下的品质因数与阻尼系数。
+
+  实验能够定性表现出阻尼振动和滑块质量与弹簧弹性系数的关系。
+
+\section{实验讨论}
+  实验中有很多容易导致误差的地方。比如弹簧在振动的时候可能会左右晃动导致即便没有阻尼也不是简谐振动。而且气垫导轨不同位置的喷气力度不同也导致饰演的误差。
+
+  之前拿这套相同的设备进行过简谐振动的实验，通过这次实验会感觉上一次实验的误差非常大，而事实上是之前实验中的确也遇到了误差过大的问题。
+  所以这次实验或许也算是解释之前实验中误差分析中解释的“可能由于不是理想的简谐振动”的补充。
   
 \end{document}
